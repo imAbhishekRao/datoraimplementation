@@ -96,6 +96,10 @@ function initDatora() {
           .then(data => {
             const basePriceFormatted = priceFormatter.format(price / 100);
 
+            // Find the Datora badge anywhere in the document
+            const datoraBadge = document.querySelector('.datora.discount-badge');
+            let datoraBadgeContent = '';
+
             if (data.calc === "perc" && data.discPerc > 0) {
               const discountedPrice = price - price * data.discPerc / 100;
               const newPrice = priceFormatter.format(discountedPrice / 100);
@@ -108,10 +112,11 @@ function initDatora() {
               const discountValue = price * data.discPerc / 100;
               const formattedDiscountValue = priceFormatter.format(discountValue / 100);
 
-              div.querySelector('[data-datora]').innerHTML = `-${data.discPerc}% (${formattedDiscountValue}) ${code.toUpperCase()}`;
-
-              const badge = div.querySelector('.datora.discount-badge');
-              if (badge) badge.removeAttribute('hidden');
+              datoraBadgeContent = `-${data.discPerc}% (${formattedDiscountValue}) ${code ? code.toUpperCase() : ''}`;
+              if (datoraBadge) {
+                datoraBadge.removeAttribute('hidden');
+                datoraBadge.querySelector('[data-datora]').innerHTML = datoraBadgeContent;
+              }
 
             } else if (data.calc === "amt" && data.discAmt > 0) {
               const discountedPrice = price - data.discAmt * 100;
@@ -125,10 +130,11 @@ function initDatora() {
               const discountValue = price - discountedPrice;
               const formattedDiscountValue = priceFormatter.format(discountValue / 100);
               
-              div.querySelector('[data-datora]').innerHTML = `(-${formattedDiscountValue}) ${code.toUpperCase()}`;
-              
-              const badge = div.querySelector('.datora.discount-badge');
-              if (badge) badge.removeAttribute('hidden');
+              datoraBadgeContent = `(-${formattedDiscountValue}) ${code ? code.toUpperCase() : ''}`;
+              if (datoraBadge) {
+                datoraBadge.removeAttribute('hidden');
+                datoraBadge.querySelector('[data-datora]').innerHTML = datoraBadgeContent;
+              }
             } else {
               div.querySelector('.price-list .price:not(.price--compare) span:not(.visually-hidden)').textContent = basePriceFormatted;
 
@@ -137,11 +143,10 @@ function initDatora() {
                 comparePriceElem.classList.add('visually-hidden');
               }
 
-              const datoraInfo = div.querySelector('[data-datora]');
-              if (datoraInfo) datoraInfo.textContent = '';
-
-              const badge = div.querySelector('.datora.discount-badge');
-              if (badge) badge.setAttribute('hidden', true);
+              if (datoraBadge) {
+                datoraBadge.querySelector('[data-datora]').textContent = '';
+                datoraBadge.setAttribute('hidden', true);
+              }
             }
           }).catch(() => {});
       });
