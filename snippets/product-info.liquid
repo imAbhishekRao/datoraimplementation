@@ -96,6 +96,26 @@
       <span class="loox-rating-label">&nbsp;(1,234)</span>
     </div>
 
+    <div class="product-badges-wrapper">
+      {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
+        {%- if settings.discount_mode == 'percentage' -%}
+          {%- assign savings = product.selected_or_first_available_variant.compare_at_price
+            | minus: product.selected_or_first_available_variant.price
+            | times: 100.0
+            | divided_by: product.selected_or_first_available_variant.compare_at_price
+            | round
+            | append: '%' -%}
+        {%- else -%}
+          {%- capture savings -%}{{ product.selected_or_first_available_variant.compare_at_price | minus: product.selected_or_first_available_variant.price | money }}{%- endcapture -%}
+        {%- endif -%}
+        <span class="label label--highlight discount-badge">{{ 'collection.product.discount_html' | t: savings: savings }}</span>
+      {%- endif -%}
+      <li class="datora discount-badge">
+         {%- render 'icon' with 'discount-badge' -%}
+         <span data-datora></span>
+      </li>
+    </div>
+
     <div
       data-datora-vid="{{ product.selected_or_first_available_variant.id }}"
       data-datora-pid="{{ product.id }}"
@@ -167,29 +187,8 @@
       <div class="product-meta__label-list label-list" data-product-label-list>
         {%- unless product.selected_or_first_available_variant.available -%}
           <span class="label label--subdued">{{ 'collection.product.sold_out' | t }}</span>
-        {%- elsif product.selected_or_first_available_variant.compare_at_price
-            > product.selected_or_first_available_variant.price
-        -%}
-          {%- if settings.discount_mode == 'percentage' -%}
-            {%- assign savings = product.selected_or_first_available_variant.compare_at_price
-              | minus: product.selected_or_first_available_variant.price
-              | times: 100.0
-              | divided_by: product.selected_or_first_available_variant.compare_at_price
-              | round
-              | append: '%'
-            -%}
-          {%- else -%}
-            {%- capture savings -%}{{ product.selected_or_first_available_variant.compare_at_price | minus: product.selected_or_first_available_variant.price | money }}{%- endcapture -%}
-          {%- endif -%}
-
-          <span class="label label--highlight">{{ 'collection.product.discount_html' | t: savings: savings }}</span>
         {%- endunless -%}
       </div>
-      <br />
-      <li hidden style="margin-left: 1rem;" class="datora discount-badge">
-         {%- render 'icon' with 'discount-badge' -%}
-         <span data-datora></span>
-      </li>
     </div>
 
     {%- if section.settings.show_taxes_included -%}
