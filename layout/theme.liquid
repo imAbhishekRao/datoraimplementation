@@ -130,6 +130,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.dataset.src=
   {%- endcomment -%}
   {{ content_for_header | replace: '"https:\/\/d9fvwtvqz2fm1.cloudfront.net\/shop\/js\/discount-on-cart-pro.min.js?shop=d9af6a-2.myshopify.com",', '' }}
 
+  {% comment %} Datora Script Loading - Only load once {% endcomment %}
+  {% if content_for_header contains 'datora' %}
+    {% comment %} Already loaded via app {% endcomment %}
+  {% else %}
+    {% comment %} Load Datora script asynchronously for better performance {% endcomment %}
+    <script async src="https://cdn.datora.com/xyz.js"></script>
+    {% comment %} Add preconnect for better performance {% endcomment %}
+    <link rel="preconnect" href="https://cdn.datora.com">
+  {% endif %}
+
+  {% comment %} Influencer Discount Code Handler {% endcomment %}
+  {% render 'influencer-discount-handler' %}
+
   <script>
     {%- render 'datora-js' -%}
   </script>

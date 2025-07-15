@@ -42,6 +42,13 @@ function initDatora() {
           elem.classList.remove('price--highlight');
         });
 
+        // Clear localStorage when discount is removed
+        localStorage.removeItem('influencer_discount');
+        localStorage.removeItem('influencer_redirect');
+        
+        // Dispatch custom event for influencer discount handler
+        document.dispatchEvent(new CustomEvent('discount:removed'));
+
       }).catch((err) => {
         console.error('Failed to remove discount:', err);
       }).finally(() => {
@@ -67,6 +74,12 @@ function initDatora() {
   }
 
   function updateProductGridDiscounts() {
+    if (typeof co2 === 'undefined' || typeof co2.getDiscountCode !== 'function') {
+      // If co2 is not available yet, retry after a short delay
+      setTimeout(updateProductGridDiscounts, 500);
+      return;
+    }
+
     co2.getDiscountCode().then(code => {
       document.querySelectorAll('[data-datora-pid]').forEach(div => {
         const [vid, pid, spgid, tags, price] = [
@@ -156,10 +169,22 @@ function applyDatoraDiscount() {
 
   if(datoraContainer) datoraContainer.classList.add('loading');
   
+  if (typeof co2 === 'undefined' || typeof co2.setDiscountCode !== 'function') {
+    console.error('Datora co2 object not available');
+    if(datoraContainer) datoraContainer.classList.add('error');
+    setTimeout(() => {
+      if(datoraContainer) datoraContainer.classList.remove('error', 'loading');
+    }, 500);
+    return;
+  }
+
   co2.setDiscountCode(discountCode).then(successful => {
     if(successful) {
       if(datoraContainer) datoraContainer.classList.add('done');
       document.documentElement.dispatchEvent(new CustomEvent('cart:refresh', { bubbles: true }));
+      
+      // Save to localStorage for persistence
+      localStorage.setItem('influencer_discount', discountCode);
     } else {
       if(datoraContainer) datoraContainer.classList.add('error');
     }
@@ -173,9 +198,16 @@ function applyDatoraDiscount() {
 // Make function available globally
 window.applyDatoraDiscount = applyDatoraDiscount;
 
+// Mobile PDP Discount Code Handler - Now handled by influencer-discount-handler.liquid
+function handleMobilePDPDiscount() {
+  // This function is now handled by the dedicated influencer discount handler
+  // Keeping for backward compatibility
+}
+
 document.addEventListener('DOMContentLoaded', function() {
   initDatora();
   updateProductGridDiscounts();
+  handleMobilePDPDiscount();
 
   // Show subtotal if discount applied
   function checkDiscountBadge() {
@@ -192,6 +224,12 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(checkDiscountBadge, 500);
   }
   checkDiscountBadge();
+});
+
+// Handle AJAX page loads for mobile - Now handled by influencer-discount-handler.liquid
+document.addEventListener('DOMContentLoaded', function() {
+  // AJAX handling is now managed by the dedicated influencer discount handler
+  // This ensures proper coordination between Datora and influencer discount functionality
 });
 
 // Remove duplicated applied discount codes

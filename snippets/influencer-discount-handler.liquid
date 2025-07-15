@@ -1,0 +1,251 @@
+{% comment %}
+  Influencer Discount Code Handler
+  Handles automatic application and persistence of influencer discount codes
+  across page loads and mobile PDP
+{% endcomment %}
+
+<script>
+(function() {
+  'use strict';
+  
+  // Configuration
+  const CONFIG = {
+    STORAGE_KEYS: {
+      DISCOUNT: 'influencer_discount',
+      REDIRECT: 'influencer_redirect'
+    },
+    MOBILE_BREAKPOINT: 768,
+    RETRY_DELAY: 500,
+    AJAX_SETTLE_DELAY: 1000
+  };
+
+  // Utility functions
+  const utils = {
+    isMobile: () => window.innerWidth <= CONFIG.MOBILE_BREAKPOINT,
+    isProductPage: () => window.location.pathname.includes('/products/'),
+    isDiscountPage: () => window.location.href.includes('/discount/'),
+    getUrlParam: (param) => new URLSearchParams(window.location.search).get(param),
+    setStorage: (key, value) => localStorage.setItem(key, value),
+    getStorage: (key) => localStorage.getItem(key),
+    removeStorage: (key) => localStorage.removeItem(key),
+    log: (message, data) => console.log('[Influencer Discount]', message, data || '')
+  };
+
+  // Discount code manager
+  const discountManager = {
+    saveDiscountFromUrl: function() {
+      const discount = utils.getUrlParam('discount');
+      const redirect = utils.getUrlParam('redirect');
+      
+      if (discount) {
+        utils.setStorage(CONFIG.STORAGE_KEYS.DISCOUNT, discount);
+        utils.log('Saved discount from URL:', discount);
+        
+        if (redirect) {
+          utils.setStorage(CONFIG.STORAGE_KEYS.REDIRECT, redirect);
+          utils.log('Saved redirect path:', redirect);
+        }
+      }
+    },
+
+    getSavedDiscount: function() {
+      return utils.getStorage(CONFIG.STORAGE_KEYS.DISCOUNT);
+    },
+
+    clearSavedDiscount: function() {
+      utils.removeStorage(CONFIG.STORAGE_KEYS.DISCOUNT);
+      utils.removeStorage(CONFIG.STORAGE_KEYS.REDIRECT);
+      utils.log('Cleared saved discount');
+    },
+
+    checkCartForDiscount: function() {
+      return fetch('/cart.js')
+        .then(res => res.json())
+        .then(cart => {
+          return !cart.discount_codes || cart.discount_codes.length === 0;
+        })
+        .catch(err => {
+          utils.log('Error checking cart:', err);
+          return true; // Assume no discount if error
+        });
+    },
+
+    applyDiscount: function(discountCode) {
+      if (typeof co2 === 'undefined' || typeof co2.setDiscountCode !== 'function') {
+        utils.log('Datora co2 object not available');
+        return Promise.reject('Datora not available');
+      }
+
+      return co2.setDiscountCode(discountCode);
+    },
+
+    getCurrentDiscount: function() {
+      if (typeof co2 === 'undefined' || typeof co2.getDiscountCode !== 'function') {
+        return Promise.reject('Datora not available');
+      }
+      return co2.getDiscountCode();
+    },
+
+    setCartAttribute: function(discountCode) {
+      return fetch('/cart/update.js', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          attributes: {
+            influencer_code: discountCode
+          }
+        })
+      }).catch(err => {
+        utils.log('Error setting cart attribute:', err);
+      });
+    }
+  };
+
+  // Page load handler
+  const pageHandler = {
+    handlePageLoad: function() {
+      const savedDiscount = discountManager.getSavedDiscount();
+      
+      if (!savedDiscount || utils.isDiscountPage()) {
+        return;
+      }
+
+      discountManager.checkCartForDiscount()
+        .then(noDiscount => {
+          if (noDiscount) {
+            const currentPath = window.location.pathname;
+            const redirectPath = utils.getStorage(CONFIG.STORAGE_KEYS.REDIRECT) || currentPath;
+            const discountUrl = `/discount/${savedDiscount}?redirect=${redirectPath}`;
+            
+            utils.log('Redirecting to apply discount:', discountUrl);
+            window.location.href = discountUrl;
+          }
+        });
+    },
+
+    handleMobilePDP: function() {
+      if (!utils.isProductPage() || !utils.isMobile()) {
+        return;
+      }
+
+      const savedDiscount = discountManager.getSavedDiscount();
+      if (!savedDiscount) {
+        return;
+      }
+
+      // Wait for AJAX content to settle
+      setTimeout(() => {
+        discountManager.getCurrentDiscount()
+          .then(currentCode => {
+            if (!currentCode || currentCode.toLowerCase() !== savedDiscount.toLowerCase()) {
+              utils.log('Applying saved discount on mobile PDP:', savedDiscount);
+              return discountManager.applyDiscount(savedDiscount);
+            }
+          })
+          .then(successful => {
+            if (successful) {
+              document.documentElement.dispatchEvent(new CustomEvent('cart:refresh', { bubbles: true }));
+            }
+          })
+          .catch(err => {
+            utils.log('Error applying discount on mobile PDP:', err);
+          });
+      }, CONFIG.AJAX_SETTLE_DELAY);
+    }
+  };
+
+  // AJAX content handler
+  const ajaxHandler = {
+    init: function() {
+      const observer = new MutationObserver(this.handleMutations.bind(this));
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true
+      });
+    },
+
+    handleMutations: function(mutations) {
+      mutations.forEach(mutation => {
+        if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
+          const hasProductContent = Array.from(mutation.addedNodes).some(node => {
+            return node.nodeType === 1 && (
+              node.classList?.contains('product') || 
+              node.querySelector?.('.product-form') ||
+              node.querySelector?.('[data-datora-pid]')
+            );
+          });
+          
+          if (hasProductContent) {
+            setTimeout(() => {
+              pageHandler.handleMobilePDP();
+              // Trigger Datora update if available
+              if (typeof updateProductGridDiscounts === 'function') {
+                updateProductGridDiscounts();
+              }
+            }, CONFIG.RETRY_DELAY);
+          }
+        }
+      });
+    }
+  };
+
+  // Event handlers
+  const eventHandlers = {
+    onCartRefresh: function() {
+      const savedDiscount = discountManager.getSavedDiscount();
+      if (savedDiscount) {
+        discountManager.setCartAttribute(savedDiscount);
+      }
+    },
+
+    onDiscountRemoved: function() {
+      discountManager.clearSavedDiscount();
+    }
+  };
+
+  // Initialize
+  function init() {
+    // Save discount from URL if present
+    discountManager.saveDiscountFromUrl();
+
+    // Handle page load
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', pageHandler.handlePageLoad);
+    } else {
+      pageHandler.handlePageLoad();
+    }
+
+    // Handle mobile PDP
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', pageHandler.handleMobilePDP);
+    } else {
+      pageHandler.handleMobilePDP();
+    }
+
+    // Initialize AJAX handler
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', ajaxHandler.init.bind(ajaxHandler));
+    } else {
+      ajaxHandler.init();
+    }
+
+    // Set up event listeners
+    document.addEventListener('cart:refresh', eventHandlers.onCartRefresh);
+    
+    // Listen for discount removal (custom event)
+    document.addEventListener('discount:removed', eventHandlers.onDiscountRemoved);
+    
+    // Also listen for remove discount button clicks
+    document.addEventListener('click', function(event) {
+      if (event.target.closest('#remove-discount-btn')) {
+        setTimeout(eventHandlers.onDiscountRemoved, 100);
+      }
+    });
+
+    utils.log('Influencer discount handler initialized');
+  }
+
+  // Start initialization
+  init();
+})();
+</script> 
