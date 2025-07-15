@@ -177,7 +177,7 @@ function applyDatoraDiscount() {
     }, 500);
     return;
   }
-
+  
   co2.setDiscountCode(discountCode).then(successful => {
     if(successful) {
       if(datoraContainer) datoraContainer.classList.add('done');

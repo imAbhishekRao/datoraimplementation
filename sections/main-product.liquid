@@ -129,6 +129,16 @@
           %}
           <a href="{{ product.url }}" class="product-item-meta__title">{{ product_title }}</a>
 
+          <div class="product-badges-wrapper">
+            <li hidden class="datora discount-badge">
+               {%- render 'icon' with 'discount-badge' -%}
+               <span data-datora></span>
+            </li>
+            {%- comment -%} Add your default badge here if needed, e.g.:
+            <li class="discount-badge"> ... </li>
+            {%- endcomment -%}
+          </div>
+
           <div
           data-datora-vid="{{ product.selected_or_first_available_variant.id }}"
           data-datora-pid="{{ product.id }}"
@@ -188,12 +198,6 @@
             {%- if template.suffix == 'quick-buy-popover' -%}
               <a href="{{ product.url }}" class="link text--subdued">{{ 'product.general.view_details' | t }}</a>
             {%- endif -%}
-            
-            <br />
-            <li hidden class="datora discount-badge">
-               {%- render 'icon' with 'discount-badge' -%}
-               <span data-datora></span>
-            </li>
           </div>
 
           {%- if section.settings.show_taxes_included -%}
