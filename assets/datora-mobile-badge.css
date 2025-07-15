@@ -299,3 +299,19 @@
 .product-badges-wrapper .datora.discount-badge {
   margin: 0;
 } 
+
+@media screen and (max-width: 767px) {
+  .product-badges-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.2em !important;
+    width: 100% !important;
+  }
+  .product-badges-wrapper > * {
+    display: block !important;
+    width: fit-content !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+  }
+} 
