@@ -2710,7 +2710,7 @@ body.new-big-redesign-ab-test .product--image-and-size-details .product--size-de
   display: flex;
   flex-direction: column;
   gap: 4px;
-  align-items: center; /* Center align badges horizontally */
+  align-items: center;
   justify-content: center;
   width: 100%;
 }
@@ -2723,7 +2723,12 @@ body.new-big-redesign-ab-test .product--image-and-size-details .product--size-de
 @media (max-width: 767px) {
   .product-badges-wrapper {
     gap: 6px;
-    align-items: center; /* Ensure center alignment on mobile too */
+    align-items: center;
+  }
+  .datora.discount-badge,
+  .label.label--highlight.discount-badge {
+    text-align: center !important;
+    justify-content: center !important;
   }
 }
 
