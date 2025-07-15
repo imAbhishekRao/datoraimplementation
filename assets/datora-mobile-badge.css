@@ -5,27 +5,51 @@
 
 /* Base mobile improvements for Datora discount badge */
 @media screen and (max-width: 767px) {
+  /* Main Datora badge */
   .datora.discount-badge {
-    /* Enhanced mobile styling */
-    font-size: 11px;
-    padding: 6px 8px;
-    border-radius: 8px;
-    margin-bottom: 8px;
-    font-weight: 600;
-    letter-spacing: 0.3px;
-    line-height: 1.2;
-    max-width: 100%;
-    word-wrap: break-word;
-    white-space: normal;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    
-    /* Enhanced visual effects */
-    background: linear-gradient(135deg, #FFCC66 0%, #FFD700 100%);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    transition: all 0.2s ease;
+    background: linear-gradient(135deg, #FFD700 0%, #FFCC66 100%);
+    color: #222;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 999px;
+    padding: 8px 18px;
+    margin: 0 0.5em 0.5em 0;
+    box-shadow: 0 2px 8px rgba(255, 204, 102, 0.25);
+    border: none;
+    min-width: 120px;
+    min-height: 32px;
+    letter-spacing: 0.02em;
+    gap: 0.5em;
+    transition: box-shadow 0.2s;
+  }
+  /* Add spacing between multiple badges */
+  .datora.discount-badge + .datora.discount-badge,
+  .datora.discount-badge + [class*='discount-badge'] {
+    margin-left: 0.5em;
+  }
+  /* Code/percentage badge style */
+  .datora.discount-badge[data-datora] {
+    background: #fffbe6;
+    color: #b48a00;
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 4px 10px;
+    min-width: unset;
+    min-height: unset;
+    box-shadow: 0 1px 4px rgba(255, 204, 102, 0.15);
+    margin: 0 0.2em 0.5em 0;
+    letter-spacing: 0.01em;
+  }
+  /* Make sure badges wrap on small screens */
+  .product-meta, .product-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5em;
   }
   
   .datora.discount-badge svg {
