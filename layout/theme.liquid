@@ -143,6 +143,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.dataset.src=
   {% comment %} Influencer Discount Code Handler {% endcomment %}
   {% render 'influencer-discount-handler' %}
 
+  {% comment %} Datora Discount Badge Styling {% endcomment %}
+  <style>
+    .datora.discount-badge {
+      display: block !important;
+      border-radius: 12px;
+      background: #FFCC66;
+      color: #282828;
+      padding-right: 10px;
+      padding-left: 10px;
+      font-size: 12px;
+      margin-bottom: 5px;
+      margin-top: 8px;
+      width: fit-content;
+    }
+
+    .product-meta__discount-badge-container {
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+  </style>
+
   <script>
     {%- render 'datora-js' -%}
   </script>
