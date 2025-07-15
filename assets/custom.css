@@ -94,10 +94,181 @@
 	color: white !important;
   }
   
-
+  .datora.discount-badge {
+	display: inline-block;
+	border-radius: 12px;
+	background: #FFCC66;
+	color: #282828;
+	padding-right: 10px;
+	padding-left: 10px;
+	font-size: 12px;
+	margin-bottom: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease;
+  }
   
   .datora.discount-badge svg {
 	display: inline-block;
+  }
+
+  /* Mobile-specific improvements for Datora discount badge */
+  @media screen and (max-width: 767px) {
+    .datora.discount-badge {
+      font-size: 11px;
+      padding: 6px 8px;
+      border-radius: 8px;
+      margin-bottom: 8px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      line-height: 1.2;
+      max-width: 100%;
+      word-wrap: break-word;
+      white-space: normal;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .datora.discount-badge svg {
+      width: 14px;
+      height: 14px;
+      margin-right: 4px;
+      flex-shrink: 0;
+    }
+    
+    /* Product grid mobile improvements */
+    .product-item .datora.discount-badge {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      z-index: 2;
+      margin-bottom: 0;
+      background: linear-gradient(135deg, #FFCC66 0%, #FFD700 100%);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+      font-size: 10px;
+      padding: 4px 6px;
+    }
+    
+    /* Product page mobile improvements */
+    .product-meta .datora.discount-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 28px;
+      margin: 8px 0;
+      background: linear-gradient(135deg, #FFCC66 0%, #FFD700 100%);
+      box-shadow: 0 3px 6px rgba(255, 204, 102, 0.3);
+      font-size: 12px;
+      padding: 8px 12px;
+    }
+    
+    /* Product info mobile improvements */
+    .product-info .datora.discount-badge {
+      margin: 8px 0;
+      background: linear-gradient(135deg, #FFCC66 0%, #FFD700 100%);
+      box-shadow: 0 3px 6px rgba(255, 204, 102, 0.3);
+    }
+    
+    /* Cart mobile improvements */
+    .line-item .datora.discount-badge {
+      font-size: 10px;
+      padding: 4px 6px;
+      margin: 4px 0;
+      background: linear-gradient(135deg, #FFCC66 0%, #FFD700 100%);
+    }
+    
+    /* Mini cart mobile improvements */
+    .mini-cart .datora.discount-badge {
+      font-size: 10px;
+      padding: 3px 5px;
+      margin: 2px 0;
+      background: linear-gradient(135deg, #FFCC66 0%, #FFD700 100%);
+    }
+    
+    /* Collection grid mobile improvements */
+    .collection-grid .product-item .datora.discount-badge {
+      position: absolute;
+      top: 6px;
+      right: 6px;
+      font-size: 9px;
+      padding: 3px 5px;
+      border-radius: 6px;
+    }
+    
+    /* Ensure badge doesn't overflow on small screens */
+    .datora.discount-badge {
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    
+    /* Improve readability on mobile */
+    .datora.discount-badge[data-datora] {
+      font-weight: 700;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    }
+  }
+  
+  /* Extra small mobile devices (phones) */
+  @media screen and (max-width: 480px) {
+    .datora.discount-badge {
+      font-size: 10px;
+      padding: 5px 7px;
+      border-radius: 6px;
+    }
+    
+    .datora.discount-badge svg {
+      width: 12px;
+      height: 12px;
+      margin-right: 3px;
+    }
+    
+    /* Product grid on very small screens */
+    .product-item .datora.discount-badge {
+      top: 4px;
+      right: 4px;
+      font-size: 8px;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+    
+    /* Product page on very small screens */
+    .product-meta .datora.discount-badge {
+      font-size: 11px;
+      padding: 6px 10px;
+      min-height: 24px;
+    }
+    
+    /* Cart on very small screens */
+    .line-item .datora.discount-badge {
+      font-size: 9px;
+      padding: 3px 5px;
+    }
+  }
+  
+  /* Tablet improvements */
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .datora.discount-badge {
+      font-size: 11px;
+      padding: 7px 9px;
+      border-radius: 10px;
+      margin-bottom: 6px;
+    }
+    
+    .datora.discount-badge svg {
+      width: 15px;
+      height: 15px;
+      margin-right: 5px;
+    }
+  }
+  
+  /* Hover effects for better UX */
+  @media screen and (min-width: 768px) {
+    .datora.discount-badge:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      background: linear-gradient(135deg, #FFCC66 0%, #FFD700 100%);
+    }
   }
   
   /* End Datora */

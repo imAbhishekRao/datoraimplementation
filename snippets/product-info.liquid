@@ -185,14 +185,11 @@
           <span class="label label--highlight">{{ 'collection.product.discount_html' | t: savings: savings }}</span>
         {%- endunless -%}
       </div>
-      </div>
-
-      <div class="product-meta__discount-badge-container">
-        <li hidden class="datora discount-badge">
-           {%- render 'icon' with 'discount-badge' -%}
-           <span data-datora></span>
-        </li>
-      </div>
+      <br />
+      <li hidden style="margin-left: 1rem;" class="datora discount-badge">
+         {%- render 'icon' with 'discount-badge' -%}
+         <span data-datora></span>
+      </li>
     </div>
 
     {%- if section.settings.show_taxes_included -%}
