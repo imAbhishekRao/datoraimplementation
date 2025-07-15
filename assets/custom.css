@@ -2841,3 +2841,12 @@ body.new-big-redesign-ab-test .product--image-and-size-details .product--size-de
     margin-right: 3px !important;
   }
 }
+
+@media (min-width: 768px) {
+  .product-badges-wrapper {
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+  }
+}
