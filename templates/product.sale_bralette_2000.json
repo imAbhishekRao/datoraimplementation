@@ -1,0 +1,928 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "info_display_nwHcfW": {
+          "type": "info_display",
+          "settings": {
+            "heading": "<p>Mehr kaufen, mehr sparen - 3 für 2 Deal</p>",
+            "description": "<p>Lege 3 Produkte in den Warenkorb & erhalte 1 davon Gratis</p>"
+          }
+        },
+        "image_size_details_TAL7JP": {
+          "type": "image__size_details",
+          "settings": {
+            "button_text": "Finde hier deine passende Größe",
+            "footer_text": "Keine Sorgen mehr, dank kostenlosem Umtausch",
+            "footer_image": "shopify://shop_images/size-description-footer-icon.svg",
+            "modal_logo": "shopify://shop_images/logo.webp",
+            "modal_footer_description": "<p><strong>100% Passformgarantie</strong> und kostenloser Umtausch!</p>",
+            "modal_footer_button_text": "Wähle jetzt deine Größe"
+          }
+        },
+        "d303cbff-e567-426c-b850-8e1e9ae2e387": {
+          "type": "couponCode",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/tag.webp",
+            "text": "<p><strong>3 für 2 DEAL: </strong>Lege 3 Produkte in den Warenkorb und erhalte 1 davon GRATIS! Mit dem Code<strong>: Deals</strong></p>",
+            "message": "Super, Du hast den Rabattcode kopiert!",
+            "coupon": "Deals"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "sizekick_creamy_fabrics_sizekick_F4L3n3": {
+          "type": "shopify://apps/sizekick-creamy-fabrics/blocks/sizekick/481874b8-e887-4a47-9c5a-171dab48c68b",
+          "settings": {}
+        },
+        "4179db7d-0a04-48c1-ad34-3812aa4158ba": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<ol><li><strong>Bitte wähle eine Nummer kleiner, da dieses Modell etwas größer ausfällt</strong></li></ol>"
+          }
+        },
+        "liquid_xF9jLa": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<font color = green class=\"new-big-redesign-ab-test-a\"> Artikel verfügbar - Lieferzeit: 3-5 Werktage </font>"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": false,
+            "atc_button_background": "rgba(0,0,0,0)",
+            "atc_button_text_color": "rgba(0,0,0,0)",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)",
+            "icon_svg_1": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewbox=\"0 0 16 16\" fill=\"none\">\n  <g clip-path=\"url(#clip0_1131_871)\">\n    <path d=\"M8 8.06812V14.4981\" stroke=\"#12100F\" stroke-width=\"0.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n    <path d=\"M2.04297 4.8075L7.99922 8.0675L13.9555 4.8075\" stroke=\"#12100F\" stroke-width=\"0.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n    <path d=\"M13.74 11.4275L8.24 14.4387C8.16641 14.479 8.08388 14.5001 8 14.5001C7.91612 14.5001 7.83359 14.479 7.76 14.4387L2.26 11.4275C2.18147 11.3845 2.11591 11.3212 2.07017 11.2443C2.02444 11.1673 2.0002 11.0795 2 10.99V5.01121C2.0002 4.92169 2.02444 4.83387 2.07017 4.75691C2.11591 4.67995 2.18147 4.61668 2.26 4.57371L7.76 1.56246C7.83359 1.5222 7.91612 1.5011 8 1.5011C8.08388 1.5011 8.16641 1.5222 8.24 1.56246L13.74 4.57371C13.8185 4.61668 13.8841 4.67995 13.9298 4.75691C13.9756 4.83387 13.9998 4.92169 14 5.01121V10.9887C14 11.0784 13.9759 11.1665 13.9301 11.2437C13.8844 11.3209 13.8187 11.3844 13.74 11.4275Z\" stroke=\"#12100F\" stroke-width=\"0.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n    <path d=\"M5.09766 3.01941L11.0002 6.25003V9.50003\" stroke=\"#12100F\" stroke-width=\"0.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  </g>\n  <defs>\n    <clippath id=\"clip0_1131_871\">\n      <rect width=\"16\" height=\"16\" fill=\"white\"></rect>\n    </clippath>\n  </defs>\n</svg>",
+            "text_1": "Kostenloser Versand ab 50€",
+            "icon_svg_2": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewbox=\"0 0 16 16\" fill=\"none\">\n  <g clip-path=\"url(#clip0_1131_879)\">\n    <path d=\"M5 8.5L2 5.5L5 2.5\" stroke=\"#12100F\" stroke-width=\"0.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n    <path d=\"M5 12.5H10.5C11.4283 12.5 12.3185 12.1313 12.9749 11.4749C13.6313 10.8185 14 9.92826 14 9C14 8.07174 13.6313 7.1815 12.9749 6.52513C12.3185 5.86875 11.4283 5.5 10.5 5.5H2\" stroke=\"#12100F\" stroke-width=\"0.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  </g>\n  <defs>\n    <clippath id=\"clip0_1131_879\">\n      <rect width=\"16\" height=\"16\" fill=\"white\"></rect>\n    </clippath>\n  </defs>\n</svg>",
+            "text_2": "Einfacher und kostenloser Umtausch",
+            "icon_svg_3": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewbox=\"0 0 16 16\" fill=\"none\">\n  <g clip-path=\"url(#clip0_1131_885)\">\n    <path d=\"M7.99938 11.8182L11.4194 13.9213C11.5081 13.9752 11.6108 14.0015 11.7145 13.997C11.8182 13.9925 11.9183 13.9574 12.002 13.8961C12.0858 13.8347 12.1495 13.7499 12.185 13.6524C12.2206 13.5549 12.2265 13.449 12.2019 13.3482L11.2719 9.42379L14.3156 6.79879C14.3932 6.73064 14.4492 6.64127 14.4766 6.54169C14.504 6.44211 14.5016 6.3367 14.4697 6.23845C14.4379 6.14021 14.378 6.05344 14.2974 5.98885C14.2168 5.92427 14.1191 5.8847 14.0163 5.87504L10.0219 5.55004L8.48313 1.82504C8.4439 1.72893 8.37694 1.6467 8.29078 1.58881C8.20462 1.53092 8.10318 1.5 7.99938 1.5C7.89558 1.5 7.79413 1.53092 7.70797 1.58881C7.62182 1.6467 7.55485 1.72893 7.51563 1.82504L5.97688 5.55004L1.9825 5.87504C1.87898 5.88413 1.78043 5.92352 1.69917 5.98829C1.61791 6.05307 1.55754 6.14035 1.52559 6.23924C1.49365 6.33813 1.49156 6.44424 1.51958 6.54431C1.5476 6.64439 1.60448 6.73398 1.68313 6.80191L4.72688 9.42691L3.79688 13.3482C3.77229 13.449 3.77815 13.5549 3.81372 13.6524C3.8493 13.7499 3.91298 13.8347 3.99672 13.8961C4.08047 13.9574 4.18052 13.9925 4.28422 13.997C4.38793 14.0015 4.49064 13.9752 4.57938 13.9213L7.99938 11.8182Z\" stroke=\"#12100F\" stroke-width=\"0.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  </g>\n  <defs>\n    <clippath id=\"clip0_1131_885\">\n      <rect width=\"16\" height=\"16\" fill=\"white\"></rect>\n    </clippath>\n  </defs>\n</svg>",
+            "text_3": "Zufriedenheitsgarantie"
+          }
+        },
+        "accordion_list_8HCyVD": {
+          "type": "accordion_list",
+          "settings": {
+            "heading_1": "Produktdetails",
+            "description_1": "",
+            "product_details_metafield": true,
+            "heading_2": "Passform",
+            "description_2": "",
+            "passform_metafield": true,
+            "heading_3": "Versand",
+            "description_3": "",
+            "versand_metafield": true
+          }
+        },
+        "trust_custom_icons_Ut3MHH": {
+          "type": "TrustCustomIcons",
+          "settings": {
+            "image1": "shopify://shop_images/image_73.png",
+            "html": "",
+            "text1": "Kostenloser Versand ab 50€. Umtausch ist Gratis.",
+            "image2": "shopify://shop_images/image_76.png",
+            "html2": "",
+            "text2": "Einfache Rücksendung"
+          }
+        },
+        "trust_custom_icons_KF4wt9": {
+          "type": "TrustCustomIcons",
+          "settings": {
+            "image1": "shopify://shop_images/image_74_1.png",
+            "html": "",
+            "text1": "Sichere Bestellung",
+            "image2": "shopify://shop_images/image_72.png",
+            "html2": "",
+            "text2": "100% Zufriedenheitsgarantie"
+          }
+        }
+      },
+      "block_order": [
+        "info_display_nwHcfW",
+        "image_size_details_TAL7JP",
+        "d303cbff-e567-426c-b850-8e1e9ae2e387",
+        "variant_picker",
+        "sizekick_creamy_fabrics_sizekick_F4L3n3",
+        "4179db7d-0a04-48c1-ad34-3812aa4158ba",
+        "liquid_xF9jLa",
+        "buy_buttons",
+        "accordion_list_8HCyVD",
+        "trust_custom_icons_Ut3MHH",
+        "trust_custom_icons_KF4wt9"
+      ],
+      "settings": {
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": true,
+        "show_product_rating": false,
+        "show_sticky_add_to_cart": true,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "slide"
+      }
+    },
+    "bd_image_feature_grid_RqHXDQ": {
+      "type": "bd-image-feature-grid",
+      "blocks": {
+        "block_44RyBh": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/pdp-featured-image-01.webp",
+            "text": "Hebt & Formt die Brust"
+          }
+        },
+        "block_eLpBFE": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/pdp-featured-image-02.webp",
+            "text": "Push-Up Effekt"
+          }
+        },
+        "block_MjAKw4": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/pdp-featured-image-03.webp",
+            "text": "Schneidet nicht ein"
+          }
+        },
+        "block_g3HyrM": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/pdp-featured-image-04.webp",
+            "text": "Perfekte Passform"
+          }
+        },
+        "block_jNKdRr": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/pdp-featured-image-05.webp",
+            "text": "Nahtlos"
+          }
+        },
+        "block_TFQbKE": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/pdp-featured-image-06.webp",
+            "text": "Extra Rausnehmbare Pads"
+          }
+        },
+        "block_qadXwd": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/pdp-featured-image-07.webp",
+            "text": "Keine Bügel"
+          }
+        },
+        "block_JCViPB": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/pdp-featured-image-08.webp",
+            "text": "Ultraweiche und atmungsaktive"
+          }
+        }
+      },
+      "block_order": [
+        "block_44RyBh",
+        "block_eLpBFE",
+        "block_MjAKw4",
+        "block_g3HyrM",
+        "block_jNKdRr",
+        "block_TFQbKE",
+        "block_qadXwd",
+        "block_JCViPB"
+      ],
+      "settings": {
+        "heading": "<p>Alles, was ein BH haben sollte</p>",
+        "mobile_heading_max_width": 250,
+        "description": "<p>Bietet sanften Halt und ultimativen Komfort – für ein angenehmes Tragegefühl den ganzen Tag.</p>",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "mobile_padding_top": 40,
+        "mobile_padding_bottom": 40,
+        "bg_color": "#e8e5e2",
+        "section_class": "new-big-redesign-ab-test-b"
+      }
+    },
+    "bd_image_text_nbAYc8": {
+      "type": "bd-image-text",
+      "settings": {
+        "image": "shopify://shop_images/pdp-image-text-desktop-1.webp",
+        "mobile_image": "shopify://shop_images/pdp-image-text-mobile-1.webp",
+        "image_height": 480,
+        "mobile_image_height": 560,
+        "desktop_image_position": "row",
+        "heading": "<p>100%ige Zufriedenheitsgarantie</p>",
+        "description": "<p>Die Stimmen unserer Kunden sprechen für sich – sie lieben die Ergebnisse und das Selbstbewusstsein, das unsere hochmoderne Produkte ihnen verleiht. Wir sind stolz auf das positive Feedback und die vielen Erfolgsgeschichten, die uns erreichen.</p><p>Um sicherzustellen, dass du ebenfalls von unseren Produkten begeistert bist, bieten wir dir eine 100%ige Zufriedenheitsgarantie. Solltest du aus irgendeinem Grund nicht vollkommen zufrieden sein, kontaktiere einfach unser Kundensupport-Team, und wir werden alles daran setzen, eine Lösung zu finden, die dich glücklich macht.</p>",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 0,
+        "section_class": "new-big-redesign-ab-test-b"
+      }
+    },
+    "bd_image_text_nbAYc9": {
+      "type": "bd-image-text",
+      "settings": {
+        "image": "shopify://shop_images/pdp-image-text-desktop-2.webp",
+        "mobile_image": "shopify://shop_images/pdp-image-text-mobile-2.webp",
+        "image_height": 480,
+        "mobile_image_height": 560,
+        "desktop_image_position": "row-reverse",
+        "heading": "<p>Pure Leichtigkeit durch unseren Comfort Bralette!</p>",
+        "description": "<p>Entdecke, wie unser Bralette mit seinem weichen, nahtlosen Design und leichten Materialien ein Gefühl von Freiheit und Komfort schafft. Dieser Bralette bietet dir sanften Halt und schmeichelt deiner natürlichen Form, ohne einzuengen. Erlebe den Komfort, der dich den ganzen Tag begleitet und dir das Gefühl gibt, einfach du selbst zu sein.</p>",
+        "padding_top": 60,
+        "padding_bottom": 0,
+        "mobile_padding_top": 60,
+        "mobile_padding_bottom": 0,
+        "section_class": "new-big-redesign-ab-test-b"
+      }
+    },
+    "bd_image_text_nbAYc10": {
+      "type": "bd-image-text",
+      "settings": {
+        "image": "shopify://shop_images/pdp-image-text-desktop-3.webp",
+        "mobile_image": "shopify://shop_images/pdp-image-text-mobile-3.webp",
+        "image_height": 480,
+        "mobile_image_height": 560,
+        "desktop_image_position": "row",
+        "heading": "<p>Komfort und Stil vereint</p>",
+        "description": "<p>Unser Comfort Bralette ist die perfekte Wahl für entspannte Tage und gemütliche Momente. Mit einem flexiblen Schnitt passt er sich deinem Körper an und bietet dir sanften Halt. Genieße ein natürliches Tragegefühl und ein Gefühl von Freiheit, als würdest du keinen BH tragen – jeden Tag, zu jeder Zeit.</p>",
+        "padding_top": 60,
+        "padding_bottom": 0,
+        "mobile_padding_top": 60,
+        "mobile_padding_bottom": 0,
+        "section_class": "new-big-redesign-ab-test-b"
+      }
+    },
+    "multi_column_LEa74J": {
+      "type": "multi-column",
+      "blocks": {
+        "item_Xkafgh": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/keine_buegel_icon_869510e5-bd63-45ed-8896-60be9eeba576.jpg",
+            "image_width": 50,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "",
+            "content": "<p>Bügelfreies Design</p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "item_TmXwn8": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Schneidet_nicht_ein_icon_6e1b8ee9-12c3-415a-ae58-35afd2cd00dc.jpg",
+            "image_width": 50,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "",
+            "content": "<p>Schneidet nicht ein</p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "item_MFqARV": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Super_stretchy_brustform_anpassend.jpg",
+            "image_width": 50,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "",
+            "content": "<p>Passt sich deinem Körper an</p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "item_dRh7rx": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/perfekte_passform_icon_11d05d1e-a89b-40ae-a11a-538caa3774f5.jpg",
+            "image_width": 50,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "",
+            "content": "<p>Perfekte Passform</p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "item_qYWTCH": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Nahtlos_icon_57fbad91-f4e1-479a-96f1-a04b5613e18d.jpg",
+            "image_width": 50,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "",
+            "content": "<p>Nahtlos</p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "item_XLrFWn": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/extra_rausnehmbare_pads_de51d8ad-2b62-49cc-b53d-3b73bad49efd.jpg",
+            "image_width": 50,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "",
+            "content": "<p>Herausnehmbare Polster-Pads</p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "item_WprRwq": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/ultra_leicht_wie_zweite_haut.jpg",
+            "image_width": 50,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "",
+            "content": "<p>Leicht wie eine zweite Haut</p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "item_tCge3h": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/atmungsaktiv_anti_schwitz.jpg",
+            "image_width": 50,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "",
+            "content": "<p>Atmungsaktiv & Anti-Schwitz</p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "item_7HidAU": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Ultra_weiches_Material_icon_9f423485-dbcd-48cf-940f-95f6d46a94aa.jpg",
+            "image_width": 50,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "",
+            "content": "<p>Ultraweiches und </p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        }
+      },
+      "block_order": [
+        "item_Xkafgh",
+        "item_TmXwn8",
+        "item_MFqARV",
+        "item_dRh7rx",
+        "item_qYWTCH",
+        "item_XLrFWn",
+        "item_WprRwq",
+        "item_tCge3h",
+        "item_7HidAU"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "stack_items": true,
+        "subheading": "Bietet sanften Halt und ultimativen Komfort – für ein angenehmes Tragegefühl den ganzen Tag.",
+        "title": "Alles, was ein BH haben sollte",
+        "content": "",
+        "column_alignment": "center",
+        "mobile_item_size": "small",
+        "desktop_item_size": "pico",
+        "spacing": "tight",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "section_class": ""
+      }
+    },
+    "7b911c20-575e-4dd3-89fd-139d17728eb4": {
+      "type": "logo-list",
+      "blocks": {
+        "template--19277325861197__7b911c20-575e-4dd3-89fd-139d17728eb4-168933434558fd15e5-4": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Perfekte_Passform.jpg",
+            "link": ""
+          }
+        },
+        "template--19277325861197__7b911c20-575e-4dd3-89fd-139d17728eb4-168933434558fd15e5-3": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Nahtlos.jpg",
+            "link": ""
+          }
+        },
+        "template--19277325861197__7b911c20-575e-4dd3-89fd-139d17728eb4-168933434558fd15e5-2": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Schneidet_nicht_ein.jpg",
+            "link": ""
+          }
+        },
+        "template--19277325861197__7b911c20-575e-4dd3-89fd-139d17728eb4-168933434558fd15e5-1": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Ultra_weiches_Material.jpg",
+            "link": ""
+          }
+        },
+        "template--19277325861197__7b911c20-575e-4dd3-89fd-139d17728eb4-168933434558fd15e5-0": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/i_Icons_5.6.webp",
+            "link": ""
+          }
+        },
+        "template--19277325861197__7b911c20-575e-4dd3-89fd-139d17728eb4-168933434558fd15e5-5": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/i_Icons_5.1.webp",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19277325861197__7b911c20-575e-4dd3-89fd-139d17728eb4-168933434558fd15e5-4",
+        "template--19277325861197__7b911c20-575e-4dd3-89fd-139d17728eb4-168933434558fd15e5-3",
+        "template--19277325861197__7b911c20-575e-4dd3-89fd-139d17728eb4-168933434558fd15e5-2",
+        "template--19277325861197__7b911c20-575e-4dd3-89fd-139d17728eb4-168933434558fd15e5-1",
+        "template--19277325861197__7b911c20-575e-4dd3-89fd-139d17728eb4-168933434558fd15e5-0",
+        "template--19277325861197__7b911c20-575e-4dd3-89fd-139d17728eb4-168933434558fd15e5-5"
+      ],
+      "disabled": true,
+      "settings": {
+        "reveal_on_scroll": false,
+        "subheading": "DER BAUCH WIRD FLACHER, DER PO RUNDER UND DIE BRÜSTE SIND PERFEKT GEFORMT",
+        "title": "Shapewear für die perfekte Figur",
+        "button_text": "",
+        "button_link": "",
+        "stack_logos": true,
+        "background": "#ffffff",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "logo_background": "rgba(0,0,0,0)",
+        "section_class": ""
+      }
+    },
+    "product-content": {
+      "type": "product-content",
+      "disabled": true,
+      "settings": {
+        "section_class": ""
+      }
+    },
+    "52a1b9a7-22a8-445a-ae75-906d91673c19": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--19289149505869__52a1b9a7-22a8-445a-ae75-906d91673c19-item-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2024-08-28_at_18.13.32_Kopie.jpg",
+            "tab_label": "",
+            "subheading": "",
+            "title": "100%ige Zufriedenheitsgarantie",
+            "content": "<p>Die Stimmen unserer Kunden sprechen für sich – sie lieben die Ergebnisse und das Selbstbewusstsein, das unsere hochmoderne Produkte ihnen verleiht. Wir sind stolz auf das positive Feedback und die vielen Erfolgsgeschichten, die uns erreichen.</p><p>Um sicherzustellen, dass du ebenfalls von unseren Produkten begeistert bist, bieten wir dir eine 100%ige Zufriedenheitsgarantie. Solltest du aus irgendeinem Grund nicht vollkommen zufrieden sein, kontaktiere einfach unser Kundensupport-Team, und wir werden alles daran setzen, eine Lösung zu finden, die dich glücklich macht.</p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19289149505869__52a1b9a7-22a8-445a-ae75-906d91673c19-item-1"
+      ],
+      "settings": {
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "section_class": ""
+      }
+    },
+    "f10d3109-6f91-45bd-bd62-98ec24098da5": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--19289149505869__f10d3109-6f91-45bd-bd62-98ec24098da5-item-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/5_2000.jpg",
+            "tab_label": "",
+            "subheading": "Vorher und Nachher",
+            "title": "Pure Leichtigkeit durch unseren Comfort Bralette!",
+            "content": "<p>Entdecke, wie unser Bralette mit seinem weichen, nahtlosen Design und leichten Materialien ein Gefühl von Freiheit und Komfort schafft. Dieser Bralette bietet dir sanften Halt und schmeichelt deiner natürlichen Form, ohne einzuengen. Erlebe den Komfort, der dich den ganzen Tag begleitet und dir das Gefühl gibt, einfach du selbst zu sein.</p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19289149505869__f10d3109-6f91-45bd-bd62-98ec24098da5-item-1"
+      ],
+      "settings": {
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "section_class": ""
+      }
+    },
+    "7c148cd4-a0bd-445e-898a-15d1d2999b24": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--19289149505869__7c148cd4-a0bd-445e-898a-15d1d2999b24-item-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/6_2000.jpg",
+            "tab_label": "",
+            "subheading": "",
+            "title": "Komfort und Stil vereint",
+            "content": "<p>Unser Comfort Bralette ist die perfekte Wahl für entspannte Tage und gemütliche Momente. Mit einem flexiblen Schnitt passt er sich deinem Körper an und bietet dir sanften Halt. Genieße ein natürliches Tragegefühl und ein Gefühl von Freiheit, als würdest du keinen BH tragen – jeden Tag, zu jeder Zeit.</p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19289149505869__7c148cd4-a0bd-445e-898a-15d1d2999b24-item-1"
+      ],
+      "settings": {
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "section_class": ""
+      }
+    },
+    "1700042383ae86443e": {
+      "type": "apps",
+      "blocks": {
+        "5be28bbb-c648-4cbb-a120-1f5b6b19a286": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": true,
+            "limit": 20,
+            "hide_thumbnails": false,
+            "maxwidth": 1080,
+            "is_sample": true
+          }
+        }
+      },
+      "block_order": [
+        "5be28bbb-c648-4cbb-a120-1f5b6b19a286"
+      ],
+      "settings": {
+        "include_horizontal_margins": true,
+        "include_vertical_margins": true
+      }
+    },
+    "06bfefab-7998-4d05-aa36-152cb3d104f8": {
+      "type": "faq",
+      "blocks": {
+        "template--19289149505869__06bfefab-7998-4d05-aa36-152cb3d104f8-category-1": {
+          "type": "category",
+          "settings": {
+            "title": "Versand"
+          }
+        },
+        "c2c511a2-8b1c-4f9e-83ce-204a35f0b219": {
+          "type": "question",
+          "settings": {
+            "title": "Wie und wo erhalte ich meine Bestellnummer?",
+            "answer": "<p>Direkt nachdem Du Deine Bestellung abgeschlossen hast, senden wir Dir eine Bestellbestätigung per E-Mail zu. Diese E-Mail wird an die Adresse gesendet, die Du beim Kauf angegeben hast. In dieser Bestellbestätigung findest Du auch Deine einzigartige Bestellnummer. Achte darauf, dass die Bestellnummer immer mit #cf gefolgt von einer Zahlenkombination beginnt (z.B. <strong>#cf12345</strong>). Bitte überprüfe auch Deinen Spam-Ordner, falls die E-Mail nicht in Deinem Posteingang erscheint.</p>"
+          }
+        },
+        "template--19289149505869__06bfefab-7998-4d05-aa36-152cb3d104f8-question-1": {
+          "type": "question",
+          "settings": {
+            "title": "Wie hoch sind die Versandkosten?",
+            "answer": "<p>Wir bieten kostenlosen Versand für Bestellungen über einen bestimmten Betrag an. Die genauen Informationen dazu finden Sie auf unserer Versandseite.</p>"
+          }
+        },
+        "template--19289149505869__06bfefab-7998-4d05-aa36-152cb3d104f8-question-2": {
+          "type": "question",
+          "settings": {
+            "title": "Wie ist die Lieferzeit für meine Bestellung?",
+            "answer": "<p><em><strong>Wichtig</strong></em><em>: </em>Liebe creamy Kunden,</p><p>Aufgrund der aktuell hohen Nachfrage nach unseren Produkten kann es leider zu verzögerten Lieferzeiten kommen. Wir geben unser Bestes, um Ihre Bestellung so schnell wie möglich zu bearbeiten und zu versenden. Dennoch kann die Lieferdauer momentan, nach der Versandbestätigung mit Sendungsnummer 2 bis 8 Tage betragen. Wir bitten um Ihr Verständnis. Wir danken Ihnen für Ihre Geduld und Ihr Vertrauen.</p>"
+          }
+        },
+        "22494ae3-16a4-4501-819b-3a67c057762a": {
+          "type": "question",
+          "settings": {
+            "title": "Wie kann ich den Status meiner Bestellung verfolgen?",
+            "answer": "<p>Sobald Ihre Bestellung versandt wurde, erhalten Sie eine E-Mail mit den Tracking-Informationen. Sie können auch auf der DHL-Website den Status Ihrer Sendung überprüfen.</p>"
+          }
+        },
+        "e03809b8-9780-4669-908c-cf921f5d5a4e": {
+          "type": "question",
+          "settings": {
+            "title": "Unterschied zwischen Umtausch & Retoure",
+            "answer": "<p>wir möchten dir den Unterschied zwischen einem kostenlosen Umtausch und einer kostenpflichtigen vollständigen Retoure erläutern.</p><p><strong>Kostenloser Umtausch:</strong><br/>Ein kostenloser Umtausch ermöglicht es Ihnen, das Produkt in eine andere Größe oder Farbe umzutauschen, ohne zusätzliche Gebühren zu zahlen. Diese Option steht Ihnen zur Verfügung, wenn Sie eine andere Variante desselben Produkts wünschen.</p><p><strong>Vollständige Retoure* :</strong><br/>Die vollständige Retoure beinhaltet die Rücksendung des gesamten Artikels für eine Rückerstattung. Hierbei fallen Retourengebühren in Höhe von 4,95 € an. Diese Gebühr deckt die Kosten für die Bearbeitung und Logistik der Rücksendung.</p><p>*(4,95 € aus Deutschland, 9,95 € Österreich, Schweiz)</p>"
+          }
+        },
+        "fc122e30-bdd2-4558-a0b7-585a150e54dd": {
+          "type": "question",
+          "settings": {
+            "title": "Wie kann ich einen Artikel umtauschen und welche Kosten fallen dabei an?",
+            "answer": "<p>Wenn Du einen Artikel umtauschen möchtest, ist das bei uns völlig unkompliziert und zudem kostenlos. Hier sind die Schritte für den Umtausch:</p><ol><li><strong>Retourportal besuchen</strong>: Gehe auf unser Retourportal unter <a href=\"https://creamyfabrics.com/apps/returns\">creamyfabrics.com/apps/returns</a>.</li><li><strong>Bestellinformationen eingeben</strong>: Gib Deine Bestellnummer (beginnt mit #cf12345) und die E-Mail-Adresse ein, die Du beim Kauf verwendet hast.</li><li><strong>Umtausch anmelden</strong>: Wähle die Option für den Umtausch und folge den weiteren Anweisungen. Du kannst dann das benötigte Retourenlabel direkt ausdrucken.</li></ol><p><strong>Kosten</strong>: Der Umtausch ist für Dich völlig kostenlos. Wir übernehmen alle anfallenden Kosten, um Dir den Umtauschprozess so einfach wie möglich zu gestalten.</p><p>Bitte beachte, dass der Umtausch innerhalb der festgelegten Frist erfolgen muss. Weitere Details zu unseren Umtauschbedingungen findest Du auf unserer Webseite.</p>"
+          }
+        },
+        "ea617120-4092-407f-a7b3-7fb8bc27c716": {
+          "type": "question",
+          "settings": {
+            "title": "Wie funktioniert der Rückversand?",
+            "answer": "<p>Wir möchten Dir den Rückversand so einfach wie möglich machen. Hier sind die Schritte, die Du befolgen kannst:</p><ol><li><strong>Rücksendeformular</strong>: In Deiner Bestellung findest Du ein Rücksendeformular. Bitte fülle es aus und lege es Deiner Rücksendung bei.</li><li><strong>Online-Retourportal nutzen</strong>: Besuche unser Retourportal unter <a href=\"https://creamyfabrics.com/apps/returns\">creamyfabrics.com/apps/returns</a>, um Deine Rücksendung anzumelden. Hierfür benötigst Du Deine Bestellnummer (beginnt mit #cf12345) und die E-Mail-Adresse, die Du beim Kauf verwendet hast. Nach der Anmeldung kannst Du das Retourenlabel einfach ausdrucken.</li></ol><p><strong>Kosten</strong>: Für Rücksendungen aus Deutschland wird eine Pauschale von 4,95 Euro berechnet. Für Rücksendungen aus Österreich und der Schweiz beträgt die Gebühr 9,95 Euro. Diese Kosten werden von Deiner Rückerstattung abgezogen.</p><p>Bitte beachte, dass die Rücksendung innerhalb der vorgegebenen Frist erfolgen muss. Weitere Informationen zur Frist und zu unseren Rücksendebedingungen findest Du auf unserer Webseite.</p>"
+          }
+        },
+        "1d53b4ae-02e1-47cf-acdd-faaed02e5b5c": {
+          "type": "question",
+          "settings": {
+            "title": "Wie lange dauert die Erstattung nach einer Rücksendung?",
+            "answer": "<p>Bitte habe Verständnis dafür, dass der Prozess der Qualitätsprüfung und die anschließende Rückerstattung bis zu <strong>20 Werktage</strong> in Anspruch nehmen können, nachdem Deine Rücksendung bei uns eingegangen ist. Unser Ziel ist es, diesen Vorgang so schnell wie möglich zu bearbeiten, da uns Dein Anliegen sehr wichtig ist.</p><p>Sobald die Überprüfung Deiner Rücksendung abgeschlossen ist, leiten wir umgehend die Rückerstattung über Deine ursprüngliche Zahlungsmethode ein. Wir halten Dich über jeden Schritt des Prozesses auf dem Laufenden und sind immer hier, um alle weiteren Fragen zu beantworten oder zusätzliche Informationen zu liefern.</p><p>Vielen Dank für Deine Geduld und Dein Verständnis in dieser Angelegenheit. Dein Einkaufserlebnis bei Creamy liegt uns am Herzen, und wir sind stets bemüht, es so angenehm wie möglich zu gestalten. Solltest Du weitere Unterstützung benötigen, stehen wir Dir jederzeit zur Verfügung und freuen uns, von Dir zu hören.</p>"
+          }
+        },
+        "af3af457-c8aa-4d20-93ee-f117658ce057": {
+          "type": "question",
+          "settings": {
+            "title": "Was geschieht mit meiner Bestellung, wenn ich zum Zeitpunkt der Lieferung nicht zu Hause bin?",
+            "answer": "<p>Sollte eine Lieferung nicht beim ersten Versuch möglich sein, versuchen wir es am nächsten Tag erneut. Wenn Sie auch dann nicht zu Hause sind, versuchen wir, das Paket an Ihre Nachbarn zu liefern. Wenn das auch nicht gelingt, gibt es keinen Grund zur Sorge: Sie können Ihr Paket beim nächsten Postamt abholen. DHL informiert Sie natürlich über den Standort des Postamtes.</p><p>Stimmt trotzdem etwas nicht? Bitte kontaktieren Sie uns direkt über support@creamyfabrics.com Dank der schnellen Kommunikation können wir alle Probleme zusammen mit DHL so schnell wie möglich lösen.</p>"
+          }
+        },
+        "d5eda276-2ac0-42a8-90d7-7d32569a23a1": {
+          "type": "question",
+          "settings": {
+            "title": "Liefern Sie auch international?",
+            "answer": "<p>Aktuell bieten versenden wir innerhalb Deutschlands, nach Niederlande, Österreich, Schweden und in die Schweiz. </p>"
+          }
+        },
+        "61fd4bbb-77bd-42d4-b2a8-ca69b2f6ae0e": {
+          "type": "question",
+          "settings": {
+            "title": "Was mache ich, wenn meine Bestellung nicht ankommt?",
+            "answer": "<p>Sollte Ihre Bestellung nicht innerhalb der erwarteten Lieferzeit ankommen, kontaktieren Sie uns bitte. Wir helfen Ihnen gerne weiter.</p>"
+          }
+        },
+        "bc47977c-f73f-4743-9318-0756ada11acb": {
+          "type": "question",
+          "settings": {
+            "title": "Ich habe den falschen Artikel erhalten. Was sollte ich tun?",
+            "answer": "<p>Haben Sie einen Artikel erhalten, den Sie nicht bestellt haben? Bitte kontaktieren Sie uns unter support@creamyfabrics.com, bevor Sie den Artikel zurückschicken. Sie erhalten dann alle Informationen, um so schnell wie möglich kostenlos zu einer geeigneten Lösung zu gelangen.</p>"
+          }
+        },
+        "template--19289149505869__06bfefab-7998-4d05-aa36-152cb3d104f8-category-2": {
+          "type": "category",
+          "settings": {
+            "title": "Produkt"
+          }
+        },
+        "template--19289149505869__06bfefab-7998-4d05-aa36-152cb3d104f8-question-3": {
+          "type": "question",
+          "settings": {
+            "title": "Wie pflege ich meinen Bodysuit am besten?",
+            "answer": "<p>Unsere Bodysuits sind aus langlebigen und atmungsaktiven Materialien hergestellt. Für die beste Pflege empfehlen wir Handwäsche in kaltem Wasser und lufttrocknen. Nicht Bügeln oder Heiß Waschen.</p>"
+          }
+        },
+        "d1fea79f-cf9c-47ef-bc85-177ff6243825": {
+          "type": "question",
+          "settings": {
+            "title": "Wie finde ich die richtige Größe für meinen Bodysuit?",
+            "answer": "<p>Schauen Sie bitte auf unsere Größentabelle auf der Produktseite. Messen Sie Ihre Taille und Hüften, um die richtige Größe zu finden.</p>"
+          }
+        },
+        "1fcf29f6-45f4-43be-bae1-104c3cf3e85b": {
+          "type": "question",
+          "settings": {
+            "title": "Sind die Träger verstellbar?",
+            "answer": "<p>Ja, unsere Bodysuits sind mit verstellbaren Trägern ausgestattet, um maximale Komfort und Anpassungsfähigkeit zu gewährleisten.</p>"
+          }
+        },
+        "466c754e-99fd-405c-b564-8996a266e2b3": {
+          "type": "question",
+          "settings": {
+            "title": "Was bedeutet \"badezimmerfreundlich\"?",
+            "answer": "<p>Unsere Bodysuits haben einen klassichen Hakenverschluß im Schritt. Das bedeutet, sie sind leicht und bequem beim Toilettengang zu handhaben.</p>"
+          }
+        },
+        "2be13f14-b92f-46be-b8a3-98c46833b416": {
+          "type": "question",
+          "settings": {
+            "title": "Ist der Bodysuit sichtbar unter meiner Kleidung?",
+            "answer": "<p>Nein, unsere Bodysuits sind aus nahtlosem Stoff hergestellt, der unter Ihrer täglichen Kleidung unsichtbar ist.</p>"
+          }
+        },
+        "6958e8df-2dca-46ab-9a18-d9c82af5ab0b": {
+          "type": "question",
+          "settings": {
+            "title": "Material",
+            "answer": "<ul><li>85% Polyamide</li><li>15% Elastane</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19289149505869__06bfefab-7998-4d05-aa36-152cb3d104f8-category-1",
+        "c2c511a2-8b1c-4f9e-83ce-204a35f0b219",
+        "template--19289149505869__06bfefab-7998-4d05-aa36-152cb3d104f8-question-1",
+        "template--19289149505869__06bfefab-7998-4d05-aa36-152cb3d104f8-question-2",
+        "22494ae3-16a4-4501-819b-3a67c057762a",
+        "e03809b8-9780-4669-908c-cf921f5d5a4e",
+        "fc122e30-bdd2-4558-a0b7-585a150e54dd",
+        "ea617120-4092-407f-a7b3-7fb8bc27c716",
+        "1d53b4ae-02e1-47cf-acdd-faaed02e5b5c",
+        "af3af457-c8aa-4d20-93ee-f117658ce057",
+        "d5eda276-2ac0-42a8-90d7-7d32569a23a1",
+        "61fd4bbb-77bd-42d4-b2a8-ca69b2f6ae0e",
+        "bc47977c-f73f-4743-9318-0756ada11acb",
+        "template--19289149505869__06bfefab-7998-4d05-aa36-152cb3d104f8-category-2",
+        "template--19289149505869__06bfefab-7998-4d05-aa36-152cb3d104f8-question-3",
+        "d1fea79f-cf9c-47ef-bc85-177ff6243825",
+        "1fcf29f6-45f4-43be-bae1-104c3cf3e85b",
+        "466c754e-99fd-405c-b564-8996a266e2b3",
+        "2be13f14-b92f-46be-b8a3-98c46833b416",
+        "6958e8df-2dca-46ab-9a18-d9c82af5ab0b"
+      ],
+      "disabled": true,
+      "settings": {
+        "show_navigation": false,
+        "title": "FAQ",
+        "content": "",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "section_class": ""
+      }
+    },
+    "cec3d765-8f16-47aa-875d-45cfe2433da1": {
+      "type": "testimonials",
+      "blocks": {
+        "template--19289149505869__cec3d765-8f16-47aa-875d-45cfe2433da1-testimonial-1": {
+          "type": "testimonial",
+          "settings": {
+            "content": "Ich liebe mein Body Sculpt mit Hose! Passt wie angegossen, unterstreicht meine Figur. Alle Problemzonen sind verschwunden. Absolut empfehlenswert!",
+            "author": "Daniela S."
+          }
+        },
+        "template--19289149505869__cec3d765-8f16-47aa-875d-45cfe2433da1-testimonial-2": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "content": "Write some content about what they are saying about your store.",
+            "author": "John S."
+          }
+        },
+        "template--19289149505869__cec3d765-8f16-47aa-875d-45cfe2433da1-testimonial-3": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "content": "Write some content about what they are saying about your store.",
+            "author": "John S."
+          }
+        }
+      },
+      "block_order": [
+        "template--19289149505869__cec3d765-8f16-47aa-875d-45cfe2433da1-testimonial-1",
+        "template--19289149505869__cec3d765-8f16-47aa-875d-45cfe2433da1-testimonial-2",
+        "template--19289149505869__cec3d765-8f16-47aa-875d-45cfe2433da1-testimonial-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "reveal_on_scroll": false,
+        "subheading": "",
+        "title": "",
+        "background": "#efd8c6",
+        "text_color": "rgba(0,0,0,0)",
+        "section_class": ""
+      }
+    },
+    "172657430123eb4af1": {
+      "type": "apps",
+      "blocks": {
+        "loox_reviews_loox_dynamic_section_4dqy9L": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 20,
+            "hide_thumbnails": false,
+            "maxwidth": 1080,
+            "is_sample": true
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_dynamic_section_4dqy9L"
+      ],
+      "settings": {
+        "include_horizontal_margins": true,
+        "include_vertical_margins": true
+      }
+    },
+    "17345364364fe39ed6": {
+      "type": "apps",
+      "blocks": {
+        "kiwi_size_chart_recommender_kiwi_sizing_AGWcgj": {
+          "type": "shopify://apps/kiwi-size-chart-recommender/blocks/kiwiSizing/b7369922-bf15-44ce-a121-a22a8fcbc4b0",
+          "settings": {
+            "product": "{{product}}",
+            "waitForElementSelector": "",
+            "waitForElementDelay": 5
+          }
+        }
+      },
+      "block_order": [
+        "kiwi_size_chart_recommender_kiwi_sizing_AGWcgj"
+      ],
+      "settings": {
+        "include_horizontal_margins": true,
+        "include_vertical_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "bd_image_feature_grid_RqHXDQ",
+    "bd_image_text_nbAYc8",
+    "bd_image_text_nbAYc9",
+    "bd_image_text_nbAYc10",
+    "multi_column_LEa74J",
+    "7b911c20-575e-4dd3-89fd-139d17728eb4",
+    "product-content",
+    "52a1b9a7-22a8-445a-ae75-906d91673c19",
+    "f10d3109-6f91-45bd-bd62-98ec24098da5",
+    "7c148cd4-a0bd-445e-898a-15d1d2999b24",
+    "1700042383ae86443e",
+    "06bfefab-7998-4d05-aa36-152cb3d104f8",
+    "cec3d765-8f16-47aa-875d-45cfe2433da1",
+    "172657430123eb4af1",
+    "17345364364fe39ed6"
+  ]
+}

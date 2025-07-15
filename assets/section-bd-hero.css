@@ -1,0 +1,99 @@
+.bd-hero--container {
+	display: flex;
+	width: 100%;
+	height: 44.5rem;
+	padding: 4rem 1.4rem;
+	align-items: end;
+	position: relative;
+}
+.bd-hero--container .image-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.bd-hero--container .image-wrapper .image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+.bd-hero--container .image-wrapper::after {
+	content: '';
+}
+.bd-hero--container .text-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+.bd-hero--container .text-wrapper .heading {
+	max-width: var(--mobile-max-width, 'fit-content');
+	position: relative;
+}
+.bd-hero--container .text-wrapper .heading * {
+	color: #F2EFEC;
+	font-family: var(--heading-font-family);
+	font-size: 4rem;
+	font-style: normal;
+	font-weight: 100;
+	line-height: normal;
+	margin: 0;
+}
+.bd-hero--container .text-wrapper .description {
+	margin-top: 0.8rem;
+	max-width: var(--mobile-max-width, 'fit-content');
+	position: relative;
+}
+.bd-hero--container .text-wrapper .description * {
+	color: #F2EFEC;
+	font-family: var(--text-font-family);
+	font-size: 1.4rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: 0.12rem;
+	margin: 0;
+}
+.bd-hero--container .text-wrapper .button {
+	display: flex;
+	padding: 0.8rem 4rem;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10rem;
+	border: 0.06rem solid #F2EFEC;
+	color: #F2EFEC;
+	font-family: var(--text-font-family);
+	font-size: 1.4rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: 0.014rem;
+	position: relative;
+	margin-top: 2rem;
+	width: fit-content;
+	opacity: 1;
+	text-transform: none;
+	transition: 0.3s;
+}
+.bd-hero--container .text-wrapper .button:hover {
+	opacity: 0.8;
+}
+@media screen and (min-width: 1000px) {
+	.bd-hero--container {
+		padding-left: max(calc((100% - 155.4rem)/2), 14px);
+		padding-right: max(calc((100% - 155.4rem)/2), 14px);
+		height: 65rem;
+	}
+	.bd-hero--container .text-wrapper .heading * {
+		font-size: 4.4rem;
+	}
+	.bd-hero--container .text-wrapper .description * {
+		font-size: 1.6rem;
+	}
+	.bd-hero--container .text-wrapper .heading {
+		max-width: var(--max-with, 'fit-content');
+	}
+	.bd-hero--container .text-wrapper .button {
+		font-size: 1.6rem;
+	}
+}

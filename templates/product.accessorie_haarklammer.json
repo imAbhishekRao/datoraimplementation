@@ -1,0 +1,318 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "image_size_details_TAL7JP": {
+          "type": "image__size_details",
+          "settings": {
+            "button_text": "Finde hier deine passende Größe",
+            "footer_text": "Keine Sorgen mehr, dank kostenlosem Umtausch",
+            "footer_image": "shopify://shop_images/size-description-footer-icon.svg",
+            "modal_logo": "shopify://shop_images/logo.webp",
+            "modal_footer_description": "<p><strong>100% Passformgarantie</strong> und kostenloser Umtausch!</p>",
+            "modal_footer_button_text": "Wähle jetzt deine Größe"
+          }
+        },
+        "2665d360-254c-4372-80a1-44abf22ada9e": {
+          "type": "couponCode",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/tag.webp",
+            "text": "<p><strong>3 für 2 DEAL: </strong>Lege 3 Produkte in den Warenkorb und erhalte 1 davon <strong>GRATIS</strong>! Mit dem Code<strong>: Deals</strong></p>",
+            "message": "Super, Du hast den Rabattcode kopiert!",
+            "coupon": "Deals"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "f416a89a-8dc7-45a6-8ece-4c559bee211a": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<ol><li><strong>Bitte wähle eine Nummer größer, da dieses Modell etwas kleiner ausfällt</strong></li></ol>"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "liquid_EU3666": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<font color = green> Artikel verfügbar - Lieferzeit: 3-5 Werktage </font>"
+          }
+        },
+        "sizekick_creamy_fabrics_sizekick_GXKYcz": {
+          "type": "shopify://apps/sizekick-creamy-fabrics/blocks/sizekick/481874b8-e887-4a47-9c5a-171dab48c68b",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": false,
+            "atc_button_background": "rgba(0,0,0,0)",
+            "atc_button_text_color": "rgba(0,0,0,0)",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)",
+            "icon_svg_1": "",
+            "text_1": "",
+            "icon_svg_2": "",
+            "text_2": "",
+            "icon_svg_3": "",
+            "text_3": ""
+          }
+        },
+        "8cb4b70e-f153-49fb-93d4-b9898efd6331": {
+          "type": "CustomerTestimonial",
+          "disabled": true,
+          "settings": {
+            "image1": "shopify://shop_images/Skimmykommentarbeate.webp",
+            "image2": "shopify://shop_images/Bildschirm_foto_2023-11-14_um_10.52.50_28eca001-721a-4490-9774-2e5480909a04.png",
+            "text": "„Melanie S. und +51.238 andere lieben unseren Shapewear"
+          }
+        },
+        "image_nBtEGf": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/image_76_aaa.png",
+            "image_alignment": "center",
+            "image_width": 500
+          }
+        },
+        "trust_custom_icons_Ut3MHH": {
+          "type": "TrustCustomIcons",
+          "settings": {
+            "image1": "shopify://shop_images/image_73.png",
+            "html": "",
+            "text1": "Kostenloser Versand ab 50€. Umtausch ist Gratis.",
+            "image2": "shopify://shop_images/image_76.png",
+            "html2": "",
+            "text2": "Einfache Rücksendung"
+          }
+        },
+        "trust_custom_icons_KF4wt9": {
+          "type": "TrustCustomIcons",
+          "settings": {
+            "image1": "shopify://shop_images/image_74_1.png",
+            "html": "",
+            "text1": "Sichere Bestellung",
+            "image2": "shopify://shop_images/image_72.png",
+            "html2": "",
+            "text2": "100% Zufriedenheitsgarantie"
+          }
+        },
+        "81fd678f-3dd0-47e8-b292-b98a82f57d10": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/icons.webp",
+            "image_alignment": "center",
+            "image_width": 500
+          }
+        }
+      },
+      "block_order": [
+        "image_size_details_TAL7JP",
+        "2665d360-254c-4372-80a1-44abf22ada9e",
+        "variant_picker",
+        "f416a89a-8dc7-45a6-8ece-4c559bee211a",
+        "quantity_selector",
+        "liquid_EU3666",
+        "sizekick_creamy_fabrics_sizekick_GXKYcz",
+        "buy_buttons",
+        "8cb4b70e-f153-49fb-93d4-b9898efd6331",
+        "image_nBtEGf",
+        "trust_custom_icons_Ut3MHH",
+        "trust_custom_icons_KF4wt9",
+        "81fd678f-3dd0-47e8-b292-b98a82f57d10"
+      ],
+      "settings": {
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": false,
+        "show_sticky_add_to_cart": true,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "slide"
+      }
+    },
+    "cd437615-44a9-4e8d-9bcf-30f21823c1dc": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--20182448079195__cd437615-44a9-4e8d-9bcf-30f21823c1dc-item-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2024-08-28_at_18.13.32_Kopie.jpg",
+            "tab_label": "",
+            "subheading": "",
+            "title": "100%ige Zufriedenheitsgarantie",
+            "content": "<p>Die Stimmen unserer Kunden sprechen für sich – sie lieben die Ergebnisse und das Selbstbewusstsein, das unsere hochmoderne Shaping Short ihnen verleiht. Wir sind stolz auf das positive Feedback und die vielen Erfolgsgeschichten, die uns erreichen.</p><p>Um sicherzustellen, dass du ebenfalls von unserer Shaping Short begeistert bist, bieten wir dir eine 100%ige Zufriedenheitsgarantie. Solltest du aus irgendeinem Grund nicht vollkommen zufrieden sein, kontaktiere einfach unser Kundensupport-Team, und wir werden alles daran setzen, eine Lösung zu finden, die dich glücklich macht.</p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20182448079195__cd437615-44a9-4e8d-9bcf-30f21823c1dc-item-1"
+      ],
+      "settings": {
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "section_class": "new-big-redesign-ab-test-a"
+      }
+    },
+    "678dd7a1-5b46-4541-9948-452a9faf353e": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--20182448079195__678dd7a1-5b46-4541-9948-452a9faf353e-item-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/4_35e15e2e-381d-41ac-b72f-8f42c74e9c48.jpg",
+            "tab_label": "",
+            "subheading": "UNSERE ACCESSORIES",
+            "title": "Der stilvolle Halt für deinen Alltag – mit unserer eleganten Haarklammer",
+            "content": "<p>Entdecke unsere elegante Haarklammer – dein neues Must-have für jeden Tag!<br/>Mit ihrem starken Halt und der hochwertigen Verarbeitung sorgt sie für einen sicheren Sitz, ganz ohne Ziepen oder Verrutschen.<br/>Ob im Alltag, im Büro oder bei besonderen Anlässen – sie verleiht deinem Look im Handumdrehen das gewisse Etwas.<br/></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20182448079195__678dd7a1-5b46-4541-9948-452a9faf353e-item-1"
+      ],
+      "settings": {
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "section_class": "new-big-redesign-ab-test-a"
+      }
+    },
+    "bd_image_text_nbAYc8": {
+      "type": "bd-image-text",
+      "settings": {
+        "image": "shopify://shop_images/pdp-image-text-desktop-1.webp",
+        "mobile_image": "shopify://shop_images/pdp-image-text-mobile-1.webp",
+        "image_height": 480,
+        "mobile_image_height": 560,
+        "desktop_image_position": "row",
+        "heading": "<p>100%ige Zufriedenheitsgarantie</p>",
+        "description": "<p>Die Stimmen unserer Kunden sprechen für sich – sie lieben die Ergebnisse und das Selbstbewusstsein, das unsere hochmoderne Shaping Short ihnen verleiht. Wir sind stolz auf das positive Feedback und die vielen Erfolgsgeschichten, die uns erreichen.</p><p>Um sicherzustellen, dass du ebenfalls von unserer Shaping Short begeistert bist, bieten wir dir eine 100%ige Zufriedenheitsgarantie. Solltest du aus irgendeinem Grund nicht vollkommen zufrieden sein, kontaktiere einfach unser Kundensupport-Team, und wir werden alles daran setzen, eine Lösung zu finden, die dich glücklich macht.</p>",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 0,
+        "section_class": "new-big-redesign-ab-test-b"
+      }
+    },
+    "bd_image_text_nbAYc10": {
+      "type": "bd-image-text",
+      "settings": {
+        "image": "shopify://shop_images/pdp-image-text-desktop-2.webp",
+        "mobile_image": "shopify://shop_images/pdp-image-text-mobile-2.webp",
+        "image_height": 480,
+        "mobile_image_height": 560,
+        "desktop_image_position": "row-reverse",
+        "heading": "<p>Der stilvolle Halt für deinen Alltag – mit unserer eleganten Haarklammer</p>",
+        "description": "<p>Entdecke unsere elegante Haarklammer – dein neues Must-have für jeden Tag!<br/>Mit ihrem starken Halt und der hochwertigen Verarbeitung sorgt sie für einen sicheren Sitz, ganz ohne Ziepen oder Verrutschen.<br/>Ob im Alltag, im Büro oder bei besonderen Anlässen – sie verleiht deinem Look im Handumdrehen das gewisse Etwas.<br/></p>",
+        "padding_top": 60,
+        "padding_bottom": 0,
+        "mobile_padding_top": 60,
+        "mobile_padding_bottom": 0,
+        "section_class": "new-big-redesign-ab-test-b"
+      }
+    },
+    "17002332148664b6b6": {
+      "type": "apps",
+      "blocks": {
+        "ef45aa5d-bee9-425e-9513-26275986a4b5": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": true,
+            "limit": 20,
+            "hide_thumbnails": false,
+            "maxwidth": 1080,
+            "is_sample": true
+          }
+        }
+      },
+      "block_order": [
+        "ef45aa5d-bee9-425e-9513-26275986a4b5"
+      ],
+      "settings": {
+        "include_horizontal_margins": true,
+        "include_vertical_margins": true
+      }
+    },
+    "1734538548a8ec8761": {
+      "type": "apps",
+      "blocks": {
+        "kiwi_size_chart_recommender_kiwi_sizing_AVnEzA": {
+          "type": "shopify://apps/kiwi-size-chart-recommender/blocks/kiwiSizing/b7369922-bf15-44ce-a121-a22a8fcbc4b0",
+          "settings": {
+            "product": "{{product}}",
+            "waitForElementSelector": "",
+            "waitForElementDelay": 5
+          }
+        }
+      },
+      "block_order": [
+        "kiwi_size_chart_recommender_kiwi_sizing_AVnEzA"
+      ],
+      "settings": {
+        "include_horizontal_margins": true,
+        "include_vertical_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "cd437615-44a9-4e8d-9bcf-30f21823c1dc",
+    "678dd7a1-5b46-4541-9948-452a9faf353e",
+    "bd_image_text_nbAYc8",
+    "bd_image_text_nbAYc10",
+    "17002332148664b6b6",
+    "1734538548a8ec8761"
+  ]
+}

@@ -1,0 +1,78 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "rich_text_kKhg8n": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "Accessories",
+        "content": "<p><strong>Jeder fühlt sich wohl in Creamy – Deine Must-Have Accessories</strong></p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "section_class": "new-big-redesign-ab-test-a"
+      }
+    },
+    "bd_main_collection_ife77y": {
+      "type": "bd-main-collection",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 60,
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 60,
+        "section_class": "new-big-redesign-ab-test-b"
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "show_sort_by": false,
+        "hide_ratings": false,
+        "products_per_page": 24,
+        "mobile_products_per_row": "2",
+        "desktop_products_per_row": 4,
+        "show_filters": false,
+        "show_filter_group_name": false,
+        "show_color_swatch": true,
+        "open_first_filter_group": false,
+        "filter_position": "always_visible",
+        "promotion_position": "top",
+        "promotion_height": "small",
+        "section_class": "new-big-redesign-ab-test-a"
+      }
+    },
+    "metaobject_accordion_KUm9nq": {
+      "type": "metaobject-accordion",
+      "settings": {
+        "use_collection_metafield": true,
+        "accordion_list": "",
+        "padding_top": 80,
+        "mobile_padding_top": 160,
+        "padding_bottom": 110,
+        "mobile_padding_bottom": 110,
+        "section_class": "collection-accordion-ab-test-b new-big-redesign-ab-test-a"
+      }
+    }
+  },
+  "order": [
+    "rich_text_kKhg8n",
+    "bd_main_collection_ife77y",
+    "main",
+    "metaobject_accordion_KUm9nq"
+  ]
+}

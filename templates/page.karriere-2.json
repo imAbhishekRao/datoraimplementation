@@ -1,0 +1,138 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "page_width": "medium"
+      }
+    },
+    "45f027f7-c731-42b0-affe-883dc6035df2": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--19782346965325__45f027f7-c731-42b0-affe-883dc6035df2-item-1": {
+          "type": "item",
+          "settings": {
+            "tab_label": "",
+            "subheading": "",
+            "title": "GESTALTE DEINE ZUKUNFT MIT Creamy Fabrics.",
+            "content": "<p>WIR STELLEN EIN!<br\/>Creamy Fabrics ist eine lösungsorientierte Marke, die die nächste Generation von Shapewear, Sportswear und Unterwäsche entwickelt. Wir wachsen schnell und suchen Gleichgesinnte für unser Team, die unsere Leidenschaft für Innovation, Technologie und den Fortschritt in Shapewear teilen. Entdecke jetzt unsere offenen Stellen und werde Teil unseres Teams.<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19782346965325__45f027f7-c731-42b0-affe-883dc6035df2-item-1"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#f9c3c6",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "8bb33028-a6db-46f7-b066-45f86da47355": {
+      "type": "faq",
+      "blocks": {
+        "template--19782346965325__8bb33028-a6db-46f7-b066-45f86da47355-category-1": {
+          "type": "category",
+          "settings": {
+            "title": "E-COMMERCE-TEAM (2)"
+          }
+        },
+        "template--19782346965325__8bb33028-a6db-46f7-b066-45f86da47355-question-1": {
+          "type": "question",
+          "settings": {
+            "title": "Customer Support (m\/w\/d)",
+            "answer": "<h4>Über Uns:<\/h4><p>Wir sind eine dynamische und kundenorientierte Shapewear-Marke, die sich durch hochwertige Produkte und exzellenten Kundenservice auszeichnet. Wir suchen ab sofort einen engagierten und motivierten Kundensupport-Mitarbeiter, der unser Team verstärkt und unseren Kunden einen herausragenden Service bietet.<\/p><h4>Aufgabenbereiche:<\/h4><ul><li><strong>Kundenservice via E-Mail, WhatsApp und Telefon:<\/strong> Beantwortung von Kundenanfragen, -beschwerden und -feedback.<\/li><li><strong>Kundenservice über Social Media:<\/strong> Interaktion mit Kunden über verschiedene Social-Media-Kanäle und Beantwortung von Direktnachrichten und Kommentaren.<\/li><li><strong>Bestellannahme:<\/strong> Bearbeitung von Kundenbestellungen und Unterstützung bei Fragen zum Bestellstatus.<\/li><li><strong>Retouren- und Reklamationsbearbeitung:<\/strong> Verwaltung von Rücksendungen und Bearbeitung von Reklamationen, einschließlich der Koordination mit anderen Abteilungen, um eine schnelle Lösung zu gewährleisten.<\/li><\/ul><h4>Qualifikationen:<\/h4><ul><li>Erfahrung im Kundenservice, vorzugsweise in der Modebranche.<\/li><li>Exzellente Kommunikationsfähigkeiten, sowohl schriftlich als auch mündlich, in Deutsch; Englischkenntnisse sind von Vorteil.<\/li><li>Grundkenntnisse in den gängigen MS-Office-Anwendungen und Social-Media-Plattformen.<\/li><li>Hohe Kundenorientierung und Empathie.<\/li><li>Fähigkeit, in einem schnelllebigen Umfeld zu arbeiten und Prioritäten effektiv zu setzen.<\/li><li>Lösungsorientiertes und proaktives Handeln.<\/li><\/ul><h4>Was wir bieten:<\/h4><ul><li>Ein dynamisches und unterstützendes Team.<\/li><li>Entwicklungsmöglichkeiten innerhalb des Unternehmens.<\/li><li>Ein attraktives Vergütungspaket.<\/li><li>30 Urlaubstage.<\/li><\/ul><h4>So bewerben Sie sich:<\/h4><p>Bitte senden Sie Ihre Bewerbungsunterlagen, bestehend aus Anschreiben, Lebenslauf und Referenzen, an karriere@skimmy.de mit dem Betreff „Bewerbung Customer Support“. Wir freuen uns darauf, von Ihnen zu hören!<\/p>"
+          }
+        },
+        "template--19782346965325__8bb33028-a6db-46f7-b066-45f86da47355-question-2": {
+          "type": "question",
+          "settings": {
+            "title": "Social Media Manager m\/w\/d",
+            "answer": "<h4>Über Uns:<\/h4><p>Wir sind eine aufstrebende und kundenorientierte Shapewear-Marke, die sich durch erstklassige Produkte und innovatives Marketing auszeichnet. Um unsere Online-Präsenz zu stärken und unsere Marke weiter auszubauen, suchen wir einen kreativen und engagierten Social Media Manager.<\/p><h4>Aufgabenbereiche:<\/h4><ul><li><strong>Verantwortung für alle Social Media Kanäle:<\/strong> Management und Optimierung unserer Präsenz auf Plattformen wie Instagram, TikTok und Co.<\/li><li><strong>Erstellen von organischem Content:<\/strong> Entwicklung und Umsetzung von Content-Strategien zur Steigerung der Reichweite und Engagement.<\/li><li><strong>Kampagnenplanung:<\/strong> Konzeption, Planung und Umsetzung von zielgruppenspezifischen Social Media Kampagnen.<\/li><li><strong>Trendmonitoring:<\/strong> Identifikation und Analyse von Social Media Trends und Anpassung der Strategie.<\/li><li><strong>Straßeninterviews:<\/strong> Durchführung und Koordination von Interviews und anderen interaktiven Formaten.<\/li><li><strong>Markenrepräsentation:<\/strong> Als Gesicht und Stimme unserer Marke agieren und unseren gesamten Social Media Auftritt prägen und verwalten.<\/li><\/ul><h4>Qualifikationen:<\/h4><ul><li>Erfahrung im Social Media Management, vorzugsweise in der Mode- oder Lifestyle-Branche.<\/li><li>Kreativität und ein Auge für Ästhetik und visuelles Design.<\/li><li>Affinität für Trends und ein tiefes Verständnis der verschiedenen Social Media Plattformen und ihrer Best Practices.<\/li><li>Exzellente Kommunikationsfähigkeiten und Textsicherheit in Deutsch; Englischkenntnisse sind von Vorteil.<\/li><li>Offenheit und Kontaktfreudigkeit, insbesondere bei der Durchführung von Straßeninterviews.<\/li><li>Selbstständige, strukturierte Arbeitsweise und Organisationsfähigkeit.<\/li><li>Sicherer Umgang mit allen Social Media tools und Bildbearbeitungsprogrammen wie Canva und\/oder Photoshop.<\/li><\/ul><h4>Was wir bieten:<\/h4><ul><li>Ein kreatives und dynamisches Arbeitsumfeld.<\/li><li>Die Möglichkeit, unsere Social Media Präsenz aktiv mitzugestalten und weiterzuentwickeln.<\/li><li>Ein attraktives Vergütungspaket.<\/li><li>und viele weitere Benefits<\/li><\/ul><h4>So bewerben Sie sich:<\/h4><p>Bitte senden Sie Ihre Bewerbungsunterlagen, bestehend aus Anschreiben, Lebenslauf, Referenzen und Portfolio, an karriere@skimmy.de mit dem Betreff „Bewerbung Social Media Manager“. Wir freuen uns darauf, von Ihnen zu hören!<\/p>"
+          }
+        },
+        "template--19782346965325__8bb33028-a6db-46f7-b066-45f86da47355-category-2": {
+          "type": "category",
+          "settings": {
+            "title": "OPERATIVE (1)"
+          }
+        },
+        "template--19782346965325__8bb33028-a6db-46f7-b066-45f86da47355-question-3": {
+          "type": "question",
+          "settings": {
+            "title": "Lagermitarbeiter\/Kommissionierer (m\/w\/d)",
+            "answer": "<h4>Über Uns:<\/h4><p>Wir sind eine aufstrebende und kundenorientierte Shapewear-Marke, die sich durch erstklassige Produkte und innovatives Marketing auszeichnet. Wir suchen einen zuverlässigen und motivierten Lagermitarbeiter\/Kommissionierer zur Unterstützung unseres Logistikteams.<\/p><h4>Aufgabenbereiche:<\/h4><ul><li><strong>Kommissionierung:<\/strong> Zusammenstellen der Waren nach Packzetteln.<\/li><li><strong>Warenannahme und -ausgabe:<\/strong> Kontrolle und Verbuchung der Warenein- und -ausgänge.<\/li><li><strong>Lagerpflege und -organisation:<\/strong> Ordnung und Sauberkeit im Lager sicherstellen.<\/li><li><strong>Inventur:<\/strong> Mithilfe bei Lagerbestandsaufnahmen.<\/li><li><strong>Verpackung und Versand:<\/strong> Verpacken der Waren und Vorbereitung für den Versand.<\/li><\/ul><h4>Qualifikationen:<\/h4><ul><li>Berufserfahrung im Lagerbereich wünschenswert.<\/li><li>Gute körperliche Belastbarkeit und Hand-Auge-Koordination.<\/li><li>Sorgfältige und zuverlässige Arbeitsweise.<\/li><li>Gute Deutschkenntnisse in Wort und Schrift.<\/li><li>Staplerschein von Vorteil, jedoch keine Voraussetzung.<\/li><\/ul><h4>Was wir bieten:<\/h4><ul><li>Einen sicheren und langfristigen Arbeitsplatz in einem wachsenden Unternehmen.<\/li><li>Eine faire und leistungsgerechte Vergütung.<\/li><li>Ein kollegiales und unterstützendes Team.<\/li><li>Und viele weitere benefits.<\/li><\/ul><h4>So bewerben Sie sich:<\/h4><p>Interessierte Bewerber sollten ihre Bewerbungsunterlagen (Lebenslauf, Anschreiben und relevante Zeugnisse) per E-Mail an karriere@skimmy.de mit dem Betreff „Bewerbung Lagermitarbeiter\/Kommissionierer“ senden.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19782346965325__8bb33028-a6db-46f7-b066-45f86da47355-category-1",
+        "template--19782346965325__8bb33028-a6db-46f7-b066-45f86da47355-question-1",
+        "template--19782346965325__8bb33028-a6db-46f7-b066-45f86da47355-question-2",
+        "template--19782346965325__8bb33028-a6db-46f7-b066-45f86da47355-category-2",
+        "template--19782346965325__8bb33028-a6db-46f7-b066-45f86da47355-question-3"
+      ],
+      "settings": {
+        "show_navigation": false,
+        "title": "Offene Stellen",
+        "content": "",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "c77320b5-0759-4a4d-a5cc-4ba703d94d49": {
+      "type": "contact-form",
+      "blocks": {
+        "d3999160-4342-4b00-b0e7-8f070fa0b0f0": {
+          "type": "text",
+          "settings": {
+            "title": "Stelle",
+            "use_long_text": false,
+            "is_required": false
+          }
+        }
+      },
+      "block_order": [
+        "d3999160-4342-4b00-b0e7-8f070fa0b0f0"
+      ],
+      "settings": {
+        "title": "Kontaktiere Uns",
+        "content": "",
+        "text_1_heading": "",
+        "text_1_text": "",
+        "text_2_heading": "",
+        "text_2_text": "",
+        "background": "#f5f5f5",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "45f027f7-c731-42b0-affe-883dc6035df2",
+    "8bb33028-a6db-46f7-b066-45f86da47355",
+    "c77320b5-0759-4a4d-a5cc-4ba703d94d49"
+  ]
+}

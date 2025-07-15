@@ -1,0 +1,96 @@
+.shopify-section--metaobject-accordion .metaobject-accordion--container {
+	max-width: 926px;
+	padding: 0 11px;
+	margin: auto;
+}
+.metaobject-accordion--container .accordion-item-wrapper {
+	width: 100%;
+	padding-bottom: 20px;
+	border-bottom: 0.6px solid rgba(40, 40, 40, 0.10);
+}
+.metaobject-accordion--container .accordion-item-wrapper+.accordion-item-wrapper {
+	margin-top: 20px;
+}
+.metaobject-accordion--container .accordion-heading {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+}
+.metaobject-accordion--container .accordion-heading .text {
+	width: 308px;
+}
+.metaobject-accordion--container .accordion-heading .text * {
+	color: #282828;
+	font-family: "DM Sans";
+	font-size: 16px;
+	font-weight: 600;
+	font-style: normal;
+	line-height: normal;
+}
+.metaobject-accordion--container .accordion-heading .icon,
+.metaobject-accordion--container .accordion-heading .icon>svg {
+	width: 20px;
+	height: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.metaobject-accordion--container .accordion-item-wrapper.open .icon.plus {
+	display: none;
+}
+.metaobject-accordion--container .accordion-item-wrapper:not(.open) .icon.minus {
+	display: none;
+}
+.metaobject-accordion--container .accordion-body {
+	margin-top: 0px;
+	overflow: hidden;
+	transition: 0.3s;
+}
+.metaobject-accordion--container .accordion-item-wrapper.open .accordion-body {
+	margin-top: 12px;
+}
+.metaobject-accordion--container .accordion-body .text * {
+	color: #646464;
+	font-family: "DM Sans";
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+}
+.metaobject-accordion--container .accordion-body .text ul,
+.metaobject-accordion--container .accordion-body .text ol {
+	padding-left: 20px;
+}
+.metaobject-accordion--container .accordion-body .text li+li {
+	margin-top: 5px;
+}
+
+@media screen and (min-width: 1000px) {
+	.metaobject-accordion--container .accordion-item-wrapper {
+		padding-bottom: 28px;
+	}
+	.metaobject-accordion--container .accordion-heading {
+		gap: 40px;
+	}
+	.metaobject-accordion--container .accordion-heading .text {
+		width: auto;
+	}
+	.metaobject-accordion--container .accordion-heading .text * {
+		font-size: 20px;
+	}
+	.metaobject-accordion--container .accordion-heading .icon,
+	.metaobject-accordion--container .accordion-heading .icon>svg {
+		width: 24px;
+		height: 24px;
+	}
+	.metaobject-accordion--container .accordion-item-wrapper.open .accordion-body {
+		margin-top: 20px;
+	}
+	.metaobject-accordion--container .accordion-body .text * {
+		font-size: 14px;
+	}
+	.metaobject-accordion--container .accordion-body .text ul,
+	.metaobject-accordion--container .accordion-body .text ol {
+		padding-left: 30px;
+	}
+}

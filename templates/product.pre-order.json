@@ -1,0 +1,124 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "info_display_nwHcfW": {
+          "type": "info_display",
+          "settings": {
+            "heading": "<p>Mehr kaufen, mehr sparen - 3 für 2 Deal</p>",
+            "description": "<p>Lege 3 Produkte in den Warenkorb & erhalte 1 davon Gratis</p>"
+          }
+        },
+        "image_size_details_TAL7JP": {
+          "type": "image__size_details",
+          "settings": {
+            "button_text": "Finde hier deine passende Größe",
+            "footer_text": "Keine Sorgen mehr, dank kostenlosem Umtausch",
+            "footer_image": "shopify://shop_images/size-description-footer-icon.svg",
+            "modal_logo": "shopify://shop_images/logo.webp",
+            "modal_footer_description": "<p><strong>100% Passformgarantie</strong> und kostenloser Umtausch!</p>",
+            "modal_footer_button_text": "Wähle jetzt deine Größe"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "sizekick_creamy_fabrics_sizekick_Ukz89j": {
+          "type": "shopify://apps/sizekick-creamy-fabrics/blocks/sizekick/481874b8-e887-4a47-9c5a-171dab48c68b",
+          "settings": {}
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": false,
+            "atc_button_background": "rgba(0,0,0,0)",
+            "atc_button_text_color": "rgba(0,0,0,0)",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)",
+            "icon_svg_1": "",
+            "text_1": "",
+            "icon_svg_2": "",
+            "text_2": "",
+            "icon_svg_3": "",
+            "text_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "info_display_nwHcfW",
+        "image_size_details_TAL7JP",
+        "variant_picker",
+        "sizekick_creamy_fabrics_sizekick_Ukz89j",
+        "quantity_selector",
+        "buy_buttons"
+      ],
+      "settings": {
+        "show_vendor": true,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": false,
+        "show_sticky_add_to_cart": true,
+        "show_share_buttons": true,
+        "help_page": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "slide"
+      }
+    },
+    "product-content": {
+      "type": "product-content",
+      "blocks": {
+        "description": {
+          "type": "description",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "description"
+      ],
+      "settings": {
+        "section_class": "new-big-redesign-ab-test-a"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "subheading": "",
+        "title": "You may also like",
+        "recommendations_count": 4,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "section_class": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-content",
+    "product-recommendations"
+  ]
+}

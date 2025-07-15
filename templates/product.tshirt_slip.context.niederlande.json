@@ -1,0 +1,26 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "parent": "product.tshirt_slip.json",
+  "context": {
+    "market": "niederlande"
+  },
+  "sections": {
+    "main": {
+      "settings": {},
+      "blocks": {
+        "d303cbff-e567-426c-b850-8e1e9ae2e387": {
+          "disabled": true,
+          "settings": {}
+        }
+      }
+    }
+  }
+}

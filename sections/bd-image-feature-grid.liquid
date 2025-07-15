@@ -1,0 +1,167 @@
+{{ 'section-bd-image-feature-grid.css' | asset_url | stylesheet_tag }}
+
+<style>
+  #shopify-section-{{ section.id }} {
+    padding-top: {{ section.settings.mobile_padding_top }}px;
+    padding-bottom: {{ section.settings.mobile_padding_bottom }}px;
+    background: {{ section.settings.bg_color }};
+  }
+  @media screen and (min-width: 1000px) {
+    #shopify-section-{{ section.id }} {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+</style>
+
+<div class="bd-image-feature-grid--container container {{ section.settings.section_class }}">
+  {% if section.settings.heading and section.settings.heading != '' %}
+    <h2
+      class="heading"
+      style="
+        {% if section.settings.heading_max_width > 0 %}
+          --max-width: {{ section.settings.heading_max_width }}px;
+        {% endif %}
+        {% if section.settings.mobile_heading_max_width > 0 %}
+          --mobile-max-width: {{ section.settings.mobile_heading_max_width }}px;
+        {% endif %}
+      "
+    >{{ section.settings.heading }}</h2>
+  {% endif %}
+  {% if section.settings.description and section.settings.description != '' %}
+    <div class="description">{{ section.settings.description }}</div>
+  {% endif %}
+  <div class="block-grid">
+    {% for block in section.blocks %}
+      <div class="feature">
+        {% if block.settings.image %}
+          <img
+            class="image"
+            src="{{ block.settings.image | image_url }}"
+            width="{{ block.settings.image.width }}"
+            height="{{ block.settings.image.height }}"
+            alt="{{ block.settings.image.alt }}"
+            loading="lazy"
+          >
+        {% endif %}
+        <span class="text">{{ block.settings.text }}</span>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{%- schema %}
+{
+  "name": "BD image feature grid",
+  "class": "shopify-section--bd-image-feature-grid",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "<p>Section heading<\/p>"
+    },
+    {
+      "type": "number",
+      "id": "heading_max_width",
+      "label": "Max width",
+      "info": "The unit is px. Set 0 to ignore."
+    },
+    {
+      "type": "number",
+      "id": "mobile_heading_max_width",
+      "label": "Max width (Mobile)",
+      "info": "The unit is px. Set 0 to ignore."
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>Section description<\/p>"
+    },
+    {
+      "type": "header",
+      "content": "General"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding top",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding bottom",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "label": "Padding top (Mobile)",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "label": "Padding bottom (Mobile)",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "BG color",
+      "default": "#E8E5E2"
+    },
+    {
+      "type": "text",
+      "id": "section_class",
+      "label": "Section class"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "block",
+      "name": "Block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "default": "Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "BD image feature grid"
+    }
+  ]
+}
+{%- endschema -%}

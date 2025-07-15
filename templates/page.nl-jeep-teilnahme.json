@@ -1,0 +1,66 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_title": false,
+        "page_width": "medium"
+      }
+    },
+    "rich_text_G7hBjR": {
+      "type": "rich-text",
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "content": "<h3>Niederlande Teilnahmebedingungen&lt;<br/></h3>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "section_class": ""
+      }
+    },
+    "rich_text_7CaCxi": {
+      "type": "rich-text",
+      "name": "Rich text",
+      "settings": {
+        "subheading": "",
+        "title": "Deelnamevoorwaarden – Creamy Fabrics Wedstrijd \"Jeep Avenger\"",
+        "content": "<p><strong>1. Organisator</strong><br/>Organisator van de wedstrijd is:<br/>Creamy Fabrics | Multiecom GmbH<br/>Niederkasseler Lohweg 18, 40547 Düsseldorf<br/>E-mail: kontakt@creamyfabrics.com<br/><br/><strong>2. Deelnameperiode</strong><br/>De wedstrijd start op 19-05-2025 en eindigt op 29-06-2025 om 23:59 uur. Deelname buiten deze periode is ongeldig.<br/><br/><strong>3. Deelnamegerechtigheid</strong><br/>Deelname is toegestaan voor natuurlijke personen met woonplaats in <strong>Duitsland, Oostenrijk, Zwitserland of Nederland</strong> die op het moment van deelname <strong>minstens 18 jaar oud</strong> zijn. Werknemers van Creamy Fabrics en hun directe familieleden zijn van deelname uitgesloten.<br/><br/><strong>4. Wijze van deelname</strong><br/>Deelname aan de wedstrijd gebeurt als volgt:<br/>Aankoopgebonden deelname: Deelnemers doen automatisch mee aan de wedstrijd wanneer zij tijdens de actieperiode een bestelling van minimaal €50 (inclusief btw en verzendkosten) plaatsen in de Creamy Fabrics webshop. Voor elke €50 bestelwaarde wordt één lot toegekend.<br/>Belangrijk: Bij volledige retour van de bestelling vervalt de deelname met terugwerkende kracht. Een omruiling heeft daarentegen geen invloed op de deelname of de geldigheid van de loten.<br/><br/><strong>5. Prijs</strong><br/>Verloot wordt een nieuwe Jeep Avenger (model en uitrusting naar keuze van de organisator).<br/>De prijs is niet overdraagbaar, niet inwisselbaar voor contant geld en niet ruilbaar.<br/><br/><strong>6. Bepaling van de winnaar</strong><br/>De winnaar wordt willekeurig getrokken uit alle geldige deelnames.<br/>De trekking vindt plaats drie weken na het einde van de deelnameperiode. De winnaar wordt per e-mail op de hoogte gebracht. Reageert de winnaar niet binnen 7 dagen, dan wordt er een nieuwe winnaar getrokken.<br/><br/><strong>7. Gegevensbescherming</strong><br/>Persoonsgegevens worden uitsluitend verwerkt voor het uitvoeren van de wedstrijd. Meer details zijn te vinden in het privacybeleid met betrekking tot de wedstrijd.<br/><br/><strong>8. Aansprakelijkheid en uitsluiting<br/></strong>De organisator behoudt zich het recht voor om deelnemers bij poging tot manipulatie of overtreding van deze voorwaarden uit te sluiten.<br/><br/><strong>9. Overig</strong><br/>Rechtsgang is uitgesloten. Deze wedstrijd is op geen enkele manier verbonden met Instagram en wordt niet gesponsord, ondersteund of georganiseerd door Instagram.<br/>Tijdens de actieperiode mag de bestickering van de Jeep Avenger aan de bestuurderszijde, passagierszijde en achterkant gedurende één jaar na overdracht niet verwijderd of aangepast worden. De folie op de motorkap mag op verzoek verwijderd worden. Verwijdering dient op eigen kosten en verantwoordelijkheid plaats te vinden – Creamy Fabrics aanvaardt hiervoor geen enkele aansprakelijkheid.<br/><br/><br/><strong>Privacyverklaring – Creamy Fabrics Wedstrijd (volgens Art. 13 AVG)<br/></strong><br/><strong>Verantwoordelijke:</strong><br/>Multiecom GmbH<br/>Niederkasseler Lohweg 18, 40547 Düsseldorf<br/><br/><strong>Verwerkte gegevens:</strong><br/>Voor deelname worden de volgende persoonsgegevens verwerkt:<br/>• Naam<br/>• E-mailadres<br/>• Woonplaats (voor leeftijds- en deelnamecontrole)<br/>• Instagram-gebruikersnaam (voor deelnameverificatie)<br/><br/><strong>Doel en rechtsgrondslag:</strong><br/>De gegevens worden uitsluitend verwerkt voor het uitvoeren van de wedstrijd.<br/>Rechtsgrondslag: Art. 6 lid 1 sub b AVG (uitvoering van een overeenkomst)<br/><strong><br/>Ontvangers:</strong><br/>De gegevens worden niet aan derden verstrekt, tenzij dit noodzakelijk is voor de prijsafhandeling (bijvoorbeeld autodealer of transporteur).<br/><br/><strong>Bewaartermijn</strong>:<br/>Alle persoonsgegevens worden uiterlijk 30 dagen na afloop van de wedstrijd verwijderd, tenzij er wettelijke bewaartermijnen gelden.<br/><br/><strong>Rechten van betrokkenen:</strong><br/>Betrokkenen hebben recht op inzage, rectificatie, verwijdering, beperking, gegevensoverdraagbaarheid en bezwaar. Daarnaast bestaat het recht om een klacht in te dienen bij een toezichthoudende autoriteit.</p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "section_class": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_G7hBjR",
+    "rich_text_7CaCxi"
+  ]
+}

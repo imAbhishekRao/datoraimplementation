@@ -1,0 +1,118 @@
+{{ 'metaobject-accordion.css' | asset_url | stylesheet_tag}}
+
+<style>
+  #shopify-section-{{ section.id }} .metaobject-accordion--container {
+    padding-top: {{ section.settings.mobile_padding_top }}px;
+    padding-bottom: {{ section.settings.mobile_padding_bottom }}px;
+  }
+  @media screen and (min-width: 1000px) {
+    #shopify-section-{{ section.id }} .metaobject-accordion--container {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+</style>
+
+<div class="{{ section.settings.section_class }}">
+  <div class="metaobject-accordion--container" js-accordion-container>
+    {% liquid
+      if section.settings.use_collection_metafield == true
+        assign accordion_list = collection.metafields.custom.accordion_list.value
+      else
+        assign accordion_list = shop.metaobjects['accordion_list'][section.settings.accordion_list].accordion.value
+      endif
+    %}
+    {% for accordion in accordion_list %}
+      <div class="accordion-item-wrapper" js-accordion-item>
+        <div class="accordion-heading" js-accordion-item-heading>
+          <div class="text">{{ accordion.heading | metafield_tag }}</div>
+          <span class="icon plus">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M4.1665 10H15.8332" stroke="#282828" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M10 4.16699V15.8337" stroke="#282828" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="icon minus">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+              <path d="M4.1665 10.5H15.8332" stroke="#282828" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </div>
+        <div class="accordion-body" js-accordion-item-body>
+          <div class="text">{{ accordion.body | metafield_tag }}</div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{%- schema %}
+{
+  "name": "Metaobject accordion",
+  "class": "shopify-section--metaobject-accordion",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "use_collection_metafield",
+      "label": "Use collection metafield",
+      "default": true
+    },
+    {
+      "type": "metaobject",
+      "id": "accordion_list",
+      "metaobject_type": "accordion_list",
+      "label": "Accordion list"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "label": "Padding top (Mobile)",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "label": "Padding bottom (Mobile)",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "text",
+      "id": "section_class",
+      "label": "Section class"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Metaobject accordion"
+    }
+  ]
+}
+{%- endschema -%}

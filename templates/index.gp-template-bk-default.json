@@ -1,0 +1,451 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "order": [
+    "slideshow",
+    "42579edc-05c7-459b-ae34-d9264a03e3e3",
+    "9157cb28-165b-4a02-9e19-b24501e1ba5b",
+    "featured-collections",
+    "b79b3c3b-f29d-4349-976b-21177f3e36e0",
+    "0fc45de0-0df5-4d06-aaee-c032f67e15e5",
+    "24de60e8-8504-4cf3-88d1-052be062e138",
+    "78987dd6-736f-499d-9d02-02bcff9e7ad0"
+  ],
+  "sections": {
+    "0fc45de0-0df5-4d06-aaee-c032f67e15e5": {
+      "type": "press",
+      "blocks": {
+        "template--19289149276493__0fc45de0-0df5-4d06-aaee-c032f67e15e5-item-1": {
+          "type": "item",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Skimmykommentarbeate.webp",
+            "logo_width": 100,
+            "content": "So bequem und leicht, formt und unterstützt genau dort, wo ich es brauche. Es ist wie eine zweite Haut, die die Problemzonen verschwinden lässt!"
+          }
+        }
+      },
+      "block_order": [
+        "template--19289149276493__0fc45de0-0df5-4d06-aaee-c032f67e15e5-item-1"
+      ],
+      "settings": {
+        "reveal_on_scroll": false,
+        "background": "#f9f9f9",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "24de60e8-8504-4cf3-88d1-052be062e138": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "reveal_on_scroll": false,
+        "section_height": "small",
+        "image": "shopify:\/\/shop_images\/image_35.webp",
+        "subheading": "",
+        "title": "Sei du selbst - spüre die Magie des Selbstbewusstseins!",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "link_style": "link",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "middle_center",
+        "text_color": "#ffffff",
+        "button_background": "#ffffff",
+        "button_text_color": "#000000",
+        "overlay_color": "#000000",
+        "overlay_opacity": 11
+      }
+    },
+    "42579edc-05c7-459b-ae34-d9264a03e3e3": {
+      "type": "custom-html",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "html": "<hr>",
+        "add_vertical_spacing": true,
+        "background_type": "full_width",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "78987dd6-736f-499d-9d02-02bcff9e7ad0": {
+      "type": "faq",
+      "blocks": {
+        "09b9cedc-68e4-4638-a958-a27e9390b3ed": {
+          "type": "question",
+          "settings": {
+            "title": "Wie finde ich die richtige Größe für meine Shapewear?",
+            "answer": "<p>Schauen Sie bitte auf unsere Größentabelle auf der Produktseite. Messen Sie Ihre Taille und Hüften, um die richtige Größe zu finden.<\/p>"
+          }
+        },
+        "1bfe1c86-663a-4ff6-b2f3-2a4835e6436f": {
+          "type": "question",
+          "settings": {
+            "title": "Wie lange dauert die Erstattung nach einer Rücksendung?",
+            "answer": "<p>Zunächst möchten wir uns bei Dir für das Vertrauen in Creamy bedanken und dafür, dass Du Dir die Zeit genommen hast, uns zu kontaktieren. Wir haben Deine Mitteilung bezüglich der Rücksendung erhalten und möchten Dir versichern, dass wir diese mit höchster Sorgfalt und Aufmerksamkeit behandeln.<\/p><p>Bitte habe Verständnis dafür, dass der Prozess der Qualitätsprüfung und die anschließende Rückerstattung bis zu <strong>20 Werktage<\/strong> in Anspruch nehmen können, nachdem Deine Rücksendung bei uns eingegangen ist. Unser Ziel ist es, diesen Vorgang so schnell wie möglich zu bearbeiten, da uns Dein Anliegen sehr wichtig ist.<\/p><p>Sobald die Überprüfung Deiner Rücksendung abgeschlossen ist, leiten wir umgehend die Rückerstattung über Deine ursprüngliche Zahlungsmethode ein. Wir halten Dich über jeden Schritt des Prozesses auf dem Laufenden und sind immer hier, um alle weiteren Fragen zu beantworten oder zusätzliche Informationen zu liefern.<\/p><p>Vielen Dank für Deine Geduld und Dein Verständnis in dieser Angelegenheit. Dein Einkaufserlebnis bei Creamy liegt uns am Herzen, und wir sind stets bemüht, es so angenehm wie möglich zu gestalten. Solltest Du weitere Unterstützung benötigen, stehen wir Dir jederzeit zur Verfügung und freuen uns, von Dir zu hören.<\/p>"
+          }
+        },
+        "27a1bd2a-57b8-4ca7-a6a2-7bc0798f590d": {
+          "type": "question",
+          "settings": {
+            "title": "Sind die Träger der Shapewear verstellbar?",
+            "answer": "<p>Ja, unsere Shapewear ist mit verstellbaren Trägern ausgestattet, um maximales Komfort und Anpassungsfähigkeit zu gewährleisten.<\/p>"
+          }
+        },
+        "4ea66216-9adc-4000-ba8e-0d8763065d02": {
+          "type": "question",
+          "settings": {
+            "title": "Kann ich die Shapewear unter enger Kleidung tragen?",
+            "answer": "<p>Ja, unsere Shapewear ist aus nahtlosem Stoff hergestellt, der unter Ihrer täglichen Kleidung unsichtbar ist.<\/p>"
+          }
+        },
+        "5657b508-8603-4d33-b4dc-03f6c8901588": {
+          "type": "question",
+          "settings": {
+            "title": "Wie funktioniert der Rückversand?",
+            "answer": "<p>Wir möchten Dir den Rückversand so einfach wie möglich machen. Hier sind die Schritte, die Du befolgen kannst:<\/p><ol><li><strong>Rücksendeformular<\/strong>: In Deiner Bestellung findest Du ein Rücksendeformular. Bitte fülle es aus und lege es Deiner Rücksendung bei.<\/li><li><strong>Online-Retourportal nutzen<\/strong>: Besuche unser Retourportal unter <a href=\"https:\/\/creamyfabrics.com\/apps\/returns\">creamyfabrics.com\/apps\/returns<\/a>, um Deine Rücksendung anzumelden. Hierfür benötigst Du Deine Bestellnummer (beginnt mit #cf12345) und die E-Mail-Adresse, die Du beim Kauf verwendet hast. Nach der Anmeldung kannst Du das Retourenlabel einfach ausdrucken.<\/li><\/ol><p><strong>Kosten<\/strong>: Für Rücksendungen aus Deutschland wird eine Pauschale von 4,95 Euro berechnet. Für Rücksendungen aus Österreich und der Schweiz beträgt die Gebühr 9,95 Euro. Diese Kosten werden von Deiner Rückerstattung abgezogen.<\/p><p>Bitte beachte, dass die Rücksendung innerhalb der vorgegebenen Frist erfolgen muss. Weitere Informationen zur Frist und zu unseren Rücksendebedingungen findest Du auf unserer Webseite.<\/p>"
+          }
+        },
+        "6568fb1d-e5ab-4ee7-ac7c-1a2c846c2b3a": {
+          "type": "question",
+          "settings": {
+            "title": "Wie und wo erhalte ich meine Bestellnummer?",
+            "answer": "<p>Direkt nachdem Du Deine Bestellung abgeschlossen hast, senden wir Dir eine Bestellbestätigung per E-Mail zu. Diese E-Mail wird an die Adresse gesendet, die Du beim Kauf angegeben hast. In dieser Bestellbestätigung findest Du auch Deine einzigartige Bestellnummer. Achte darauf, dass die Bestellnummer immer mit #cf gefolgt von einer Zahlenkombination beginnt (z.B. <strong>#cf12345<\/strong>). Bitte überprüfe auch Deinen Spam-Ordner, falls die E-Mail nicht in Deinem Posteingang erscheint.<\/p>"
+          }
+        },
+        "773d32ac-7adc-4290-b527-b797c393b86f": {
+          "type": "question",
+          "settings": {
+            "title": "Wie kann ich einen Artikel umtauschen und welche Kosten fallen dabei an?",
+            "answer": "<p>Wenn Du einen Artikel umtauschen möchtest, ist das bei uns völlig unkompliziert und zudem kostenlos. Hier sind die Schritte für den Umtausch:<\/p><ol><li><strong>Retourportal besuchen<\/strong>: Gehe auf unser Retourportal unter <a href=\"https:\/\/creamyfabrics.com\/apps\/returns\">creamyfabrics.com\/apps\/returns<\/a>.<\/li><li><strong>Bestellinformationen eingeben<\/strong>: Gib Deine Bestellnummer (beginnt mit #cf12345) und die E-Mail-Adresse ein, die Du beim Kauf verwendet hast.<\/li><li><strong>Umtausch anmelden<\/strong>: Wähle die Option für den Umtausch und folge den weiteren Anweisungen. Du kannst dann das benötigte Retourenlabel direkt ausdrucken.<\/li><\/ol><p><strong>Kosten<\/strong>: Der Umtausch ist für Dich völlig kostenlos. Wir übernehmen alle anfallenden Kosten, um Dir den Umtauschprozess so einfach wie möglich zu gestalten.<\/p><p>Bitte beachte, dass der Umtausch innerhalb der festgelegten Frist erfolgen muss. Weitere Details zu unseren Umtauschbedingungen findest Du auf unserer Webseite.<\/p>"
+          }
+        },
+        "7a779318-2f06-4276-8479-2fc4010fd097": {
+          "type": "question",
+          "settings": {
+            "title": "Was geschieht mit meiner Bestellung, wenn ich zum Zeitpunkt der Lieferung nicht zu Hause bin?",
+            "answer": "<p>Sollte eine Lieferung nicht beim ersten Versuch möglich sein, versuchen wir es am nächsten Tag erneut. Wenn Sie auch dann nicht zu Hause sind, versuchen wir, das Paket an Ihre Nachbarn zu liefern. Wenn dies nicht gelingt, gibt es keinen Grund zur Sorge: Sie können Ihr Paket beim nächsten Postamt abholen. DHL informiert Sie natürlich über den Standort des Postamtes.<\/p><p>Stimmt trotzdem etwas nicht? Bitte kontaktieren Sie uns direkt über support@creamyfabrics.com  <\/p><p>Dank der schnellen Kommunikation können wir alle Probleme zusammen mit DHL so schnell wie möglich lösen.<\/p>"
+          }
+        },
+        "8418d3b1-ac7e-40f0-9030-0f8c2443d5e9": {
+          "type": "question",
+          "settings": {
+            "title": "Was bedeutet \"badezimmerfreundlich\"?",
+            "answer": "<p>Unsere Shapewear hat einen klassichen Hakenverschluß im Schritt. Dies bedeutet, sie sind leicht und bequem beim Toilettengang zu handhaben.<\/p>"
+          }
+        },
+        "84bde3a8-bbdd-4e1d-a540-e340b0fb0623": {
+          "type": "question",
+          "settings": {
+            "title": "Wie hoch sind die Versandkosten?",
+            "answer": "<p>Ab einem Bestellwert von 35€ bieten wir kostenfreien Versand an. <\/p>"
+          }
+        },
+        "956d0622-ae9b-4045-955a-4e1fc44c1334": {
+          "type": "question",
+          "settings": {
+            "title": "Was mache ich, wenn meine Bestellung nicht ankommt?",
+            "answer": "<p>Sollte Ihre Bestellung nicht innerhalb der erwarteten Lieferzeit ankommen, kontaktieren Sie uns bitte. Wir helfen Ihnen gerne weiter. support@creamyfabrics.com<\/p>"
+          }
+        },
+        "b0e214fe-1ada-4a22-b7c4-fb13eb58b725": {
+          "type": "question",
+          "settings": {
+            "title": "Material",
+            "answer": "<ul><li>85% Polyamide<\/li><li>15% Elastane<\/li><\/ul>"
+          }
+        },
+        "bb8d0c95-fa3c-41dd-b772-429238c63093": {
+          "type": "question",
+          "settings": {
+            "title": "Unterschied zwischen Umtausch & Rückversand",
+            "answer": "<p>wir möchten dir den Unterschied zwischen einem kostenlosen Umtausch und einer kostenpflichtigen vollständigen Retoure erläutern.<\/p><p><strong>Kostenloser Umtausch:<\/strong><br\/>Ein kostenloser Umtausch ermöglicht es Ihnen, das Produkt in eine andere Größe oder Farbe umzutauschen, ohne zusätzliche Gebühren zu zahlen. Diese Option steht Ihnen zur Verfügung, wenn Sie eine andere Variante desselben Produkts wünschen.<\/p><p><strong>Vollständige Retoure* :<\/strong><br\/>Die vollständige Retoure beinhaltet die Rücksendung des gesamten Artikels für eine Rückerstattung. Hierbei fallen Retourengebühren in Höhe von 4,95 € an. Diese Gebühr deckt die Kosten für die Bearbeitung und Logistik der Rücksendung.<\/p><p>*(4,95 € aus Deutschland, 9,95 € Österreich, Schweiz)<\/p>"
+          }
+        },
+        "cb024346-dfa4-404b-a5c3-b5e674eb2458": {
+          "type": "question",
+          "settings": {
+            "title": "Ich habe den falschen Artikel erhalten. Was sollte ich tun?",
+            "answer": "<p>Haben Sie einen Artikel erhalten, den Sie nicht bestellt haben? Bitte kontaktieren Sie uns unter support@creamyfabrics.com, bevor Sie den Artikel zurückschicken. Sie erhalten dann alle Informationen, um so schnell wie möglich kostenlos zu einer geeigneten Lösung zu gelangen.<\/p>"
+          }
+        },
+        "d9e4b29c-44b9-444e-86da-0deb4a2510f0": {
+          "type": "question",
+          "settings": {
+            "title": "Liefern Sie auch international?",
+            "answer": "<p>Aktuell bieten versenden wir innerhalb Deutschlands, nach Niederlande, Österreich, Schweden und in die Schweiz. <\/p>"
+          }
+        },
+        "template--19289149276493__78987dd6-736f-499d-9d02-02bcff9e7ad0-category-1": {
+          "type": "category",
+          "settings": {
+            "title": "Bestellung & Versand"
+          }
+        },
+        "template--19289149276493__78987dd6-736f-499d-9d02-02bcff9e7ad0-category-2": {
+          "type": "category",
+          "settings": {
+            "title": "Produkt"
+          }
+        },
+        "template--19289149276493__78987dd6-736f-499d-9d02-02bcff9e7ad0-question-1": {
+          "type": "question",
+          "settings": {
+            "title": "Wie ist die Lieferzeit für meine Bestellung?",
+            "answer": "<p><em><strong>Wichtig<\/strong><\/em><em>: <\/em>Liebe creamy Kunden,<\/p><p>Aufgrund der aktuell hohen Nachfrage nach unseren Produkten kann es leider zu verzögerten Lieferzeiten kommen. Wir geben unser Bestes, um Ihre Bestellung so schnell wie möglich zu bearbeiten und zu versenden. Dennoch kann die Lieferdauer momentan, nach der Versandbestätigung mit Sendungsnummer 2 bis 8 Tage betragen. Wir bitten um Ihr Verständnis. Wir danken Ihnen für Ihre Geduld und Ihr Vertrauen.<\/p>"
+          }
+        },
+        "template--19289149276493__78987dd6-736f-499d-9d02-02bcff9e7ad0-question-2": {
+          "type": "question",
+          "settings": {
+            "title": "Wie kann ich den Status meiner Bestellung verfolgen?",
+            "answer": "<p>Sobald Ihre Bestellung versandt wurde, erhalten Sie eine E-Mail mit den Tracking-Informationen. Sie können auch auf der DHL-Website den Status Ihrer Sendung überprüfen.<\/p>"
+          }
+        },
+        "template--19289149276493__78987dd6-736f-499d-9d02-02bcff9e7ad0-question-3": {
+          "type": "question",
+          "settings": {
+            "title": "Wie pflege ich meine Shapewear am besten?",
+            "answer": "<p>Unsere Shapewear wird aus langlebigen und atmungsaktiven Materialien hergestellt. Für die beste Pflege empfehlen wir die Handwäsche mit kaltem Wasser und das Produkt lufttrocknen zu lassen. Das Produkt bitte nicht bügeln oder heiß waschen. Bei Bedarf kann es vorsichtig gesteamt werden.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19289149276493__78987dd6-736f-499d-9d02-02bcff9e7ad0-category-1",
+        "6568fb1d-e5ab-4ee7-ac7c-1a2c846c2b3a",
+        "84bde3a8-bbdd-4e1d-a540-e340b0fb0623",
+        "template--19289149276493__78987dd6-736f-499d-9d02-02bcff9e7ad0-question-1",
+        "template--19289149276493__78987dd6-736f-499d-9d02-02bcff9e7ad0-question-2",
+        "bb8d0c95-fa3c-41dd-b772-429238c63093",
+        "773d32ac-7adc-4290-b527-b797c393b86f",
+        "5657b508-8603-4d33-b4dc-03f6c8901588",
+        "1bfe1c86-663a-4ff6-b2f3-2a4835e6436f",
+        "7a779318-2f06-4276-8479-2fc4010fd097",
+        "d9e4b29c-44b9-444e-86da-0deb4a2510f0",
+        "956d0622-ae9b-4045-955a-4e1fc44c1334",
+        "cb024346-dfa4-404b-a5c3-b5e674eb2458",
+        "template--19289149276493__78987dd6-736f-499d-9d02-02bcff9e7ad0-category-2",
+        "template--19289149276493__78987dd6-736f-499d-9d02-02bcff9e7ad0-question-3",
+        "09b9cedc-68e4-4638-a958-a27e9390b3ed",
+        "27a1bd2a-57b8-4ca7-a6a2-7bc0798f590d",
+        "8418d3b1-ac7e-40f0-9030-0f8c2443d5e9",
+        "4ea66216-9adc-4000-ba8e-0d8763065d02",
+        "b0e214fe-1ada-4a22-b7c4-fb13eb58b725"
+      ],
+      "disabled": true,
+      "settings": {
+        "show_navigation": false,
+        "title": "FAQ",
+        "content": "",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "9157cb28-165b-4a02-9e19-b24501e1ba5b": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "subheading": "Unsere Mission",
+        "title": "Warum ist die creamy Shapewear  das perfekte Produkt für dich?",
+        "content": "<p>Wir lieben deine Kurven und bieten dir mit unserer Shapewear einen shaping Effekt, der deinen Look transformiert. Die softe und leichte Shapewear umhüllt dich in Komfort<br\/>und ist die perfekte Ergänzung für jeden Anlass und jedes Outfit.<br\/><\/p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "boxed",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#ead4bc",
+        "text_color": "#282828",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "b79b3c3b-f29d-4349-976b-21177f3e36e0": {
+      "type": "multi-column",
+      "blocks": {
+        "38574ead-eff6-4c3e-85f4-b0e3ab8cb033": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/i_Icons_5.5.webp",
+            "image_width": 75,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Badezimmer freundlich",
+            "content": "<p>Hergestellt aus atmungsaktiven Materialien, hält unsere body-sculpting Shapewear dich über den ganzen Tag angenehm frisch.<br\/><\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "90e615c0-9f9b-45d0-ae13-ddea0d6a2d7b": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/i_Icons_5.6.webp",
+            "image_width": 75,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Verstellbare Träger",
+            "content": "<p>Die weichen und elastischen Träger sind leicht größenverstellbar und somit individuell anpassbar.<br\/><\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "template--19289149276493__b79b3c3b-f29d-4349-976b-21177f3e36e0-item-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/i_Icons_5.2.webp",
+            "image_width": 75,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Glättende Sanduhr Figur",
+            "content": "<p>Unsere Shapewear schafft eine geformte Sanduhrfigur, betont deine natürlichen Kurven und gibt dir ein sicheres Selbstgefühl.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "template--19289149276493__b79b3c3b-f29d-4349-976b-21177f3e36e0-item-2": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/i_Icons_5.4.webp",
+            "image_width": 75,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Natürlicher Po-Lifting-Effekt",
+            "content": "<p>Innovative Stoff- und Schnitt Designs geben Form und Push-Up Effekt.<br\/><br\/><\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "template--19289149276493__b79b3c3b-f29d-4349-976b-21177f3e36e0-item-3": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/i_Icons_5.1.webp",
+            "image_width": 75,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Quetscht nicht ein",
+            "content": "<p>Erlebe Komfort und Stil in Einem: Unsere Shapewear engt nicht ein und passt sich deiner Körperform perfekt an!<br\/><br\/><\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "template--19289149276493__b79b3c3b-f29d-4349-976b-21177f3e36e0-item-4": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/i_Icons_5.3.webp",
+            "image_width": 75,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Atmungsaktiv & Anti-Schwitz",
+            "content": "<p>Hergestellt aus innovativen atmungsaktiven Materialien, hält unser Bodysuit Sculpting Shapewear Sie den ganzen Tag über frisch.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        }
+      },
+      "block_order": [
+        "template--19289149276493__b79b3c3b-f29d-4349-976b-21177f3e36e0-item-1",
+        "template--19289149276493__b79b3c3b-f29d-4349-976b-21177f3e36e0-item-2",
+        "template--19289149276493__b79b3c3b-f29d-4349-976b-21177f3e36e0-item-3",
+        "template--19289149276493__b79b3c3b-f29d-4349-976b-21177f3e36e0-item-4",
+        "90e615c0-9f9b-45d0-ae13-ddea0d6a2d7b",
+        "38574ead-eff6-4c3e-85f4-b0e3ab8cb033"
+      ],
+      "disabled": true,
+      "settings": {
+        "reveal_on_scroll": false,
+        "stack_items": false,
+        "subheading": "",
+        "title": "Deine Vorteile mit creamy fabrics",
+        "content": "",
+        "column_alignment": "center",
+        "mobile_item_size": "large",
+        "desktop_item_size": "medium",
+        "spacing": "normal",
+        "background": "#f5f5f5",
+        "text_color": "#282828"
+      }
+    },
+    "featured-collections": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage",
+            "label": "o",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection-1"
+      ],
+      "settings": {
+        "subheading": "Shapewear für deine perfekte Figur",
+        "title": "Unsere Produkte",
+        "content": "",
+        "products_count": 4,
+        "products_per_row": 4,
+        "stack_products": false,
+        "show_cta": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "#f9ca4f",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_33.webp",
+            "text_position": "bottom_center",
+            "subheading": "Alltagstaugliche Shapewear, die sich dir anpasst!",
+            "title": "",
+            "button_1_text": "Jetzt shoppen",
+            "button_1_link": "shopify:\/\/collections\/frontpage",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 9
+          }
+        }
+      },
+      "block_order": [
+        "slide-1"
+      ],
+      "settings": {
+        "section_height": "auto",
+        "transition_type": "sweep",
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)"
+      }
+    }
+  }
+}

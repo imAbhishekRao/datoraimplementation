@@ -1,0 +1,131 @@
+{{ 'section-bd-main-collection.css' | asset_url | stylesheet_tag }}
+
+<style>
+  #shopify-section-{{ section.id }} .bd-main-collection--container {
+    margin-top: {{ section.settings.mobile_padding_top }}px;
+    margin-bottom: {{ section.settings.mobile_padding_bottom }}px;
+  }
+  @media screen and (min-width: 1000px) {
+    #shopify-section-{{ section.id }} .bd-main-collection--container {
+      margin-top: {{ section.settings.padding_top }}px;
+      margin-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+</style>
+
+{% liquid
+  if section.settings.image
+    assign collection_image = section.settings.image
+  endif
+  if collection.metafields.custom.featured_image
+    assign collection_image = collection.metafields.custom.featured_image
+  endif
+
+  assign title = collection.title
+  if collection.metafields.custom.heading and collection.metafields.custom.heading != '' 
+    assign title = collection.metafields.custom.heading
+  endif
+
+  assign description = collection.metafields.custom.description | metafield_tag
+%}
+<div class="bd-main-collection--container {{ section.settings.section_class }}">
+  {% if collection_image %}
+    <img
+      class="featured-image"
+      src="{{ collection_image | image_url }}"
+      width="{{ collection_image.width }}"
+      height="{{ collection_image.height }}"
+      alt="{{ collection_image.alt }}"
+    >
+  {% endif %}
+  <div class="container">
+    <h1 class="collection-title">{{ title }}</h1>
+    {% if description and description != '' %}
+      <div class="collection-description">{{ description }}</div>
+    {% endif %}
+    <div class="product-grid">
+      {% if collection.metafields.custom.variant_color_selector != blank %}
+        {% for variant in collection.metafields.custom.variant_color_selector.value %}
+          {% unless variant.product.tags contains 'secretsale' or variant.product.metafields.custom.hide_on_collection_page == true %}
+            {%- render 'bd-product-item', product: variant.product, selected_variant: variant, collection: collection -%}
+          {% endunless %}
+        {% endfor %}
+      {% else %}
+        {% for product in collection.products %}
+          {% unless product.tags contains 'secretsale' or product.metafields.custom.hide_on_collection_page == true %}
+            {% render 'bd-product-item', product: product %}
+          {% endunless %}
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{%- schema %}
+{
+  "name": "BD main collection",
+  "class": "shopify-section--bd-main-collection",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image",
+      "info": "This field is not used if the collection has featured image or collection level metafield (Featured Image) is not empty."
+    },
+    {
+      "type": "header",
+      "content": "General"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding top",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding bottom",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "label": "Padding top (Mobile)",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "label": "Padding bottom (Mobile)",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+    },
+    {
+      "type": "text",
+      "id": "section_class",
+      "label": "Section class"
+    }
+  ],
+  "presets": [
+    {
+      "name": "BD main collection"
+    }
+  ]
+}
+{%- endschema -%}

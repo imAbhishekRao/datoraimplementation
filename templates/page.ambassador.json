@@ -1,0 +1,332 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": false,
+        "page_width": "medium"
+      }
+    },
+    "slideshow_UqQg7p": {
+      "type": "slideshow",
+      "blocks": {
+        "image_YAJWfe": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ambassadorwebseiteohnetext.jpg",
+            "text_position": "bottom_center",
+            "subheading": "Teile deine Looks mit uns und werde dafür belohnt. Zeige dich einfach wie du bist und werde Teil unseres Teams, dem Influencer-Programm von Creamy fabrics",
+            "title": "",
+            "button_1_text": "Anmelden",
+            "button_1_link": "https:\/\/creamyfabrics.typeform.com\/Ambassador",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#796b6c",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_YAJWfe"
+      ],
+      "settings": {
+        "section_height": "auto",
+        "transition_type": "sweep",
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)"
+      }
+    },
+    "multi_column_ht8CMP": {
+      "type": "multi-column",
+      "blocks": {
+        "item_7NAcnr": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Design_ohne_Titel_-_2024-09-17T135105.746_54f42e1a-b55d-4a90-ad0d-4f020901087b.png",
+            "image_width": 70,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "1. ANMELDEN",
+            "content": "<p>Einfach Hier klicken, um<br\/>Teil unserer CreamyFam zu werden.<\/p>",
+            "link_text": "",
+            "link_url": "https:\/\/creamyfabrics.typeform.com\/Ambassador",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "item_NfcdfA": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Design_ohne_Titel_-_2024-09-17T135907.555.png",
+            "image_width": 70,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "2. STYLE TEILEN",
+            "content": "<p>Erstelle Content und empfehle deine Creamy-Favoriten.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "item_mbmMAN": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Design_ohne_Titel_-_2024-09-17T140248.382.png",
+            "image_width": 60,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "3. VERDIENEN",
+            "content": "<p>Bei CreamyFam erhaltet ihr 15% vom Umsatz für jeden Verkauf.<\/p><p><\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        }
+      },
+      "block_order": [
+        "item_7NAcnr",
+        "item_NfcdfA",
+        "item_mbmMAN"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "stack_items": false,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "column_alignment": "center",
+        "mobile_item_size": "medium",
+        "desktop_item_size": "medium",
+        "spacing": "normal",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "image_with_text_aUxMgE": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_hHzneA": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/WhatsApp_Image_2024-09-17_at_18.00.18.jpg",
+            "tab_label": "Item",
+            "subheading": "Bist du bereit, dein Selbstbewusstsein auf ein neues Level zuheben und andere zu inspirieren?",
+            "title": "werde ein Teil unserer exklusiven Creamy-Familie!",
+            "content": "<p>Unsere Mission ist es, Frauen auf der ganzen Welt dabei zu unterstützen, sich in ihrem Körper wohlzufühlen, egal welche Form oder Größe sie haben. Als Ambassador bist du nicht nur ein wichtiger Teil dieser Bewegung, sondern hast auch die Chance, deine Leidenschaft für Mode und Selbstbewusstsein mit einer weltweiten Community zu teilen.<\/p>",
+            "button_text": "Jetzt Anmelden",
+            "button_link": "https:\/\/creamyfabrics.typeform.com\/Ambassador"
+          }
+        }
+      },
+      "block_order": [
+        "item_hHzneA"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "boxed",
+        "background_overlap": "text",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#796b6c",
+        "text_color": "#ffffff",
+        "button_background": "#ffffff",
+        "button_text_color": "#282828"
+      }
+    },
+    "rich_text_pwLrX6": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "WIE FUNKTIONIERTS ?",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "slideshow_r8AebF": {
+      "type": "slideshow",
+      "blocks": {
+        "image_iBk7FA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ambassador_step_by_step_V3_1a18fda0-03c1-4bac-be59-63fb5c73310e.png",
+            "text_position": "middle_center",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_iBk7FA"
+      ],
+      "settings": {
+        "section_height": "auto",
+        "transition_type": "sweep",
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)"
+      }
+    },
+    "rich_text_NEkENB": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "Was ist Creamy Fabrics ?",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "multi_column_cQMQyA": {
+      "type": "multi-column",
+      "blocks": {
+        "item_g43Rme": {
+          "type": "item",
+          "settings": {
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Eine Wachsende Marke",
+            "content": "<p>Wir sind spezialisiert auf hochwertiger Shapewear, die entwickelt wurde, um die Figur zu betonen und das Selbstbewusstsein zu stärken. Unsere Produkte bieten bequemen Tragekomfort und unterstützen dabei, die gewünschte Silhouette zu erreichen.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "item_tiDRDt": {
+          "type": "item",
+          "settings": {
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Wir unterstützen Influencerinnen",
+            "content": "<p>Wir unterstützen Influencer mit exklusiven Partnerschaften, Boni und Ressourcen, um ihre Reichweite zu vergrößern und authentischen Content zu schaffen.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "item_8wDmtP": {
+          "type": "item",
+          "settings": {
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "Langjährige Erfahrung",
+            "content": "<p>Mit unserer langjährigen Erfahrung unterstützen wir dich professionell auf deinem Weg als Influencer und helfen dir, erfolgreich zu wachsen.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        }
+      },
+      "block_order": [
+        "item_g43Rme",
+        "item_tiDRDt",
+        "item_8wDmtP"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "stack_items": false,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "column_alignment": "center",
+        "mobile_item_size": "medium",
+        "desktop_item_size": "large",
+        "spacing": "normal",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "slideshow_GYUmAH": {
+      "type": "slideshow",
+      "blocks": {
+        "image_JtDhiB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_35.jpg",
+            "text_position": "middle_center",
+            "subheading": "creamyfabrics",
+            "title": "Sei du selbst -spüre die Magie  des Selbstbewusstseins!",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "image_JtDhiB"
+      ],
+      "settings": {
+        "section_height": "small",
+        "transition_type": "sweep",
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_UqQg7p",
+    "multi_column_ht8CMP",
+    "image_with_text_aUxMgE",
+    "rich_text_pwLrX6",
+    "slideshow_r8AebF",
+    "rich_text_NEkENB",
+    "multi_column_cQMQyA",
+    "slideshow_GYUmAH"
+  ]
+}

@@ -1,0 +1,292 @@
+{% assign image_list = product.metafields.custom.product_image_list.value %}
+{% assign image_count = 0 %}
+{% for image in product.metafields.custom.product_image_list.value %}
+  {% assign image_count = image_count | plus: 1 %}
+{% endfor %}
+{% if image_count == 0 %}
+  {% assign image_list = product.media %}
+  {% assign image_count = product.media.size %}
+{% endif %}
+{%- if image_count > 0 -%}
+  {%- assign selected_media = product.selected_variant.featured_media | default: product.featured_media -%}
+
+  {%- comment -%}
+  IMPLEMENTATION NOTE: Shopify does not natively offers a way to create a set of images per variant. This is often
+    pretty limited when you have a lot of colors and would like to only see the images specific to a given color. To
+    goes around that, Focal offers a hack using alt tags whose usage is described here: https://support.maestrooo.com/article/187-product-creating-variant-image-set
+    The implementation is rather complex and inefficient due to lot of string parsings, but it is, unfortunately, the
+    only way to do it on Shopify right now.
+  {%- endcomment -%}
+
+  {% liquid
+    assign banned_media_ids = ''
+    for variant in product.variants
+      if variant.metafields.custom.hidden_on_storefront_variant_option == true and variant.featured_media
+        assign banned_media_ids = banned_media_ids | append: variant.featured_media.id | append: ','
+      endif
+    endfor
+    assign banned_media_ids = banned_media_ids | split: ',' | compact
+  %}
+  {% assign filtered_media_ids = '' %}
+
+  {%- for media in image_list -%}
+    {% assign media_id_as_string = media.id | append: '' %}
+    {% if banned_media_ids contains media_id_as_string %}
+      {% continue %}
+    {% endif %}
+    {%- if media.alt contains '#' -%}
+      {%- assign alt_parts = media.alt | split: '#' -%}
+
+      {%- assign media_group_parts = alt_parts.last | split: '_' -%}
+      {%- assign option = product.options_by_name[media_group_parts.first] -%}
+      {%- assign option_value = option.selected_value | downcase -%}
+
+      {%- assign downcase_group_value = media_group_parts.last | strip | downcase -%}
+
+      {%- if option_value != downcase_group_value and media != selected_media -%}
+        {%- assign filtered_media_ids = filtered_media_ids | append: media.id | append: ',' -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+
+  {%- assign filtered_media_ids = filtered_media_ids | split: ',' | compact -%}
+
+  {%- assign max_width = 0 -%}
+  {%- assign largest_image_aspect_ratio = 999 -%}
+
+  {%- for media in image_list -%}
+    {% assign media_id_as_string = media.id | append: '' %}
+    {% if banned_media_ids contains media_id_as_string %}
+      {% continue %}
+    {% endif %}
+    {%- assign max_width = max_width | at_least: media.preview_image.width -%}
+    {%- assign largest_image_aspect_ratio = largest_image_aspect_ratio | at_most: media.preview_image.aspect_ratio -%}
+  {%- endfor -%}
+
+  <product-media form-id="product-form-{{ section.id }}-{{ product.id }}" {% if section.settings.enable_video_autoplay %}autoplay-video{% endif %} thumbnails-position="{{ section.settings.desktop_thumbnails_position }}" {% if settings.reveal_product_media %}reveal-on-scroll{% endif %} product-handle="{{ product.handle }}" class="product__media bd-product__media new-big-redesign-ab-test-b desktop-hide" style="--largest-image-aspect-ratio: {{ largest_image_aspect_ratio }}">
+    {%- capture flickity_config -%}
+    {
+      "adaptiveHeight": true,
+      "dragThreshold": 10,
+      "initialIndex": ".is-initial-selected",
+      "fade": {% if section.settings.transition_effect == 'fade' %}true{% else %}false{% endif %},
+      "draggable": ">1",
+      "contain": true,
+      "cellSelector": ".product__media-item:not(.is-filtered)",
+      "percentPosition": false,
+      "pageDots": false,
+      "prevNextButtons": false
+    }
+    {%- endcapture -%}
+    {% assign total_index = 0 %}
+    {% for option in product.options_with_values %}
+      {% assign option_downcase = option.name | downcase %}
+      {% if option_downcase contains 'color' or option_downcase contains 'colour' or option_downcase contains 'farbe' %}
+        {% for value in option.values %}
+          {% assign name = 'option' | append: option.position %}
+          {% assign variants_for_value = product.variants | where: name, value %}
+          {% assign temp_image_count = 0 %}
+          <div
+            class="product__media {% if option.selected_value == value %} active{% endif %}"
+            js-product-media-id="{% for variant in variants_for_value %}{{ variant.id }},{% endfor %}"
+          >
+            <div class="product__media-list-wrapper" style="max-width: {{ max_width }}px">
+              <flickity-carousel click-nav flickity-config="{{ flickity_config | escape }}" id="product-{{ section.id }}-{{ product.id }}-b-{{ total_index }}-media-list" class="product__media-list">
+                {% for media in image_list %}
+                  {% if variants_for_value[0].metafields.custom.paired_image_index_list.value == null or variants_for_value[0].metafields.custom.paired_image_index_list.value contains forloop.index %}
+                    {%- assign alt = media.alt -%}
+                    {%- assign is_media_filtered = false -%}
+                    {%- assign media_id_as_string = media.id | append: '' -%}
+                    {% if banned_media_ids contains media_id_as_string %}
+                      {% continue %}
+                    {% endif %}
+
+                    {% if media.alt contains '#' %}
+                      {%- assign alt = product.title -%}
+                    {%- endif -%}
+
+                    {%- if filtered_media_ids contains media_id_as_string and media.alt != product.title -%}
+                      {%- assign is_media_filtered = true -%}
+                    {%- endif -%}
+
+                    <div id="product-{{ section.id }}-{{ media.id }}" class="product__media-item {% if is_media_filtered %}is-filtered{% endif %} {% if selected_media.id == media.id %}is-initial-selected is-selected{% endif %}" data-media-type="{{ media.media_type }}" data-media-id="{{ media.id }}" data-original-position="{{ forloop.index0 }}">
+                      <div class="product__media-image-wrapper aspect-ratio aspect-ratio--natural" style="padding-bottom: {{ 100.0 | divided_by: media.aspect_ratio }}%; --aspect-ratio: {{ media.aspect_ratio }}">
+                        {%- assign should_reveal = false -%}
+                        {%- assign loading = 'eager' -%}
+
+                        {%- if settings.reveal_product_media and selected_media.id == media.id -%}
+                          {%- assign should_reveal = true -%}
+                        {%- else -%}
+                          {%- unless forloop.first -%}
+                            {%- assign loading = 'lazy' -%}
+                          {%- endunless -%}
+                        {%- endif -%}
+
+                        {%- if should_reveal -%}
+                          {{- media | image_url: width: media.width | image_tag: loading: loading, sizes: '(max-width: 999px) calc(100vw - 48px), 640px', widths: '400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800', reveal: true -}}
+                        {%- else -%}
+                          {{- media | image_url: width: media.width | image_tag: loading: loading, sizes: '(max-width: 999px) calc(100vw - 48px), 640px', widths: '400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800' -}}
+                        {%- endif -%}
+                      </div>
+                    </div>
+                    {% assign temp_image_count = temp_image_count | plus: 1 %}
+                  {% endif %}
+                {%- endfor -%}
+              </flickity-carousel>
+
+              {%- if section.settings.enable_image_zoom -%}
+                <button {% if selected_media.media_type != 'image' %}hidden{% endif %} is="toggle-button" aria-controls="product-{{ section.id }}-{{ product.id }}-b-{{ total_index }}-zoom" aria-expanded="false" class="tap-area product__zoom-button">
+                  <span class="visually-hidden">{{ 'product.general.zoom' | t }}</span>
+                  {%- render 'icon' with 'image-zoom' -%}
+                </button>
+              {%- endif -%}
+            </div>
+
+            {%- if temp_image_count > 1 -%}
+              <flickity-controls controls="product-{{ section.id }}-{{ product.id }}-b-{{ total_index }}-media-list" class="product__media-nav">
+                <button class="product__media-prev-next {% if section.settings.show_thumbnails_on_mobile %}hidden-pocket{% endif %} hidden-lap-and-up tap-area tap-area--large" aria-label="{{ 'general.accessibility.previous' | t }}" data-action="prev">
+                  {%- render 'icon' with 'nav-arrow-left', direction_aware: true -%}
+                </button>
+
+                {%- unless section.settings.show_thumbnails_on_mobile -%}
+                  <div class="dots-nav dots-nav--centered hidden-lap-and-up">
+                    {% for media in image_list %}
+                      {% if variants_for_value[0].metafields.custom.paired_image_index_list.value == null or variants_for_value[0].metafields.custom.paired_image_index_list.value contains forloop.index %}
+                        {% assign media_id_as_string = media.id | append: '' %}
+                        {% if banned_media_ids contains media_id_as_string %}
+                          {% continue %}
+                        {% endif %}
+                        {%- assign is_media_filtered = false -%}
+                        {%- assign media_id_as_string = media.id | append: '' -%}
+
+                        {%- if filtered_media_ids contains media_id_as_string -%}
+                          {%- assign is_media_filtered = true -%}
+                        {%- endif -%}
+
+                        <button type="button" tabindex="-1" class="dots-nav__item {% if is_media_filtered %}is-filtered{% endif %} tap-area" {% if selected_media.id == media.id %}aria-current="true"{% endif %} aria-controls="product-{{ section.id }}-{{ media.id }}" data-media-id="{{ media.id }}" data-action="select">
+                            <span class="visually-hidden">{{ 'general.accessibility.go_to_slide' | t: num: forloop.index }}</span>
+                        </button>
+                      {% endif %}
+                    {%- endfor -%}
+                  </div>
+                {%- endunless -%}
+
+                <scroll-shadow class="product__thumbnail-scroll-shadow {% unless section.settings.show_thumbnails_on_mobile %}hidden-pocket{% endunless %}">
+                  <div class="product__thumbnail-list hide-scrollbar">
+                    <div class="product__thumbnail-list-inner">
+                      {% for media in image_list %}
+                        {% if variants_for_value[0].metafields.custom.paired_image_index_list.value == null or variants_for_value[0].metafields.custom.paired_image_index_list.value contains forloop.index %}
+                          {%- assign alt = media.alt -%}
+                          {%- assign is_media_filtered = false -%}
+                          {% assign media_id_as_string = media.id | append: '' %}
+                          {% if banned_media_ids contains media_id_as_string %}
+                            {% continue %}
+                          {% endif %}
+
+                          {% if media.alt contains '#' %}
+                            {%- assign alt = product.title -%}
+                          {%- endif -%}
+
+                          {%- if filtered_media_ids contains media_id_as_string and media.alt != product.title -%}
+                            {%- assign is_media_filtered = true -%}
+                          {%- endif -%}
+
+                          <button type="button" tabindex="-1" {% if settings.reveal_product_media and is_media_filtered == false %}reveal{% endif %} class="product__thumbnail-item {% if is_media_filtered %}is-filtered{% endif %} {% unless section.settings.show_thumbnails_on_mobile %}hidden-pocket{% endunless %}" {% if selected_media.id == media.id %}aria-current="true"{% endif %} aria-controls="product-{{ section.id }}-{{ media.id }}" data-media-id="{{ media.id }}" data-action="select">
+                            <div class="product__thumbnail">
+                              {{ media.preview_image | image_url: width: media.preview_image.width | image_tag: loading: 'lazy', sizes: '(max-width: 999px) 72px, 60px', widths: '60,72,120,144,180,216,240,288' }}
+                            </div>
+                          </button>
+                        {% endif %}
+                      {% endfor %}
+                    </div>
+                  </div>
+                </scroll-shadow>
+
+                <button class="product__media-prev-next {% if section.settings.show_thumbnails_on_mobile %}hidden-pocket{% endif %} hidden-lap-and-up tap-area tap-aera--large" aria-label="{{ 'general.accessibility.next' | t }}" data-action="next">
+                  {%- render 'icon' with 'nav-arrow-right', direction_aware: true -%}
+                </button>
+              </flickity-controls>
+            {%- endif -%}
+
+            {%- if section.settings.enable_image_zoom -%}
+              {%- comment -%}This code MUST NOT be changed, and is part of the PhotoSwipe required interface{%- endcomment -%}
+              <product-image-zoom product-handle="{{ product.handle }}" id="product-{{ section.id }}-{{ product.id }}-b-{{ total_index }}-zoom" class="pswp" tabindex="-1" role="dialog">
+                <div class="pswp__bg"></div>
+
+                <div class="pswp__scroll-wrap">
+                  <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                  </div>
+
+                  <div class="pswp__ui pswp__ui--hidden">
+                    <div class="pswp__top-bar">
+                      <button class="pswp__button pswp__button--close prev-next-button" data-action="pswp-close" title="{{ 'general.accessibility.close' | t | escape }}">{% render 'icon' with 'close' %}</button>
+                    </div>
+
+                    <div class="pswp__prev-next-buttons hidden-pocket">
+                      <button class="pswp__button prev-next-button prev-next-button--prev" data-action="pswp-prev" title="{{ 'general.accessibility.previous' | t | escape }}">{% render 'icon' with 'nav-arrow-left', direction_aware: true %}</button>
+                      <button class="pswp__button prev-next-button prev-next-button--next" data-action="pswp-next" title="{{ 'general.accessibility.next' | t | escape }}">{% render 'icon' with 'nav-arrow-right', direction_aware: true %}</button>
+                    </div>
+
+                    <div class="pswp__dots-nav-wrapper hidden-lap-and-up">
+                      <button class="tap-area tap-area--large" data-action="pswp-prev">
+                        <span class="visually-hidden">{{ 'general.accessibility.previous' | t }}</span>
+                        {%- render 'icon' with 'nav-arrow-left', direction_aware: true -%}
+                      </button>
+
+                      <div class="dots-nav dots-nav--centered">
+                        <!-- This will be fill at runtime as the number of items will be dynamic -->
+                      </div>
+
+                      <button class="tap-area tap-area--large" data-action="pswp-next">
+                        <span class="visually-hidden">{{ 'general.accessibility.next' | t }}</span>
+                        {%- render 'icon' with 'nav-arrow-right', direction_aware: true -%}
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </product-image-zoom>
+            {%- endif -%}
+            {% assign total_index = total_index | plus: 1 %}
+          </div>
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+  </product-media>
+
+  <product-media class="mobile-hide new-big-redesign-ab-test-b desktop-product-media">
+    {% for option in product.options_with_values %}
+      {% assign option_downcase = option.name | downcase %}
+      {% if option_downcase contains 'color' or option_downcase contains 'colour' or option_downcase contains 'farbe' %}
+        {% for value in option.values %}
+          {% assign name = 'option' | append: option.position %}
+          {% assign variants_for_value = product.variants | where: name, value %}
+          <div
+            class="product-media-image-grid {% if option.selected_value == value %} active{% endif %}"
+            js-product-media-id="{% for variant in variants_for_value %}{{ variant.id }},{% endfor %}"
+          >
+            {% for media in image_list %}
+              {% if variants_for_value[0].metafields.custom.paired_image_index_list.value == null or variants_for_value[0].metafields.custom.paired_image_index_list.value contains forloop.index %}
+                <div class="image-wrapper">
+                  <img
+                    class="image"
+                    src="{{ media | image_url }}"
+                    width="{{ media.width }}"
+                    height="{{ media.height }}"
+                    alt="{{ media.alt }}"
+                    loading="lazy"
+                  >
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+  </product-media>
+
+{% else %}
+  {%- render 'product-media', product: product -%}
+{%- endif -%}

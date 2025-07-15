@@ -1,0 +1,65 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_title": false,
+        "page_width": "medium"
+      }
+    },
+    "rich_text_XJwJxB": {
+      "type": "rich-text",
+      "name": "Rich text",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "content": "<h3><a href=\"/pages/nl-teilnahmebedinugen\" title=\"NL Teilnahmebedinugen\"><span style=\"text-decoration:underline\"><strong>Niederlande Teilnahmebedingungen &lt;</strong></span></a></h3>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "section_class": ""
+      }
+    },
+    "rich_text_7CaCxi": {
+      "type": "rich-text",
+      "name": "Rich text",
+      "settings": {
+        "subheading": "",
+        "title": "Teilnahmebedingungen",
+        "content": "<p><strong>Teilnahmebedingungen – Creamy Fabrics Gewinnspiel „Jeep Avenger“<br/><br/><br/>1. Veranstalter<br/></strong>Veranstalter des Gewinnspiels ist: <strong> Multiecom GmbH<br/></strong>Niederkasseler Lohweg 18, 40547 Düsseldorf E-Mail: <br/>kontakt@creamyfabrics.com<br/><br/><strong>2. Teilnahmezeitraum<br/></strong>Das Gewinnspiel beginnt am <strong>19.05.2025 </strong>und endet am <strong>29.06.2025, 23:59 Uhr. </strong>Teilnahmen außerhalb dieses Zeitraums sind ungültig.<br/></p><p><strong>3. Teilnahmeberechtigung</strong><br/>Teilnahmeberechtigt sind natürliche Personen mit Wohnsitz in <strong>Deutschland, Österreich, der Schweiz oder den Niederlanden</strong>, die zum Zeitpunkt der Teilnahme <strong>mindestens 18 Jahre alt</strong> sind. Mitarbeitende von Creamy Fabrics sowie deren Angehörige sind von der Teilnahme ausgeschlossen.<br/><br/><strong>4. Teilnahmebedingungen<br/></strong>Die Teilnahme am Gewinnspiel erfolgt auf folgende Art: <strong>Kaufgebundene Teilnahme: </strong>Teilnehmende nehmen automatisch am Gewinnspiel teil, wenn sie im Gewinnspielzeitraum eine Bestellung im Onlineshop von Creamy Fabrics im Wert von mindestens 50 € (inkl. MwSt., inkl. Versand) tätigen. Für je 50 € weiterer Einkaufswert wird ein weiteres Los vergeben. <strong>Wichtiger Hinweis: </strong>Bei vollständiger Rückgabe der bestellten Ware verfällt die Teilnahme am Gewinnspiel rückwirkend. Ein Umtausch der Ware hat hingegen keinen Einfluss auf die Teilnahme oder die Gültigkeit der Lose.<br/><br/><strong>5. Gewinn<br/></strong>Verlost wird ein fabrikneuer <strong>Jeep Avenger </strong>(Modell und Ausstattung nach Wahl des Veranstalters). Der Gewinn ist nicht übertragbar, nicht in bar auszahlbar und nicht umtauschbar.<br/><br/><strong>6. Gewinnerermittlung<br/></strong>Der/die Gewinner:in wird per <strong>Zufallsprinzip </strong>unter allen gültigen Teilnahmen ausgelost. Die Ziehung findet drei Wochen nach Ende des Teilnahmezeitraums statt. Die Gewinnerbenachrichtigung erfolgt per E-Mail. Meldet sich der/die Gewinner:in nicht innerhalb von 7 Tagen, wird neu ausgelost.<br/><br/><strong>7. Datenschutz<br/></strong>Personenbezogene Daten werden ausschließlich zur Durchführung des Gewinnspiels verarbeitet. Details findest du in der Datenschutzerklärung zum Gewinnspiel.<br/><br/><strong>8. Haftung & Ausschluss<br/></strong>Der Veranstalter behält sich vor, Teilnehmende bei Manipulationsversuchen oder Verstößen gegen diese Bedingungen vom Gewinnspiel auszuschließen.<br/><br/><strong>9. Sonstiges<br/></strong>Der Rechtsweg ist ausgeschlossen. Dieses Gewinnspiel steht in keiner Verbindung zu Instagram und wird nicht von Instagram gesponsert, unterstützt oder organisiert. Im Rahmen des Gewinnspiels darf die Folierung des Jeep Avenger an der Fahrer- und Beifahrerseite sowie am Heck des Fahrzeugs für die Dauer von einem Jahr nach Übergabe weder entfernt noch verändert werden. Die Folierung auf der Motorhaube kann auf Wunsch entfernt werden. Die Entfernung hat eigenständig auf eigene Kosten zu erfolgen; Creamy Fabrics übernimmt hierfür keinerlei Verantwortung oder Verpflichtung</p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "section_class": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_XJwJxB",
+    "rich_text_7CaCxi"
+  ]
+}

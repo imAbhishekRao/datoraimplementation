@@ -1,0 +1,527 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "info_display_nwHcfW": {
+          "type": "info_display",
+          "settings": {
+            "heading": "<p>Mehr kaufen, mehr sparen - 3 für 2 Deal</p>",
+            "description": "<p>Lege 3 Produkte in den Warenkorb & erhalte 1 davon Gratis</p>"
+          }
+        },
+        "image_size_details_TAL7JP": {
+          "type": "image__size_details",
+          "settings": {
+            "button_text": "Finde hier deine passende Größe",
+            "footer_text": "Keine Sorgen mehr, dank kostenlosem Umtausch",
+            "footer_image": "shopify://shop_images/size-description-footer-icon.svg",
+            "modal_logo": "shopify://shop_images/logo.webp",
+            "modal_footer_description": "<p><strong>100% Passformgarantie</strong> und kostenloser Umtausch!</p>",
+            "modal_footer_button_text": "Wähle jetzt deine Größe"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "sizekick_creamy_fabrics_sizekick_tVQwNr": {
+          "type": "shopify://apps/sizekick-creamy-fabrics/blocks/sizekick/481874b8-e887-4a47-9c5a-171dab48c68b",
+          "settings": {}
+        },
+        "text_9ngF6T": {
+          "type": "text",
+          "settings": {
+            "text": "<ol><li><strong>Bitte wähle eine Nummer kleiner, da dieses Modell etwas größer ausfällt</strong></li></ol>"
+          }
+        },
+        "liquid_EU3666": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<font color = green class=\"new-big-redesign-ab-test-a\"> Artikel verfügbar - Lieferzeit: 3-5 Werktage </font>"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": false,
+            "atc_button_background": "rgba(0,0,0,0)",
+            "atc_button_text_color": "rgba(0,0,0,0)",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)",
+            "icon_svg_1": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewbox=\"0 0 16 16\" fill=\"none\">\n  <g clip-path=\"url(#clip0_1131_871)\">\n    <path d=\"M8 8.06812V14.4981\" stroke=\"#12100F\" stroke-width=\"0.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n    <path d=\"M2.04297 4.8075L7.99922 8.0675L13.9555 4.8075\" stroke=\"#12100F\" stroke-width=\"0.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n    <path d=\"M13.74 11.4275L8.24 14.4387C8.16641 14.479 8.08388 14.5001 8 14.5001C7.91612 14.5001 7.83359 14.479 7.76 14.4387L2.26 11.4275C2.18147 11.3845 2.11591 11.3212 2.07017 11.2443C2.02444 11.1673 2.0002 11.0795 2 10.99V5.01121C2.0002 4.92169 2.02444 4.83387 2.07017 4.75691C2.11591 4.67995 2.18147 4.61668 2.26 4.57371L7.76 1.56246C7.83359 1.5222 7.91612 1.5011 8 1.5011C8.08388 1.5011 8.16641 1.5222 8.24 1.56246L13.74 4.57371C13.8185 4.61668 13.8841 4.67995 13.9298 4.75691C13.9756 4.83387 13.9998 4.92169 14 5.01121V10.9887C14 11.0784 13.9759 11.1665 13.9301 11.2437C13.8844 11.3209 13.8187 11.3844 13.74 11.4275Z\" stroke=\"#12100F\" stroke-width=\"0.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n    <path d=\"M5.09766 3.01941L11.0002 6.25003V9.50003\" stroke=\"#12100F\" stroke-width=\"0.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  </g>\n  <defs>\n    <clippath id=\"clip0_1131_871\">\n      <rect width=\"16\" height=\"16\" fill=\"white\"></rect>\n    </clippath>\n  </defs>\n</svg>",
+            "text_1": "Kostenloser Versand ab 50€",
+            "icon_svg_2": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewbox=\"0 0 16 16\" fill=\"none\">\n  <g clip-path=\"url(#clip0_1131_879)\">\n    <path d=\"M5 8.5L2 5.5L5 2.5\" stroke=\"#12100F\" stroke-width=\"0.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n    <path d=\"M5 12.5H10.5C11.4283 12.5 12.3185 12.1313 12.9749 11.4749C13.6313 10.8185 14 9.92826 14 9C14 8.07174 13.6313 7.1815 12.9749 6.52513C12.3185 5.86875 11.4283 5.5 10.5 5.5H2\" stroke=\"#12100F\" stroke-width=\"0.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  </g>\n  <defs>\n    <clippath id=\"clip0_1131_879\">\n      <rect width=\"16\" height=\"16\" fill=\"white\"></rect>\n    </clippath>\n  </defs>\n</svg>",
+            "text_2": "Einfacher und kostenloser Umtausch",
+            "icon_svg_3": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewbox=\"0 0 16 16\" fill=\"none\">\n  <g clip-path=\"url(#clip0_1131_885)\">\n    <path d=\"M7.99938 11.8182L11.4194 13.9213C11.5081 13.9752 11.6108 14.0015 11.7145 13.997C11.8182 13.9925 11.9183 13.9574 12.002 13.8961C12.0858 13.8347 12.1495 13.7499 12.185 13.6524C12.2206 13.5549 12.2265 13.449 12.2019 13.3482L11.2719 9.42379L14.3156 6.79879C14.3932 6.73064 14.4492 6.64127 14.4766 6.54169C14.504 6.44211 14.5016 6.3367 14.4697 6.23845C14.4379 6.14021 14.378 6.05344 14.2974 5.98885C14.2168 5.92427 14.1191 5.8847 14.0163 5.87504L10.0219 5.55004L8.48313 1.82504C8.4439 1.72893 8.37694 1.6467 8.29078 1.58881C8.20462 1.53092 8.10318 1.5 7.99938 1.5C7.89558 1.5 7.79413 1.53092 7.70797 1.58881C7.62182 1.6467 7.55485 1.72893 7.51563 1.82504L5.97688 5.55004L1.9825 5.87504C1.87898 5.88413 1.78043 5.92352 1.69917 5.98829C1.61791 6.05307 1.55754 6.14035 1.52559 6.23924C1.49365 6.33813 1.49156 6.44424 1.51958 6.54431C1.5476 6.64439 1.60448 6.73398 1.68313 6.80191L4.72688 9.42691L3.79688 13.3482C3.77229 13.449 3.77815 13.5549 3.81372 13.6524C3.8493 13.7499 3.91298 13.8347 3.99672 13.8961C4.08047 13.9574 4.18052 13.9925 4.28422 13.997C4.38793 14.0015 4.49064 13.9752 4.57938 13.9213L7.99938 11.8182Z\" stroke=\"#12100F\" stroke-width=\"0.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  </g>\n  <defs>\n    <clippath id=\"clip0_1131_885\">\n      <rect width=\"16\" height=\"16\" fill=\"white\"></rect>\n    </clippath>\n  </defs>\n</svg>",
+            "text_3": "Zufriedenheitsgarantie"
+          }
+        },
+        "accordion_list_8HCyVD": {
+          "type": "accordion_list",
+          "settings": {
+            "heading_1": "Produktdetails",
+            "description_1": "",
+            "product_details_metafield": true,
+            "heading_2": "Passform",
+            "description_2": "",
+            "passform_metafield": true,
+            "heading_3": "Versand",
+            "description_3": "",
+            "versand_metafield": true
+          }
+        },
+        "trust_custom_icons_Ut3MHH": {
+          "type": "TrustCustomIcons",
+          "settings": {
+            "image1": "shopify://shop_images/image_73.png",
+            "html": "",
+            "text1": "Kostenloser Versand ab 50€. Umtausch ist Gratis.",
+            "image2": "shopify://shop_images/image_76.png",
+            "html2": "",
+            "text2": "Einfache Rücksendung"
+          }
+        },
+        "trust_custom_icons_KF4wt9": {
+          "type": "TrustCustomIcons",
+          "settings": {
+            "image1": "shopify://shop_images/image_74_1.png",
+            "html": "",
+            "text1": "Sichere Bestellung",
+            "image2": "shopify://shop_images/image_72.png",
+            "html2": "",
+            "text2": "100% Zufriedenheitsgarantie"
+          }
+        }
+      },
+      "block_order": [
+        "info_display_nwHcfW",
+        "image_size_details_TAL7JP",
+        "variant_picker",
+        "sizekick_creamy_fabrics_sizekick_tVQwNr",
+        "text_9ngF6T",
+        "liquid_EU3666",
+        "buy_buttons",
+        "accordion_list_8HCyVD",
+        "trust_custom_icons_Ut3MHH",
+        "trust_custom_icons_KF4wt9"
+      ],
+      "settings": {
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": true,
+        "show_product_rating": false,
+        "show_sticky_add_to_cart": true,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "slide"
+      }
+    },
+    "bd_image_feature_grid_RqHXDQ": {
+      "type": "bd-image-feature-grid",
+      "blocks": {
+        "block_44RyBh": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/pdp-featured-image-01.webp",
+            "text": "Hebt & Formt die Brust"
+          }
+        },
+        "block_eLpBFE": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/pdp-featured-image-02.webp",
+            "text": "Push-Up Effekt"
+          }
+        },
+        "block_MjAKw4": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/pdp-featured-image-03.webp",
+            "text": "Schneidet nicht ein"
+          }
+        },
+        "block_g3HyrM": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/pdp-featured-image-04.webp",
+            "text": "Perfekte Passform"
+          }
+        },
+        "block_jNKdRr": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/pdp-featured-image-05.webp",
+            "text": "Nahtlos"
+          }
+        },
+        "block_TFQbKE": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/pdp-featured-image-06.webp",
+            "text": "Extra Rausnehmbare Pads"
+          }
+        },
+        "block_qadXwd": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/pdp-featured-image-07.webp",
+            "text": "Keine Bügel"
+          }
+        },
+        "block_JCViPB": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/pdp-featured-image-08.webp",
+            "text": "Ultraweiche und atmungsaktive"
+          }
+        }
+      },
+      "block_order": [
+        "block_44RyBh",
+        "block_eLpBFE",
+        "block_MjAKw4",
+        "block_g3HyrM",
+        "block_jNKdRr",
+        "block_TFQbKE",
+        "block_qadXwd",
+        "block_JCViPB"
+      ],
+      "settings": {
+        "heading": "<p>Creamy Shapewear für die perfekte Figur</p>",
+        "mobile_heading_max_width": 250,
+        "description": "<p>Der Bauch wird flacher, der Po runder und die Brüste sind perfekt geformt</p>",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "mobile_padding_top": 40,
+        "mobile_padding_bottom": 40,
+        "bg_color": "#e8e5e2",
+        "section_class": "new-big-redesign-ab-test-b"
+      }
+    },
+    "bd_image_text_nbAYc8": {
+      "type": "bd-image-text",
+      "settings": {
+        "image": "shopify://shop_images/pdp-image-text-desktop-1.webp",
+        "mobile_image": "shopify://shop_images/pdp-image-text-mobile-1.webp",
+        "image_height": 480,
+        "mobile_image_height": 560,
+        "desktop_image_position": "row",
+        "heading": "<p>100%ige Zufriedenheitsgarantie</p>",
+        "description": "<p>Die Stimmen unserer Kunden sprechen für sich – sie lieben die Ergebnisse und das Selbstbewusstsein, das unsere hochmoderne Shapewear ihnen verleiht. Wir sind stolz auf das positive Feedback und die vielen Erfolgsgeschichten, die uns erreichen.</p><p>Um sicherzustellen, dass du ebenfalls von unserer Shapewear begeistert bist, bieten wir dir eine 100%ige Zufriedenheitsgarantie. Solltest du aus irgendeinem Grund nicht vollkommen zufrieden sein, kontaktiere einfach unser Kundensupport-Team, und wir werden alles daran setzen, eine Lösung zu finden, die dich glücklich macht.</p>",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 0,
+        "section_class": "new-big-redesign-ab-test-b"
+      }
+    },
+    "bd_image_text_nbAYc9": {
+      "type": "bd-image-text",
+      "settings": {
+        "image": "shopify://shop_images/pdp-image-text-desktop-2.webp",
+        "mobile_image": "shopify://shop_images/pdp-image-text-mobile-2.webp",
+        "image_height": 480,
+        "mobile_image_height": 560,
+        "desktop_image_position": "row-reverse",
+        "heading": "<p>Die Verwandlung mit unserer Shapewear!</p>",
+        "description": "<p>Unser Vorher und Nachher Bild zeigt eindrucksvoll, wie unsere bezahlbare Shapewear eine erstaunliche Figurkorrektur ermöglicht. Von einer bequemen, aber dennoch unscheinbaren Grundlage bis hin zu einer verführerischen, glatten und konturierten Silhouette - unsere Shapewears zaubern ein völlig neues Erscheinungsbild zu einem erschwinglichen Preis. Erlebe jetzt selbst das Selbstbewusstsein und die Eleganz, die unsere Shapewear dir verleihen kann. Starte deine persönliche Transformation noch heute!</p>",
+        "padding_top": 60,
+        "padding_bottom": 0,
+        "mobile_padding_top": 60,
+        "mobile_padding_bottom": 0,
+        "section_class": "new-big-redesign-ab-test-b"
+      }
+    },
+    "bd_image_text_nbAYc10": {
+      "type": "bd-image-text",
+      "settings": {
+        "image": "shopify://shop_images/pdp-image-text-desktop-3.webp",
+        "mobile_image": "shopify://shop_images/pdp-image-text-mobile-3.webp",
+        "image_height": 480,
+        "mobile_image_height": 560,
+        "desktop_image_position": "row",
+        "heading": "<p>Entdecke unsere revolutionäre Shapewear!</p>",
+        "description": "<p>Entdecke unsere hochmoderne Shapewear-Kollektion und verwandle deine Silhouette! Spüre den Komfort und das Selbstbewusstsein auf einem neuen Level. Unsere Shapewears formen sanft deine Figur und lassen dich strahlen – für einen umwerfenden Look bei jedem Anlass. Herzlich willkommen in unserem Shop, wo deine Schönheit im Mittelpunkt steht!</p>",
+        "padding_top": 60,
+        "padding_bottom": 0,
+        "mobile_padding_top": 60,
+        "mobile_padding_bottom": 0,
+        "section_class": "new-big-redesign-ab-test-b"
+      }
+    },
+    "product-content": {
+      "type": "product-content",
+      "disabled": true,
+      "settings": {
+        "section_class": ""
+      }
+    },
+    "130e7648-bb2e-4748-87c7-b795a7e27407": {
+      "type": "logo-list",
+      "blocks": {
+        "template--20182448079195__130e7648-bb2e-4748-87c7-b795a7e27407-logo-1": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/i_Icons_5.2.webp",
+            "link": ""
+          }
+        },
+        "template--20182448079195__130e7648-bb2e-4748-87c7-b795a7e27407-logo-2": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/i_Icons_5.3.webp",
+            "link": ""
+          }
+        },
+        "template--20182448079195__130e7648-bb2e-4748-87c7-b795a7e27407-logo-3": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/i_Icons_5.4.webp",
+            "link": ""
+          }
+        },
+        "template--20182448079195__130e7648-bb2e-4748-87c7-b795a7e27407-logo-4": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/i_Icons_5.5.webp",
+            "link": ""
+          }
+        },
+        "template--20182448079195__130e7648-bb2e-4748-87c7-b795a7e27407-logo-5": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/i_Icons_5.6.webp",
+            "link": ""
+          }
+        },
+        "template--20182448079195__130e7648-bb2e-4748-87c7-b795a7e27407-logo-6": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/i_Icons_5.1.webp",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20182448079195__130e7648-bb2e-4748-87c7-b795a7e27407-logo-1",
+        "template--20182448079195__130e7648-bb2e-4748-87c7-b795a7e27407-logo-2",
+        "template--20182448079195__130e7648-bb2e-4748-87c7-b795a7e27407-logo-3",
+        "template--20182448079195__130e7648-bb2e-4748-87c7-b795a7e27407-logo-4",
+        "template--20182448079195__130e7648-bb2e-4748-87c7-b795a7e27407-logo-5",
+        "template--20182448079195__130e7648-bb2e-4748-87c7-b795a7e27407-logo-6"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "subheading": "Der Bauch wird flacher, der Po runder und die Brüste sind perfekt geformt",
+        "title": "Creamy Shapewear für die perfekte Figur",
+        "button_text": "",
+        "button_link": "",
+        "stack_logos": true,
+        "background": "#ffffff",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "logo_background": "rgba(0,0,0,0)",
+        "section_class": ""
+      }
+    },
+    "cd437615-44a9-4e8d-9bcf-30f21823c1dc": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--20182448079195__cd437615-44a9-4e8d-9bcf-30f21823c1dc-item-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/k_KundenReview_1.1_98339886-7d9f-4843-89de-de8c053e3eee.webp",
+            "tab_label": "",
+            "subheading": "",
+            "title": "100%ige Zufriedenheitsgarantie",
+            "content": "<p>Die Stimmen unserer Kunden sprechen für sich – sie lieben die Ergebnisse und das Selbstbewusstsein, das unsere hochmoderne Shapewear ihnen verleiht. Wir sind stolz auf das positive Feedback und die vielen Erfolgsgeschichten, die uns erreichen.</p><p>Um sicherzustellen, dass du ebenfalls von unserer Shapewear begeistert bist, bieten wir dir eine 100%ige Zufriedenheitsgarantie. Solltest du aus irgendeinem Grund nicht vollkommen zufrieden sein, kontaktiere einfach unser Kundensupport-Team, und wir werden alles daran setzen, eine Lösung zu finden, die dich glücklich macht.</p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20182448079195__cd437615-44a9-4e8d-9bcf-30f21823c1dc-item-1"
+      ],
+      "settings": {
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "section_class": ""
+      }
+    },
+    "image_with_text_xXm68y": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_jcj4Tx": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/v_VorherNacher_2.1_6f24493c-9f13-4eb7-8903-591b66954901.png",
+            "tab_label": "Item",
+            "subheading": "VORHER UND NACHHER",
+            "title": "Die Verwandlung mit unserer Shapewear!",
+            "content": "<p>Unser Vorher und Nachher Bild zeigt eindrucksvoll, wie unsere bezahlbare Shapewear eine erstaunliche Figurkorrektur ermöglicht. Von einer bequemen, aber dennoch unscheinbaren Grundlage bis hin zu einer verführerischen, glatten und konturierten Silhouette - unsere Shapewears zaubern ein völlig neues Erscheinungsbild zu einem erschwinglichen Preis. Erlebe jetzt selbst das Selbstbewusstsein und die Eleganz, die unsere Shapewear dir verleihen kann. Starte deine persönliche Transformation noch heute!</p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_jcj4Tx"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "section_class": ""
+      }
+    },
+    "577f079b-3cb0-4127-aa35-f91522e34266": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--20182448079195__577f079b-3cb0-4127-aa35-f91522e34266-item-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/k_Kompression_1.1_1.webp",
+            "tab_label": "",
+            "subheading": "",
+            "title": "Entdecke unsere revolutionäre Shapewear!",
+            "content": "<p>Entdecke unsere hochmoderne Shapewear-Kollektion und verwandle deine Silhouette! Spüre den Komfort und das Selbstbewusstsein auf einem neuen Level. Unsere Shapewears formen sanft deine Figur und lassen dich strahlen – für einen umwerfenden Look bei jedem Anlass. Herzlich willkommen in unserem Shop, wo deine Schönheit im Mittelpunkt steht!</p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20182448079195__577f079b-3cb0-4127-aa35-f91522e34266-item-1"
+      ],
+      "settings": {
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "section_class": ""
+      }
+    },
+    "rich_text_x4A4Dz": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "subheading": "Creamy Fabrics",
+        "title": "Stärke dein Selbstbewusstsein und Deine natürliche Schönheit 🤎",
+        "content": "<p>Unsere <strong>Essentials </strong>entstehen durch eine<br/>Kombination aus innovativem <strong>Design</strong>, <strong>hochwertigen Materialien </strong>und einer Leidenschaft für <strong>Details, </strong>die Dir ein unvergleichliches Tragegefühl und Selbstbewusstsein schenkt</p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "section_class": ""
+      }
+    },
+    "17002332148664b6b6": {
+      "type": "apps",
+      "blocks": {
+        "ef45aa5d-bee9-425e-9513-26275986a4b5": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": true,
+            "limit": 5,
+            "hide_thumbnails": false,
+            "maxwidth": 1080,
+            "is_sample": true
+          }
+        }
+      },
+      "block_order": [
+        "ef45aa5d-bee9-425e-9513-26275986a4b5"
+      ],
+      "settings": {
+        "include_horizontal_margins": true,
+        "include_vertical_margins": true
+      }
+    },
+    "1734537879c1df2851": {
+      "type": "apps",
+      "blocks": {
+        "kiwi_size_chart_recommender_kiwi_sizing_kTRwaN": {
+          "type": "shopify://apps/kiwi-size-chart-recommender/blocks/kiwiSizing/b7369922-bf15-44ce-a121-a22a8fcbc4b0",
+          "settings": {
+            "product": "{{product}}",
+            "waitForElementSelector": "",
+            "waitForElementDelay": 5
+          }
+        }
+      },
+      "block_order": [
+        "kiwi_size_chart_recommender_kiwi_sizing_kTRwaN"
+      ],
+      "settings": {
+        "include_horizontal_margins": true,
+        "include_vertical_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "bd_image_feature_grid_RqHXDQ",
+    "bd_image_text_nbAYc8",
+    "bd_image_text_nbAYc9",
+    "bd_image_text_nbAYc10",
+    "product-content",
+    "130e7648-bb2e-4748-87c7-b795a7e27407",
+    "cd437615-44a9-4e8d-9bcf-30f21823c1dc",
+    "image_with_text_xXm68y",
+    "577f079b-3cb0-4127-aa35-f91522e34266",
+    "rich_text_x4A4Dz",
+    "17002332148664b6b6",
+    "1734537879c1df2851"
+  ]
+}

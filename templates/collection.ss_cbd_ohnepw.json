@@ -1,0 +1,80 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "bd_main_collection_ife77y": {
+      "type": "bd-main-collection",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 60,
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 60,
+        "section_class": "new-big-redesign-ab-test-b"
+      }
+    },
+    "slideshow_xMKkkh": {
+      "type": "slideshow",
+      "blocks": {
+        "image_kQc6Lw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SS_Secret_Sale_Sale_Banner_Desktop_fixed.jpg",
+            "mobile_image": "shopify://shop_images/SS_Secret_Sale_Banner_Mobil_fixed.jpg",
+            "text_position": "middle_center",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_kQc6Lw"
+      ],
+      "settings": {
+        "section_height": "auto",
+        "transition_type": "sweep",
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)",
+        "section_class": "new-big-redesign-ab-test-a"
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "show_sort_by": false,
+        "products_per_page": 24,
+        "mobile_products_per_row": "2",
+        "desktop_products_per_row": 4,
+        "show_filters": false,
+        "show_filter_group_name": false,
+        "show_color_swatch": true,
+        "open_first_filter_group": false,
+        "filter_position": "always_visible",
+        "promotion_position": "top",
+        "promotion_height": "small",
+        "section_class": "new-big-redesign-ab-test-a"
+      }
+    }
+  },
+  "order": [
+    "bd_main_collection_ife77y",
+    "slideshow_xMKkkh",
+    "main"
+  ]
+}

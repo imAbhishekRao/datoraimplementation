@@ -1,0 +1,152 @@
+{{ 'section-bd-collection-grid.css' | asset_url | stylesheet_tag }}
+
+<style>
+  #shopify-section-{{ section.id }} .bd-collection-grid--container {
+    margin-top: {{ section.settings.mobile_padding_top }}px;
+    margin-bottom: {{ section.settings.mobile_padding_bottom }}px;
+  }
+  @media screen and (min-width: 1000px) {
+    #shopify-section-{{ section.id }} .bd-collection-grid--container {
+      margin-top: {{ section.settings.padding_top }}px;
+      margin-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+</style>
+
+<div class="bd-collection-grid--container {{ section.settings.section_class }}">
+  <div class="block-grid">
+    {% for block in section.blocks %}
+      {% assign block_collection = block.settings.collection %}
+      {% if block_collection %}
+        {% liquid
+          assign image = block_collection.featured_image
+          if block.settings.image
+            assign image = block.settings.image
+          endif
+  
+          assign title = block_collection.title
+          if block.settings.title and block.settings.title != ''
+            assign title = block.settings.title
+          endif
+        %}
+        <a href="{{ block_collection.url }}" class="block">
+          <div class="image-wrapper">
+            <div class="image" style="{% if block.settings.image_size == 'contain' %}aspect-ratio: 1 / 1; {% endif %}">
+              <img
+                src="{{ image | image_url }}"
+                width="{{ image.width }}"
+                height="{{ image.height }}"
+                alt="{{ image.alt }}"
+                loading="lazy"
+                style="object-fit: {{ block.settings.image_size }};"
+              >
+            </div>
+          </div>
+          <span class="title">{{ title }}</span>
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+{%- schema %}
+{
+  "name": "BD collection grid",
+  "class": "shopify-section--bd-collection-grid",
+  "settings": [
+    {
+      "type": "header",
+      "content": "General"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding top",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding bottom",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "label": "Padding top (Mobile)",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "label": "Padding bottom (Mobile)",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+    },
+    {
+      "type": "text",
+      "id": "section_class",
+      "label": "Section class"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "block",
+      "name": "Block",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "select",
+          "id": "image_size",
+          "label": "Image size",
+          "options": [
+            {
+              "value": "cover",
+              "label": "Cover"
+            },
+            {
+              "value": "contain",
+              "label": "Contain"
+            }
+          ],
+          "default": "contain"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "BD collection grid"
+    }
+  ]
+}
+{%- endschema -%}

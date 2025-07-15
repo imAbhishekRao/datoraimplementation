@@ -1,0 +1,91 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Header group",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "cb7914cb-6111-4475-9bec-c27329aabdcd": {
+          "type": "message",
+          "settings": {
+            "text": "Spring Restock jetzt erhältlich",
+            "learn_more_text": "Learn more",
+            "title": "",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "cb7914cb-6111-4475-9bec-c27329aabdcd"
+      ],
+      "settings": {
+        "announcement_bar_position": "non_sticky",
+        "announcement_text_size": "small",
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "#f4c2c2",
+        "text_color": "#000000",
+        "button_background": "#ffffff",
+        "button_text_color": "#282828"
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "enable_sticky_header": true,
+        "logo": "shopify://shop_images/Design_ohne_Titel_-_2025-04-10T182040.810.png",
+        "logo_max_width": 120,
+        "mobile_logo_max_width": 100,
+        "logo_b": "shopify://shop_images/creamy_fabrics_new_logo_for_ab_test.webp",
+        "logo_max_width_b": 140,
+        "mobile_logo_max_width_b": 100,
+        "navigation_menu": "test-men-all-underwear-eren",
+        "sidebar_navigation_menu": "",
+        "header_layout": "logo_left_navigation_center",
+        "show_icons": true,
+        "reduce_desktop_padding": true,
+        "show_locale_selector": false,
+        "show_country_selector": false,
+        "enable_transparent_header": false,
+        "transparent_header_text_color": "#ffffff",
+        "search_menu": ""
+      }
+    },
+    "1730740499ab73be7d": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_email_marketing_sms_form_embed_block_hJDTiC": {
+          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
+          "disabled": true,
+          "settings": {
+            "formId": "VNuaY7"
+          }
+        }
+      },
+      "block_order": [
+        "klaviyo_email_marketing_sms_form_embed_block_hJDTiC"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_horizontal_margins": true,
+        "include_vertical_margins": true
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header",
+    "1730740499ab73be7d"
+  ]
+}

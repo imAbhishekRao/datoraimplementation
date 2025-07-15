@@ -1,0 +1,331 @@
+
+{% capture bsscommerce_login_require_template %}{% include 'bsscommerce_login_require' %}{% endcapture %}{% unless bsscommerce_login_require_template contains "Liquid error" %}{{ bsscommerce_login_require_template }}{% endunless %}
+{% capture bsscommerce_login_require_template %}{% include 'bsscommerce_login_require' %}{% endcapture %}{% unless bsscommerce_login_require_template contains "Liquid error" %}{{ bsscommerce_login_require_template }}{% endunless %}
+<!doctype html>
+{%- assign direction = 'ltr' -%}
+{%- case request.locale.iso_code -%}
+  {%- when 'ar' or 'arc' or 'dv' or 'fa' or 'ha' or 'he' or 'kwh' or 'ks' or 'ku' or 'ps' or 'ur' or 'yi' -%}
+    {%- assign direction = 'rtl' -%}
+{%- endcase -%}
+<html class="no-js" lang="{{ request.locale.iso_code }}" dir="{{ direction }}">
+  <head>{{ 'bss-hide-variant.css' | asset_url | stylesheet_tag }}
+  {% render 'replo-head' %}{{ 'bss-hide-variant.css' | asset_url | stylesheet_tag }}
+  {{ 'tiny.content.min.css' | asset_url | stylesheet_tag}}
+  {{ 'tiny.content.min.css' | asset_url | stylesheet_tag}}
+  {% if product.handle == 'creamy-bodysuit-sculpting-shapewear-en-1' %}
+    <meta name="robots" content="noindex, nofollow">
+  {% endif %}
+  {% if product.handle == 'shaping-string-mit-hoher-taille-kopie' %}
+    <meta name="robots" content="noindex, nofollow">
+  {% endif %}
+  {% if product.handle == 'shaping-string-mit-hoher-taille-kopie' %}
+    <meta name="robots" content="noindex, nofollow">
+  {% endif %}
+  {% if request.path == '/collections/vendors' and request.query.q == 'creamyfabrics' %}
+    <meta name="robots" content="noindex, nofollow">
+  {% endif %}
+  {% if request.path == '/collections/vendors' and request.query.q == 'creamyfabrics' %}
+    <meta name="robots" content="noindex, nofollow">
+  {% endif %}
+  {% if request.path == '/collections/vendors' and request.query.q contains 'creamyfabrics' %}
+    <meta name="robots" content="noindex, nofollow">
+  {% endif %}
+  {% if request.path == '/pages/contact' or request.path == '/pages/versandinformationen' or request.path == '/pages/danke-seite' or request.path == '/pages/grosse' %}
+    <meta name="robots" content="noindex, nofollow">
+  {% endif %}
+  <script src="https://cdn.ablyft.com/s/42710401.js"></script>
+
+    {% if collection %}
+      {% if collection.metafields.custom.no_index_for_google == true %}
+        <meta name="robots" content="noindex">
+      {% endif %}
+    {% else %}
+      {% if canonical_url contains 'policies' %}
+        <meta name="robots" content="noindex">
+      {% endif %}
+    {% endif %}
+    <meta name="google-site-verification" content="MFNDFOanHiDRW5OwuuaASf0JuamGiLH7BCl8ZVz-g4w" />
+    
+{% render 'shoplift' %}
+    
+    <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:5011132,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.dataset.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+  
+  {% comment %}  
+    {% render "load-tracify" %}
+{% endcomment %}
+    
+    {% render 'social-meta-tags' %}
+	{% render 'pandectes-rules' %}
+  {% render "load-metafields" %}
+<script data-src="{{ 'OneTrack.js' | asset_url }}" async></script>
+
+    
+  <script async data-src="https://sos-de-fra-1.exo.io/cdn-adv/adv.js" data-system="sh" data-cutrid="06WKwtKD8vt7ZJqhOKYALZKJDhw8gfYE8f2B" data-acccurrency="EUR" data-acctimezone="Europe/Berlin"   id="adv-script"></script>
+	
+  <script async data-src="https://sos-de-fra-1.exo.io/cdn-adv/adv-net-nc-code.js" data-system="sh" data-cutrid="06WKwtKD8vt7ZJqhOKYALZKJDhw8gfYE8f2B" data-acccurrency="EUR" data-acctimezone="Europe/Berlin"   id="adv-script"></script>
+	
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.dataset.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KX3382H6');</script>
+<!-- End Google Tag Manager -->
+	
+   <script async data-src="https://scripting.ibgrej509o.com/ckiv2.js?csid=0ace62f7-0dde-4412-bf50-8d8f302d5706"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="theme-color" content="{{ settings.header_background }}">
+
+    <title>{% if page_title == blank %}{{ shop.name }}{% else %}{{ page_title }}{% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}{% endif %}</title>
+    {%- if page_description -%}
+      <meta name="description" content="{{ page_description | escape }}">
+    {%- endif -%}
+    <link rel="canonical" href="{{ canonical_url }}">
+    {%- if settings.favicon -%}
+      <link rel="shortcut icon" href="{{ settings.favicon | img_url: '96x96' }}" type="image/png">
+    {%- endif -%}
+    {%- comment -%}Few prefech to increase performance on commonly used third-parties{%- endcomment -%}
+    <link rel="preconnect" href="https://cdn.shopify.com">
+    <link rel="dns-prefetch" href="https://productreviews.shopifycdn.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="stylesheet" href="https://use.typekit.net/vkt4lzq.css">
+    {%- unless settings.heading_font.system? and settings.text_font.system? -%}
+      <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+    {%- endunless -%}
+    {%- comment -%}Preload important resources{%- endcomment -%}
+    
+{{ 'DevStyles.css' | asset_url | stylesheet_tag }}
+{{ 'custom.css' | asset_url | stylesheet_tag }}
+    
+    {%- comment -%}
+      IMPLEMENTATION NOTE: for improving performance, Focal tries to preload images on known pages (such as blog page,
+      product or collection pages). In order to keep a main JS file size minimal, the theme also lazyloads non-essential
+      libraries (such as PhotoSwipe or Flickity) and only loads them on demand.
+    {%- endcomment -%}
+    {%- if request.page_type == 'product' -%}
+      {%- assign selected_media = product.selected_variant.featured_media | default: product.featured_media -%}
+      <link rel="preload" as="fetch" href="{{ product.url }}.js" crossorigin>
+      {%- if product.media.size > 1 -%}
+        <link rel="preload" as="script" href="{{ 'flickity.js' | asset_url }}">
+      {%- endif -%}
+    {%- endif -%}
+    {% render 'microdata-schema' %}
+    {% render 'kiwiSizing' %}
+    {% render 'css-variables', direction: direction %}
+    {% render 'js-variables', direction: direction %}                                                                                                                                                           {% include 'vital-loader' %} 
+ 
+  {% render 'vital-scripts' %}
+  {%- comment %}
+  {{ content_for_header }}
+  {%- endcomment -%}
+  {{ content_for_header | replace: '"https:\/\/d9fvwtvqz2fm1.cloudfront.net\/shop\/js\/discount-on-cart-pro.min.js?shop=d9af6a-2.myshopify.com",', '' }}
+
+  <script>
+    {%- render 'datora-js' -%}
+  </script>
+ 
+
+  <link rel="stylesheet" href="{{ 'theme.css' | asset_url }}">
+    <script src="{{ 'vendor.js' | asset_url }}" defer></script>
+    <script src="{{ 'counter-section.js' | asset_url }}" defer></script>
+    <script src="{{ 'theme.js' | asset_url }}" defer></script>
+
+  
+
+  {% render 'shogun-head' %}
+
+</head>
+  {%- assign feature_classes = '' -%}
+  {%- if settings.show_image_zoom -%}
+    {% assign feature_classes = feature_classes | append: ' features--image-zoom' %}
+  {%- endif -%}
+  <body class="no-focus-outline {{ feature_classes }}" data-instant-allow-query-string>
+    <svg class="visually-hidden">
+      <linearGradient id="rating-star-gradient-half">
+        <stop offset="50%" stop-color="rgb(var(--product-star-rating))" />
+        <stop offset="50%" stop-color="rgb(var(--product-star-rating))" stop-opacity="0.4" />
+      </linearGradient>
+    </svg>
+    <a href="#main" class="visually-hidden skip-to-content">{{ 'general.accessibility.skip_to_content' | t }}</a>
+    <loading-bar class="loading-bar"></loading-bar>
+    {%- if request.page_type != 'gift_card' and request.page_type != 'password' -%}
+      {%- sections 'header-group' -%}
+      {%- sections 'overlay-group' -%}
+      {%- unless settings.cart_type == 'page' or request.page_type == 'cart' -%}
+        {%- section 'mini-cart' -%}
+      {%- endunless -%}
+    {%- endif -%}
+    <div id="main" role="main" class="anchor">
+      {%- if request.page_type == 'collection' or request.page_type == 'search' -%}
+        {%- assign active_filters_count = 0 -%}
+        {%- if request.page_type == 'collection' -%}
+          {%- assign filters = collection.filters -%}
+        {%- else -%}
+          {%- assign filters = search.filters -%}
+        {%- endif -%}
+        {%- for filter in filters -%}
+          {%- if filter.type == 'list' -%}
+            {%- assign active_filters_count = active_filters_count | plus: filter.active_values.size -%}
+          {%- elsif filter.type == 'price_range' and filter.min_value.value or filter.max_value.value -%}
+            {%- assign active_filters_count = active_filters_count | plus: 1 -%}
+          {%- endif -%}
+        {%- endfor -%}
+        {%- assign is_toolbar_collapsed = false -%}
+        {%- if request.page_type == 'search' and search.results.first.object_type != 'product' and search.results_count > 0 -%}
+          {%- assign is_toolbar_collapsed = true -%}
+        {%- endif -%}
+        <div id="mobile-facet-toolbar" class="mobile-toolbar {% if is_toolbar_collapsed %}is-collapsed{% endif %} hidden-lap-and-up">
+          <button is="toggle-button" class="mobile-toolbar__item mobile-toolbar__item--filters {% if active_filters_count > 0 %}has-filters{% endif %}" aria-expanded="false" aria-controls="facet-filters" style="display: none">
+            {%- render 'icon' with 'filters' -%}
+            <span class="mobile-toolbar__item-label">{{- 'collection.general.filters' | t -}}</span>
+          </button>
+          <button is="toggle-button" class="mobile-toolbar__item mobile-toolbar__item--sort" aria-expanded="false" aria-controls="sort-by-popover" style="display: none">
+            <span class="mobile-toolbar__item-label">{{- 'collection.general.sort_by' | t -}}</span>
+            {%- render 'icon' with 'chevron' -%}
+          </button>
+        </div>
+      {%- endif -%}
+      {{ content_for_layout }}
+    </div>
+    {%- if request.page_type != 'gift_card' and request.page_type != 'password' -%}
+      {%- sections 'footer-group' -%}
+    {%- endif -%}
+          
+ <script>
+function copyTextToClipboard(text) {
+        var textArea = document.createElement("textarea");
+        textArea.style.position = 'fixed';
+        textArea.style.top = 0;
+        textArea.style.left = 0;
+        textArea.style.width = '2em';
+        textArea.style.height = '2em';
+        textArea.style.padding = 0;
+        textArea.style.border = 'none';
+        textArea.style.outline = 'none';
+        textArea.style.boxShadow = 'none';
+        textArea.style.background = 'transparent';
+        textArea.value = text;
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+        try {
+                var successful = document.execCommand('copy');
+                var msg = successful ? 'successful' : 'unsuccessful';
+                console.log('Copying text command was ' + msg);
+        } catch (err) {
+                console.log('Oops, unable to copy');
+        }
+        document.body.removeChild(textArea);
+}
+let couponCodeElements = document.querySelectorAll(".couponCode--inner");
+couponCodeElements.forEach((elem) => {
+        elem.addEventListener('click', function(event) {
+                let $this = this;
+                $this.nextElementSibling.style.display = 'block'
+                setTimeout(function() {
+                        $this.nextElementSibling.style.display = 'none'
+                }, 1500);
+                copyTextToClipboard(this.dataset.coupon);
+        });
+})
+ </script>
+           
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KX3382H6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  {% render "bc_banner" %}
+  
+
+           {{ 'api.jquery.js' | shopify_asset_url | script_tag }} 
+        {% capture bsscommerce_login_to_see_price_product_custom %}{% render 'bsscommerce-login-to-see-price-custom-js.liquid' %}{% endcapture %}{% unless bsscommerce_login_to_see_price_product_custom contains "Liquid error" %}{% render 'bsscommerce-login-to-see-price-custom-js.liquid' %}{% endunless %}
+<script data-src="//trck.linkster.co/trck/etms/eatms.js?campaign_id=372"></script>
+
+<script>
+  setInterval(function () {
+  document.querySelectorAll('.product__info .product-form__option-info span.product-form__option-name').forEach((opt)=>{
+    if(opt.innerText.includes('Farbe') || opt.innerText.includes('farbe')){
+        opt.innerText = 'Farbe'
+    }
+    else if(opt.innerText.includes('Größe') || opt.innerText.includes('größe')){
+        opt.innerText = 'Größe'
+    }
+  })
+}, 10);
+</script>
+          
+ {% capture bss_ltap_fl_redirect %}{% render 'bss-ltap-fl-redirect.liquid' %}{% endcapture %}{% unless bss_ltap_fl_redirect contains "Liquid error" %}{% render 'bss-ltap-fl-redirect.liquid' %}{% endunless %}  {{ 'custom.min.js' | asset_url | script_tag }} 
+        
+<script src="https://a.klaviyo.com/media/js/onsite/onsite.js"></script>
+<script>
+    var klaviyo = klaviyo || [];
+    klaviyo.init({
+      account: "VTSBDU",
+      platform: "shopify"
+    });
+    klaviyo.enable("backinstock",{ 
+    trigger: {
+      product_page_text: "Benachrichtige mich wenn verfügbar!",
+      product_page_class: "product-form__add-button button button--primary button--full",
+      product_page_text_align: "center",
+      product_page_margin: "0px",
+      replace_anchor: true
+    },
+    modal: {
+     headline: "{product_name}",
+     body_content: "Melde dich an, um benachrichtigt zu werden.",
+     email_field_label: "Email",
+     button_label: "Benachrichtige mich wenn verfügbar!",
+     subscription_success_label: "Deine Anmeldung war erfolgreich!",
+     footer_content: '',
+     additional_styles: "@import url('https://fonts.googleapis.com/css?family=Helvetica+Neue');",
+     drop_background_color: "#000",
+     background_color: "#fff",
+     text_color: "#222",
+     button_text_color: "#fff",
+     button_background_color: "#AF886B",
+     close_button_color: "#AF886B",
+     error_background_color: "#fcd6d7",
+     error_text_color: "#C72E2F",
+     success_background_color: "#d3efcd",
+     success_text_color: "#1B9500"
+    }
+  });
+</script> 
+<script src="{{ 'custom.js' | asset_url }}" defer></script>
+
+
+{% render 'discount-badge' %}
+       <script>
+        setInterval(() => {
+          if(document.querySelector('.hidden-on-storefront')){
+    // document.querySelectorAll('.product-form__option-value--limited').forEach((limited) => {
+       
+    //     if (limited.textContent.trim() === '' && limited.children.length === 0) {
+    //         const optionInfo = limited.closest('.product-form__option-info');
+    //         if (optionInfo) {
+    //             const optionName = optionInfo.querySelector('.product-form__option-name');
+    //             if (optionName && !optionName.classList.contains('custom-empty-class')) {
+    //                 optionName.classList.add('custom-empty-class');
+    //             }
+    //         }
+    //     }
+    // });
+var optval = document.querySelector('.product-form__option-value--limited');
+if(optval){
+  document.querySelector('.product-form__option-value--limited').parentElement.querySelector('.product-form__option-name').classList.add('custom-empty-class')
+}
+            }
+}, 1000); 
+</script> 
+
+</body>
+</html>

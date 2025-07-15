@@ -1,0 +1,56 @@
+.bd-image-overlay--container {
+	position: relative;
+	padding: 4rem 1.4rem;
+	width: 100%;
+	height: var(--mobile-height);
+	display: flex;
+	align-items: end;
+}
+.bd-image-overlay--container .image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+.bd-image-overlay--container .text-wrapper {
+	width: 100%;
+	height: fit-content;
+	position: relative;
+}
+.bd-image-overlay--container .text-wrapper .description {
+	max-width: var(--max-width, 'fit-content');
+}
+.bd-image-overlay--container .text-wrapper .description * {
+	color: #F2EFEC;
+	font-family: var(--text-font-family);
+	font-size: 1.4rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: 0.014rem;
+	margin: 0;
+}
+.bd-image-overlay--container .text-wrapper .description h1,
+.bd-image-overlay--container .text-wrapper .description h2,
+.bd-image-overlay--container .text-wrapper .description h3,
+.bd-image-overlay--container .text-wrapper .description h4,
+.bd-image-overlay--container .text-wrapper .description h5,
+.bd-image-overlay--container .text-wrapper .description h6 {
+	color: #F2EFEC;
+	font-family: var(--heading-font-family);
+	font-size: 2rem;
+	font-style: normal;
+	font-weight: 100;
+	line-height: normal;
+}
+.bd-image-overlay--container .text-wrapper .description *+* {
+	margin-top: 0.8rem;
+}
+@media screen and (min-width: 1000px) {
+	.bd-image-overlay--container {
+		height: var(--height);
+	}
+}

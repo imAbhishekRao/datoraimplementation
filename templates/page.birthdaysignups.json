@@ -1,0 +1,115 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_bMWnXN": {
+      "type": "slideshow",
+      "blocks": {
+        "image_PH4GQp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Birthday_Sale_Newsletter_Banner.jpg",
+            "text_position": "middle_center",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 10
+          }
+        }
+      },
+      "block_order": [
+        "image_PH4GQp"
+      ],
+      "settings": {
+        "section_height": "auto",
+        "transition_type": "sweep",
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)"
+      }
+    },
+    "rich_text_3gqXra": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "Geburtstagsspecial – Spare 60 % am 17. November! 🎉",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "17307447038f40faba": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_email_marketing_sms_form_embed_block_HTrEVG": {
+          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "VNuaY7"
+          }
+        }
+      },
+      "block_order": [
+        "klaviyo_email_marketing_sms_form_embed_block_HTrEVG"
+      ],
+      "settings": {
+        "include_horizontal_margins": true,
+        "include_vertical_margins": false
+      }
+    },
+    "rich_text_At6zi3": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "content": "<p>Wir feiern Geburtstag und möchten das mit dir teilen! Nur am <strong>17. November<\/strong> kannst du unglaubliche <strong>60 %<\/strong> auf unsere Produkte sparen – das ist unser exklusives Geschenk an dich! Aber aufgepasst: Dieses Angebot ist nur für 24 Stunden verfügbar.<\/p><p>👉 <strong>Sei der Erste!<\/strong> Melde dich jetzt an, um rechtzeitig informiert zu werden und verpasse auf keinen Fall dieses einmalige, zeitlich begrenzte Angebot. Trage dich einfach ein und sichere dir Zugang zu unserem Geburtstags-Event!<\/p><p><strong>Jetzt eintragen und 60 % für 24 Stunden sichern!<\/strong><\/p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#f5f5f5",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "#ffffff"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": false,
+        "page_width": "medium"
+      }
+    }
+  },
+  "order": [
+    "slideshow_bMWnXN",
+    "rich_text_3gqXra",
+    "17307447038f40faba",
+    "rich_text_At6zi3",
+    "main"
+  ]
+}

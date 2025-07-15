@@ -1,0 +1,334 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Design_ohne_Titel_345cc7e9-845e-492f-9b5e-cf57ef35e10a.png",
+            "text_position": "bottom_center",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "slide-1"
+      ],
+      "settings": {
+        "section_height": "auto",
+        "transition_type": "fade",
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)",
+        "section_class": "new-big-redesign-ab-test-a"
+      }
+    },
+    "bd_hero_xcfK9G": {
+      "type": "bd-hero",
+      "settings": {
+        "heading": "",
+        "description": "",
+        "mobile_des_max_width": 0,
+        "button_text": "",
+        "button_link": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 0,
+        "section_class": "new-big-redesign-ab-test-b"
+      }
+    },
+    "featured-collections": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "neuheiten",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection-1"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "content": "<h3><strong>SPRING RESTOCK - JETZT ERHÄLTLICH</strong></h3>",
+        "hide_ratings": true,
+        "products_count": 34,
+        "products_per_row": 6,
+        "stack_products": false,
+        "show_cta": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "#f9ca4f",
+        "button_text_color": "rgba(0,0,0,0)",
+        "section_class": "new-big-redesign-ab-test-a"
+      }
+    },
+    "featured_collections_BC8mYn": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_bVTjxX": {
+          "type": "collection",
+          "settings": {
+            "collection": "bestseller",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_bVTjxX"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "content": "<h3>UNSERE BESTSELLER</h3>",
+        "hide_ratings": false,
+        "products_count": 50,
+        "products_per_row": 6,
+        "stack_products": false,
+        "show_cta": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "section_class": "new-big-redesign-ab-test-a"
+      }
+    },
+    "featured_collections_QRc9UU": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_HVXJVW": {
+          "type": "collection",
+          "settings": {
+            "collection": "all-underwear",
+            "label": "",
+            "button_text": "",
+            "button_url": "shopify://collections/bh-slip"
+          }
+        }
+      },
+      "block_order": [
+        "collection_HVXJVW"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "content": "<h3><strong>MUST HAVE BHS & SLIPS</strong></h3>",
+        "hide_ratings": false,
+        "products_count": 50,
+        "products_per_row": 6,
+        "stack_products": false,
+        "show_cta": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "section_class": "new-big-redesign-ab-test-a"
+      }
+    },
+    "bd_collection_grid_6fcrxk": {
+      "type": "bd-collection-grid",
+      "blocks": {
+        "block_rRYVGX": {
+          "type": "block",
+          "settings": {
+            "collection": "bhs",
+            "image": "shopify://shop_images/collection-image-01.webp",
+            "image_size": "contain",
+            "title": "BH"
+          }
+        },
+        "block_VEbYYU": {
+          "type": "block",
+          "settings": {
+            "collection": "frontpage",
+            "image": "shopify://shop_images/collection-image-03.webp",
+            "image_size": "contain",
+            "title": "Bodysuit"
+          }
+        },
+        "block_zpQL34": {
+          "type": "block",
+          "settings": {
+            "collection": "kleidung",
+            "image": "shopify://shop_images/7_56f91eea-d263-480c-b58b-8fda07d14c62.jpg",
+            "image_size": "contain",
+            "title": "Bekleidung"
+          }
+        },
+        "block_DhtB6y": {
+          "type": "block",
+          "settings": {
+            "collection": "slips",
+            "image": "shopify://shop_images/dhannuuuussshh.jpg",
+            "image_size": "contain",
+            "title": "Slips"
+          }
+        }
+      },
+      "block_order": [
+        "block_rRYVGX",
+        "block_VEbYYU",
+        "block_zpQL34",
+        "block_DhtB6y"
+      ],
+      "settings": {
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "mobile_padding_top": 40,
+        "mobile_padding_bottom": 0,
+        "section_class": "new-big-redesign-ab-test-b"
+      }
+    },
+    "bd_featured_collection_tJ9kr8": {
+      "type": "bd-featured-collection",
+      "settings": {
+        "image_height": 560,
+        "mobile_image_height": 296,
+        "image_top": 50,
+        "mobile_image_top": 50,
+        "collection": "bestseller",
+        "heading": "",
+        "heading_size": "normal",
+        "show_more": "Mehr Ansehen",
+        "description": "",
+        "gap": "normal",
+        "products_count": 8,
+        "products_per_row": 4,
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "mobile_padding_top": 40,
+        "mobile_padding_bottom": 0,
+        "section_class": "new-big-redesign-ab-test-b"
+      }
+    },
+    "bd_featured_collection_mrDAWW": {
+      "type": "bd-featured-collection",
+      "settings": {
+        "image": "shopify://shop_images/DSC01784.jpg",
+        "mobile_image": "shopify://shop_images/DSC01784.jpg",
+        "image_height": 560,
+        "mobile_image_height": 296,
+        "image_top": 50,
+        "mobile_image_top": 50,
+        "collection": "neuheiten",
+        "heading": "Neuheiten",
+        "heading_size": "big",
+        "show_more": "",
+        "description": "<p>Entdecke das Neuste von creamy fabrics und entdecke deinen perfekten Fit.</p>",
+        "gap": "big",
+        "products_count": 8,
+        "products_per_row": 4,
+        "padding_top": 60,
+        "padding_bottom": 0,
+        "mobile_padding_top": 60,
+        "mobile_padding_bottom": 0,
+        "section_class": "new-big-redesign-ab-test-b"
+      }
+    },
+    "bd_featured_collection_mrDAWZ": {
+      "type": "bd-featured-collection",
+      "settings": {
+        "image": "shopify://shop_images/homepage-image-1.webp",
+        "mobile_image": "shopify://shop_images/homepage-image-1.webp",
+        "image_height": 560,
+        "mobile_image_height": 296,
+        "image_top": 30,
+        "mobile_image_top": 50,
+        "collection": "bh-slip",
+        "heading": "Must-Have Bras und Slips",
+        "heading_size": "big",
+        "show_more": "",
+        "description": "<p>Entdecke dein sanftes & angenehmes Tragegefühl. Mit perfektem Support für Po, Bauch & Taille.</p>",
+        "gap": "big",
+        "products_count": 8,
+        "products_per_row": 4,
+        "padding_top": 60,
+        "padding_bottom": 0,
+        "mobile_padding_top": 60,
+        "mobile_padding_bottom": 0,
+        "section_class": "new-big-redesign-ab-test-b"
+      }
+    },
+    "bd_image_overlay_M8cdtB": {
+      "type": "bd-image-overlay",
+      "settings": {
+        "image": "shopify://shop_images/homepage-image-overlay.webp",
+        "mobile_image": "shopify://shop_images/homepage-image-overlay.webp",
+        "height": 400,
+        "mobile_height": 355,
+        "description": "<p>Jeder fühlt sich wohl in Creamy – für Komfort, Stärke und das gute Gefühl, ganz du selbst zu sein.</p>",
+        "desc_max_width": 300,
+        "padding_top": 60,
+        "padding_bottom": 0,
+        "mobile_padding_top": 60,
+        "mobile_padding_bottom": 0,
+        "section_class": "new-big-redesign-ab-test-b"
+      }
+    },
+    "24de60e8-8504-4cf3-88d1-052be062e138": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "reveal_on_scroll": false,
+        "section_height": "auto",
+        "image": "shopify://shop_images/footer.jpg",
+        "subheading": "",
+        "title": "Jeder fühlt sich wohl in Creamy",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "link_style": "link",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "middle_center",
+        "text_color": "#ffffff",
+        "button_background": "#ffffff",
+        "button_text_color": "#000000",
+        "overlay_color": "#000000",
+        "overlay_opacity": 11,
+        "section_class": "new-big-redesign-ab-test-a"
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "bd_hero_xcfK9G",
+    "featured-collections",
+    "featured_collections_BC8mYn",
+    "featured_collections_QRc9UU",
+    "bd_collection_grid_6fcrxk",
+    "bd_featured_collection_tJ9kr8",
+    "bd_featured_collection_mrDAWW",
+    "bd_featured_collection_mrDAWZ",
+    "bd_image_overlay_M8cdtB",
+    "24de60e8-8504-4cf3-88d1-052be062e138"
+  ]
+}

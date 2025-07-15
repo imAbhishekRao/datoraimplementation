@@ -1,0 +1,67 @@
+/* discount badge styling start */
+  .hb_discount-badge {
+    height: 24px;
+    padding: 4px 11px;
+    font-size: 12px;
+    font-weight: 400;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 4px;
+  }
+  .hb_discount-badge__icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+  }
+  .hb_discount-badge__text,
+  .hb_discount-badge__text * {
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  .hb_discount-badge__number {
+    margin-right: 6px;
+  }
+  .hb_discount-badge__icon svg {
+    width: 100%;
+    height: 100%;
+  }
+  .product-item-meta__price-list-container:has(.hb_discount-box) > .price-list,
+  .product-meta__price-list-container:has(.hb_discount-box) > .product-meta__label-list,
+  .product-meta__price-list-container:has(.hb_discount-box) > .price-list  {
+    display: none !important;
+  }
+
+  @media screen and (min-width: 767px) {
+    .hb_discount-badge {
+      margin-left: 5px;
+      margin-top: 0px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .product-meta__price-list-container .hb_discount-box .price-list {
+      display: inline-flex;
+      flex-direction: column;
+      margin-right: 10px;
+    }
+    .product-meta__price-list-container .hb_discount-box {
+      display: flex;
+      align-items: center;
+    }
+    .product-meta__price-list-container .hb_discount-box .price-list .price.price--highlight {
+      margin-right: 0;
+      margin-left: 0;
+      font-size: 17px;
+    }
+    .product-meta__price-list-container .hb_discount-box .price-list .price.price--compare {
+      font-size: 18px;
+    }
+    .product-meta__price-list-container .hb_discount-box .price-list {
+      line-height: 1.1;
+    }
+    .product-meta__price-list-container .hb_discount-box {
+      margin-block: 10px;
+    }
+  }
+/* discount badge styling end */

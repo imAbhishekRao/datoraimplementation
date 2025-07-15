@@ -1,0 +1,160 @@
+{% liquid
+  assign banned_media_ids = ''
+  for variant in product.variants
+    if variant.metafields.custom.hidden_on_storefront_variant_option == true and variant.featured_media
+      assign banned_media_ids = banned_media_ids | append: variant.featured_media.id | append: ','
+    endif
+  endfor
+  assign banned_media_ids = banned_media_ids | split: ',' | compact
+%}
+
+<div js-container class="{{ class }}">
+  <div class="product--image-and-size-details">
+    <div class="product--image-description" js-product-image-description>
+      {% assign index = 0 %}
+      {% for media in product.media %}
+        {% assign media_id_as_string = media.id | append: '' %}
+        {% if banned_media_ids contains media_id_as_string %}
+          {% continue %}
+        {% endif %}
+        {% if media.alt != '' and media.alt != product.title %}
+          <div data-index="{{ index }}" class="{% if index == 0 %}active{% endif %}">
+            {{ media.alt }}
+          </div>
+        {% endif %}
+        {% assign index = index | plus: 1 %}
+      {% endfor %}
+    </div>
+    {% if product.metafields.custom.size_description_text and product.metafields.custom.size_description_text != '' %}
+      <div class="product--size-details">
+        <div class="product--size-details--body">
+          {% if product.metafields.custom.size_description_image %}
+            <img
+              class="image"
+              src="{{ product.metafields.custom.size_description_image | image_url }}"
+              width="{{ product.metafields.custom.size_description_image.width }}"
+              height="{{ product.metafields.custom.size_description_image.height }}"
+              alt="{{ product.metafields.custom.size_description_image.alt }}"
+            >
+          {% endif %}
+          <div class="text">
+            {{ product.metafields.custom.size_description_text | metafield_tag }}
+          </div>
+        </div>
+        <div class="product--size-details--button d-none">
+          <span class="trigger-button" js-sizeguide-modal-trigger>{{ block.settings.button_text }}</span>
+        </div>
+        <div class="product--size-details--footer">
+          <div class="text">{{ block.settings.footer_text }}</div>
+          <img
+            class="image"
+            src="{{ block.settings.footer_image | image_url }}"
+            width="{{ block.settings.footer_image.width }}"
+            height="{{ block.settings.footer_image.height }}"
+            alt="{{ block.settings.footer_image.alt }}"
+          >
+        </div>
+      </div>
+    {% endif %}
+  </div>
+
+  <div class="product-sizeguide-modal" js-sizeguide-modal>
+    <div class="mask" js-close></div>
+    <div class="modal-wrapper">
+      <div class="modal-header">
+        {% if block.settings.modal_logo %}
+          <img
+            src="{{ block.settings.modal_logo | image_url }}"
+            width="{{ block.settings.modal_logo.width }}"
+            height="{{ block.settings.modal_logo.height }}"
+            alt="{{ block.settings.modal_logo.alt }}"
+          >
+        {% endif %}
+        <span js-close>
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+            <path d="M9 1.06982L5 5.06982M1 9.06982L5 5.06982M5 5.06982L1 1.06982L9 9.06982" stroke="#282828"/>
+          </svg>
+        </span>
+      </div>
+      <div class="modal-body">
+        <div class="description">{{ product.metafields.custom.sizeguide.value.description | metafield_tag }}</div>
+        <div class="image-wrapper">
+          {% if product.metafields.custom.sizeguide.value.image %}
+            <img
+              class="image"
+              src="{{ product.metafields.custom.sizeguide.value.image | image_url }}"
+              width="{{ product.metafields.custom.sizeguide.value.image.width }}"
+              height="{{ product.metafields.custom.sizeguide.value.image.height }}"
+              alt="{{ product.metafields.custom.sizeguide.value.image.alt }}"
+            >
+          {% endif %}
+          <div class="text">{{ product.metafields.custom.sizeguide.value.image_text | metafield_tag }}</div>
+        </div>
+        <div id="KiwiSizingChart" 
+          data-display-mode="0"
+          data-recommender-display-mode="0"
+          data-layout-type="0">
+        </div>
+        <div class="video-wrapper" js-sizeguide-video-wrapper js-video-trigger>
+          {% if product.metafields.custom.sizeguide.value.video.value %}
+            {{ product.metafields.custom.sizeguide.value.video.value | video_tag: width: 1000, image_size: '1000x'}}
+          {% else %}
+          <video playsinline="playsinline" width="1000" preload="metadata">
+            <source src="https://cdn.shopify.com/videos/c/o/v/2e0ebed46f1243c6bc79ace544f7e402.mp4" type="video/mp4">
+          </video>
+          {% endif %}
+          <div>
+            <div class="text">{{ product.metafields.custom.sizeguide.value.video_text | metafield_tag }}</div>
+            <div class="time-left" js-video-time-left></div>
+            <span class="play-button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14" viewBox="0 0 11 14" fill="none">
+                <path d="M10.5 6.27411C11.1667 6.65901 11.1667 7.62126 10.5 8.00616L1.5 13.2023C0.833332 13.5872 -6.10471e-07 13.1061 -5.76822e-07 12.3363L-1.2256e-07 1.94398C-8.8911e-08 1.17418 0.833333 0.693058 1.5 1.07796L10.5 6.27411Z" fill="white"/>
+              </svg>
+            </span>
+            <span class="pause-button">
+              <svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 0.890137V13.3901" stroke="white" stroke-linecap="round"/>
+                <path d="M9 0.890137V13.3901" stroke="white" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </div>
+        </div>
+        <div class="load-more-wrapper" js-load-more-wrapper>
+          <div class="load-more--image" js-trigger-load-more>
+            {% if product.metafields.custom.sizeguide.value.image_for_load_more %}
+              <img
+                class="image"
+                src="{{ product.metafields.custom.sizeguide.value.image_for_load_more | image_url }}"
+                width="{{ product.metafields.custom.sizeguide.value.image_for_load_more.width }}"
+                height="{{ product.metafields.custom.sizeguide.value.image_for_load_more.height }}"
+                alt="{{ product.metafields.custom.sizeguide.value.image_for_load_more.alt }}"
+              >
+            {% endif %}
+            <div class="text">{{ product.metafields.custom.sizeguide.value.text_for_load_more | metafield_tag }}</div>
+            <span class="trigger-button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11" viewBox="0 0 10 11" fill="none">
+                <path d="M0.5 9.64014L5 5.14014M9.5 0.640137L5 5.14014M5 5.14014L9.5 9.64014L0.5 0.640137" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </div>
+          <div class="load-more--content" js-load-more-content>
+            <table>
+              {% for line_text in product.metafields.custom.sizeguide.value.second_table.value %}
+                <tr>
+                  {% assign cells = line_text | split: ', ' %}
+                  {% for cell in cells %}
+                    <td>{{ cell }}</td>
+                  {% endfor %}
+                </tr>
+              {% endfor %}
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="description">{{ block.settings.modal_footer_description }}</div>
+        <span class="footer-button" js-anchor-button>{{ block.settings.modal_footer_button_text }}</span>
+      </div>
+    </div>
+  </div>
+</div>

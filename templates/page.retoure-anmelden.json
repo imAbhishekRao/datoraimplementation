@@ -1,0 +1,87 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": false,
+        "page_width": "medium"
+      }
+    },
+    "e8f5c8fd-a2de-4162-9f75-8a6f7f6f86f5": {
+      "type": "image-with-text-block",
+      "settings": {
+        "reveal_on_scroll": false,
+        "image": "shopify:\/\/shop_images\/Umtausch_Portal_Backround.png",
+        "mobile_image": "shopify:\/\/shop_images\/Umtausch_Portal_Backround.png",
+        "subheading": "",
+        "title": "Kostenloser Umtausch",
+        "content": "<p>Warum zurücksenden, wenn du kostenlos umtauschen kannst? Wähle deinen Favoriten neu und erlebe vollen Komfort ohne zusätzliche Kosten!<\/p>",
+        "button_text": "Umtausch anmelden",
+        "button_link": "https:\/\/skimmygermany.returnsportal.online\/",
+        "background_type": "full_width",
+        "text_position": "center",
+        "text_alignment": "center",
+        "text_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "5105936f-ce1a-49d5-a0ee-48beefe0d97f": {
+      "type": "custom-liquid",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "liquid": "",
+        "add_vertical_spacing": true,
+        "background_type": "full_width",
+        "background": "#f9c3c6",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "contact-form": {
+      "type": "contact-form",
+      "blocks": {
+        "34ee693e-a165-4424-98b0-cad6936bb1a4": {
+          "type": "text",
+          "settings": {
+            "title": "Bestellnummer",
+            "use_long_text": false,
+            "is_required": true
+          }
+        }
+      },
+      "block_order": [
+        "34ee693e-a165-4424-98b0-cad6936bb1a4"
+      ],
+      "settings": {
+        "title": "Retoure Anmelden",
+        "content": "<p>Es ist natürlich schade, dass du deine Bestellung zurücksenden möchtest, aber keine Sorge – wir machen den Prozess so einfach wie möglich für dich.<\/p><p>Solltest du eine Erstattung wünschen, kontaktiere bitte unseren Kundensupport unter Angabe deiner Bestellnummer. Wir stehen dir mit Rat und Tat zur Seite, um den Vorgang so reibungslos wie möglich zu gestalten.<\/p><p>Aktuell ist eine kostenlose Retoure nur im Falle eines Umtausches möglich. Wir arbeiten jedoch kontinuierlich daran, unseren Service zu verbessern. Deshalb ist es nicht ausgeschlossen, dass wir dir auch in Zukunft kostenlose Rücksendungen im Rahmen bestimmter Aktionen anbieten können.<\/p>",
+        "text_1_heading": "",
+        "text_1_text": "",
+        "text_2_heading": "",
+        "text_2_text": "",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "e8f5c8fd-a2de-4162-9f75-8a6f7f6f86f5",
+    "5105936f-ce1a-49d5-a0ee-48beefe0d97f",
+    "contact-form"
+  ]
+}

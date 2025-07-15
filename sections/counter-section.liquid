@@ -1,0 +1,286 @@
+{% assign year = section.settings.year %}
+{% assign month = section.settings.month %}
+{% assign day = section.settings.day %}
+{% assign hour = section.settings.hour %}
+{% assign minute = section.settings.minute %}
+{% capture hour %}{{year}}-{{month}}-{{day}}T{{hour}}:{{minute}}:00{% endcapture %}
+  {% assign storetime = hour | date: '%s' %}
+  {% assign currenttime = 'now' | date: '%s' %}
+  {% assign time_diff = storetime | minus: currenttime %}
+  {% if time_diff > 0 %}
+    <div class="container {{ section.settings.section_class }}">
+      <div
+        class="counter-section-wrapper"
+        data-hours="{{ hour }}"
+        style="--background:{{ section.settings.bg_color }};--color:{{ section.settings.text_color }}"
+      >
+        <div class="counter-inner">
+          {% if section.settings.title != blank %}
+            <div class="counter-text">
+              <p>{{ section.settings.title }}</p>
+            </div>
+          {% endif %}
+          <div class="counter-bar">
+            <div class="counter-timer">
+              <div class="update-timer" id="days">{{ time_diff | divided_by: 86400 | plus: 1000 | slice: 2, 3 }}</div>
+              <span class="timer-title-anno">Tage</span>
+            </div>
+            <div class="counter-timer">
+              <div class="update-timer" id="hours">
+                {{ time_diff | modulo: 86400 | divided_by: 3600 | plus: 1000 | slice: 2, 3 }}
+              </div>
+              <span class="timer-title-anno">Std</span>
+            </div>
+            <div class="counter-timer">
+              <div class="update-timer" id="minutes">
+                {{ time_diff | modulo: 3600 | divided_by: 60 | plus: 1000 | slice: 2, 3 }}
+              </div>
+              <span class="timer-title-anno">Min.</span>
+            </div>
+            <div class="counter-timer">
+              <div class="update-timer" id="seconds">{{ time_diff | modulo: 60 | plus: 1000 | slice: 2, 3 }}</div>
+              <span class="timer-title-anno">Sek.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   {% else %}
+      {% if section.settings.hide_timer_on_complete != true %}
+         <div class="container {{ section.settings.section_class }}">
+            <div class="counter-section-wrapper" style="--background:{{ section.settings.bg_color }};--color:{{ section.settings.text_color }}">
+               <div class="counter-inner">
+                  {% if section.settings.text_on_complete != blank %}
+                  <div class="counter-text">
+                     <p>{{ section.settings.text_on_complete }}</p>
+                  </div>
+                  {% endif %}
+                  <div class="counter-bar">
+                     <div class="counter-timer">
+                        <div class="update-timer" id="days">00</div>
+                        <span class="timer-title-anno">Tage</span>
+                     </div>
+                     <div class="counter-timer">
+                        <div class="update-timer" id="hours">00</div>
+                        <span class="timer-title-anno">Std</span>
+                     </div>
+                     <div class="counter-timer">
+                        <div class="update-timer" id="minutes">00</div>
+                        <span class="timer-title-anno">Min.</span>
+                     </div>
+                     <div class="counter-timer">
+                        <div class="update-timer" id="seconds">00</div>
+                        <span class="timer-title-anno">Sek.</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      {% endif %}
+   {% endif %}
+{% schema %}
+{
+  "name": "Counter Section",
+  "settings": [
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color",
+      "default": "#302C2C"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "number",
+      "id": "year",
+      "label": "Year",
+      "default": 2024
+    },
+    {
+      "type": "select",
+      "id": "month",
+      "label": "Month",
+      "options": [
+        { "value": "01", "label": "January" },
+        { "value": "02", "label": "February" },
+        { "value": "03", "label": "March" },
+        { "value": "04", "label": "April" },
+        { "value": "05", "label": "May" },
+        { "value": "06", "label": "June" },
+        { "value": "07", "label": "July" },
+        { "value": "08", "label": "August" },
+        { "value": "09", "label": "September" },
+        { "value": "10", "label": "October" },
+        { "value": "11", "label": "November" },
+        { "value": "12", "label": "December" }
+      ],
+      "default": "12"
+    },
+    {
+      "type": "select",
+      "id": "day",
+      "label": "Day",
+      "options": [
+        { "value": "01", "label": "1" },
+        { "value": "02", "label": "2" },
+        { "value": "03", "label": "3" },
+        { "value": "04", "label": "4" },
+        { "value": "05", "label": "5" },
+        { "value": "06", "label": "6" },
+        { "value": "07", "label": "7" },
+        { "value": "08", "label": "8" },
+        { "value": "09", "label": "9" },
+        { "value": "10", "label": "10" },
+        { "value": "11", "label": "11" },
+        { "value": "12", "label": "12" },
+        { "value": "13", "label": "13" },
+        { "value": "14", "label": "14" },
+        { "value": "15", "label": "15" },
+        { "value": "16", "label": "16" },
+        { "value": "17", "label": "17" },
+        { "value": "18", "label": "18" },
+        { "value": "19", "label": "19" },
+        { "value": "20", "label": "20" },
+        { "value": "21", "label": "21" },
+        { "value": "22", "label": "22" },
+        { "value": "23", "label": "23" },
+        { "value": "24", "label": "24" },
+        { "value": "25", "label": "25" },
+        { "value": "26", "label": "26" },
+        { "value": "27", "label": "27" },
+        { "value": "28", "label": "28" },
+        { "value": "29", "label": "29" },
+        { "value": "30", "label": "30" },
+        { "value": "31", "label": "31" }
+      ],
+      "default": "05"
+    },
+    {
+      "type": "select",
+      "id": "hour",
+      "label": "Hour",
+      "options": [
+        { "value": "00", "label": "0" },
+        { "value": "01", "label": "1" },
+        { "value": "02", "label": "2" },
+        { "value": "03", "label": "3" },
+        { "value": "04", "label": "4" },
+        { "value": "05", "label": "5" },
+        { "value": "06", "label": "6" },
+        { "value": "07", "label": "7" },
+        { "value": "08", "label": "8" },
+        { "value": "09", "label": "9" },
+        { "value": "10", "label": "10" },
+        { "value": "11", "label": "11" },
+        { "value": "12", "label": "12" },
+        { "value": "13", "label": "13" },
+        { "value": "14", "label": "14" },
+        { "value": "15", "label": "15" },
+        { "value": "16", "label": "16" },
+        { "value": "17", "label": "17" },
+        { "value": "18", "label": "18" },
+        { "value": "19", "label": "19" },
+        { "value": "20", "label": "20" },
+        { "value": "21", "label": "21" },
+        { "value": "22", "label": "22" },
+        { "value": "23", "label": "23" }
+      ],
+      "default": "12"
+    },
+    {
+      "id": "minute",
+      "type": "select",
+      "label": "Minute",
+      "options": [
+        { "value": "00", "label": "0" },
+        { "value": "01", "label": "1" },
+        { "value": "02", "label": "2" },
+        { "value": "03", "label": "3" },
+        { "value": "04", "label": "4" },
+        { "value": "05", "label": "5" },
+        { "value": "06", "label": "6" },
+        { "value": "07", "label": "7" },
+        { "value": "08", "label": "8" },
+        { "value": "09", "label": "9" },
+        { "value": "10", "label": "10" },
+        { "value": "11", "label": "11" },
+        { "value": "12", "label": "12" },
+        { "value": "13", "label": "13" },
+        { "value": "14", "label": "14" },
+        { "value": "15", "label": "15" },
+        { "value": "16", "label": "16" },
+        { "value": "17", "label": "17" },
+        { "value": "18", "label": "18" },
+        { "value": "19", "label": "19" },
+        { "value": "20", "label": "20" },
+        { "value": "21", "label": "21" },
+        { "value": "22", "label": "22" },
+        { "value": "23", "label": "23" },
+        { "value": "24", "label": "24" },
+        { "value": "25", "label": "25" },
+        { "value": "26", "label": "26" },
+        { "value": "27", "label": "27" },
+        { "value": "28", "label": "28" },
+        { "value": "29", "label": "29" },
+        { "value": "30", "label": "30" },
+        { "value": "31", "label": "31" },
+        { "value": "32", "label": "32" },
+        { "value": "33", "label": "33" },
+        { "value": "34", "label": "34" },
+        { "value": "35", "label": "35" },
+        { "value": "36", "label": "36" },
+        { "value": "37", "label": "37" },
+        { "value": "38", "label": "38" },
+        { "value": "39", "label": "39" },
+        { "value": "40", "label": "40" },
+        { "value": "41", "label": "41" },
+        { "value": "42", "label": "42" },
+        { "value": "43", "label": "43" },
+        { "value": "44", "label": "44" },
+        { "value": "45", "label": "45" },
+        { "value": "46", "label": "46" },
+        { "value": "47", "label": "47" },
+        { "value": "48", "label": "48" },
+        { "value": "49", "label": "49" },
+        { "value": "50", "label": "50" },
+        { "value": "51", "label": "51" },
+        { "value": "52", "label": "52" },
+        { "value": "53", "label": "53" },
+        { "value": "54", "label": "54" },
+        { "value": "55", "label": "55" },
+        { "value": "56", "label": "56" },
+        { "value": "57", "label": "57" },
+        { "value": "58", "label": "58" },
+        { "value": "59", "label": "59" }
+      ],
+      "default": "00"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_timer_on_complete",
+      "label": "Hide timer on complete",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "text_on_complete",
+      "label": "Text on complete"
+    },
+    {
+      "type": "text",
+      "id": "section_class",
+      "label": "Section class"
+    }
+  ],
+  "presets": [{ "name": "Counter Section" }]
+}
+{% endschema %}

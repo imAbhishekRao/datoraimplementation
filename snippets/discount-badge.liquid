@@ -1,0 +1,36 @@
+{{ 'discount-badge.css' | asset_url | stylesheet_tag }}
+
+<style>
+    .hb_discount-badge {
+        background: {{ settings.background_color_badge }};
+        color: {{ settings.font_and_svg_color_badge }};
+    }
+    .hb_discount-badge__icon svg path {
+        stroke: {{ settings.font_and_svg_color_badge }};;
+    }
+</style>
+
+{% capture badge_code %}
+    [
+    {% for discountItem in shop.metaobjects.discount_list.values %}
+        {% if discountItem.fixed_price == true or discountItem.percentage == true %}
+            {
+                "code": "{{ discountItem.discount_code }}",
+                "value": "{{ discountItem.discount_value }}",
+                {% if discountItem.fixed_price == true %}
+                    "type": "fixed"
+                {% endif %}
+                {% if discountItem.percentage == true %}
+                    "type": "percentage"
+                {% endif %}
+            }
+            {% unless forloop.last %}
+            ,
+            {% endunless %}
+        {% endif %}
+    {% endfor %}
+    ]
+{% endcapture %}
+<script js-hb-badge-list type="text/template" >{{ badge_code | base64_url_safe_encode }}</script>
+
+<script src="{{ 'discount-badge.js' | asset_url }}" defer></script>

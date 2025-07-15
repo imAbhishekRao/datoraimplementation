@@ -1,0 +1,43 @@
+<section class="main-404">
+  <div class="container">
+    <h1>404</h1>
+    <h2>{{ '404.general.title' | t }}</h2>
+    <a href="/" class="button button--primary main-404__button">{{ '404.general.back_to_home' | t }}</a>
+  </div>
+</section>
+
+<style>
+  .main-404 {
+    padding: 150px 0;
+    text-align: center;
+  }
+
+  .main-404__button{
+    background-color: black !important;
+    color: white !important;
+    background: black !important;
+    border: 1px solid black !important;
+    transition: .4s ease all !important; 
+  }
+
+  .main-404__button:hover{
+    background-color: white !important;
+    color: black !important;
+  }
+
+  .main-404__button {
+    margin-right: auto;
+    margin-left: auto;
+    width: fit-content;
+  }
+
+  .main-404 h1 {
+    font-size: 60px;
+    line-height: 120%;
+  }
+
+  .main-404 h2 {
+    font-size: 40px;
+    line-height: 120%;
+  }
+</style>

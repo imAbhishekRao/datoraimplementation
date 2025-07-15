@@ -1,0 +1,56 @@
+{%- assign color_white_label = 'general.label.white' | t | downcase -%}
+{%- assign color_white_label_2 = 'general.label.white_2' | t | downcase -%}
+{%- assign color_off_white_label = 'general.label.off_white' | t | downcase -%}
+
+{%- for connected_option in connected_product.options_with_values -%}
+  {% assign option_downcase = connected_option.name | downcase %}
+  {% if option_downcase contains 'color' or option_downcase contains 'colour' or option_downcase contains 'farbe' %}
+    {% for value in connected_option.values %}
+      {% liquid
+        assign name = 'option' | append: connected_option.position
+        assign variant_for_value = connected_product.variants | where: name, value | first
+        assign is_limited_color_option = variant_for_value.metafields.custom.limited_color_swatch_option | default: false
+        if is_limited_color_option != true
+          continue
+        endif
+      %}
+      {% assign limited_color_swatch_count = limited_color_swatch_count | plus: 1 %}
+      {%- assign color_value_downcase = value | downcase -%}
+      {% liquid
+        assign hidden_on_storefront = false
+        assign disabled_variant = false
+        assign temp_variants = connected_product.variants | where: name, value
+        assign hidden_size = 0
+        assign disabled_size = 0
+        for temp_variant in temp_variants
+          if temp_variant.metafields.custom.hidden_on_storefront_variant_option == true
+            assign hidden_size = hidden_size | plus: 1
+          endif
+          if temp_variant.available == false
+            assign disabled_size = disabled_size | plus: 1
+          endif
+        endfor
+        if hidden_size == temp_variants.size
+          assign hidden_on_storefront = true
+        endif
+        if disabled_size == temp_variants.size
+          assign disabled_variant = true
+        endif
+      %}
+      <div
+        class="
+          color-swatch hb_color-swatch
+          {% if color_white_label == color_value_downcase or color_white_label_2 == color_value_downcase %} color-swatch--white{% endif %}
+          {% if color_off_white_label == color_value_downcase %} color-swatch--off-white{% endif %}
+          {% if hidden_on_storefront == true %} hidden-on-storefront{% endif %}
+          {% if disabled_variant == true %} is-disabled{% endif %}
+        "
+        data-index
+      >
+        <a href="{{ connected_product.url }}/?variant={{ variant_for_value.id }}" class="color-swatch__item" style="{% render 'color-swatch-style', color_swatch_config: color_swatch_config, value: value %}">
+          <span class="visually-hidden">{{ value }}</span>
+        </a>
+      </div>
+    {% endfor %}
+  {% endif %}
+{% endfor %}

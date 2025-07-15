@@ -1,0 +1,297 @@
+{%- assign color_label_list = 'general.label.color' | t | replace: ', ', ',' | downcase | split: ',' -%}
+{%- assign color_white_label = 'general.label.white' | t | downcase -%}
+{%- assign color_white_label_2 = 'general.label.white_2' | t | downcase -%}
+{%- assign color_off_white_label = 'general.label.off_white' | t | downcase -%}
+
+<product-item class="product-item bd-product-item {% unless product.available %}product-item--sold-out{% endunless %}">
+  <div class="product-item__image-wrapper {% if settings.show_secondary_image and product.media.size > 1 and hide_secondary_image != true %}product-item__image-wrapper--multiple{% endif %}">
+    <a href="{{ product.url }}" class="product-item__aspect-ratio">
+      {%- if product.featured_media and selected_variant == blank -%}
+        {{ product.featured_media | image_url: width: product.featured_media.width | image_tag: loading: 'lazy', sizes: sizes_attribute, widths: '200,300,400,500,600,700,800,900,1000,1100,1200', class: 'product-item__primary-image', data-media-id: product.featured_media.id }}
+      {%- endif -%}
+      {%- if selected_variant.featured_media and selected_variant != blank -%}
+        {{ selected_variant.featured_media | image_url: width: selected_variant.featured_media.width | image_tag: loading: 'lazy', sizes: sizes_attribute, widths: '200,300,400,500,600,700,800,900,1000,1100,1200', class: 'product-item__primary-image', data-media-id: selected_variant.featured_media.id }}
+      {%- endif -%}
+
+      {%- for color_label in color_label_list -%}
+        {% for option_name in product.options %}
+          {% assign option_name_down = option_name | downcase %}
+          {% if option_name_down contains color_label %}
+            {% assign color_option_label = option_name %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+        {%- if product.options_by_name[color_option_label] != blank -%}
+          {%- for color_option in product.options_by_name[color_option_label].values -%}
+            {%- for variant in product.variants -%}
+              {%- if variant.options contains color_option and variant.featured_media != blank -%}
+                {%- unless variant.featured_media == product.featured_media or selected_variant != blank -%}
+                  {{ variant.featured_media | image_url: width: variant.featured_media.width | image_tag: loading: 'lazy', sizes: sizes_attribute, widths: '200,300,400,500,600,700,800,900,1000,1100,1200', class: 'product-item__primary-image', data-media-id: variant.featured_media.id, hidden: true }}
+                  {% break %}
+                {%- endunless -%}
+                {%- unless variant.featured_media == selected_variant.featured_media or selected_variant == blank -%}
+                  {{ variant.featured_media | image_url: width: variant.featured_media.width | image_tag: loading: 'lazy', sizes: sizes_attribute, widths: '200,300,400,500,600,700,800,900,1000,1100,1200', class: 'product-item__primary-image', data-media-id: variant.featured_media.id, hidden: true }}
+                  {% break %}
+                {%- endunless -%}
+              {%- endif -%}
+            {%- endfor -%}
+          {%- endfor -%}
+        {%- endif -%}
+      {%- endfor -%}
+
+      {%- if settings.show_secondary_image and product.media.size > 1 and hide_secondary_image != true -%}
+        {%- assign next_media = product.media[product.featured_media.position] | default: product.media[1] -%}
+        {{- next_media | image_url: width: next_media.width | image_tag: loading: 'lazy', sizes: sizes_attribute, widths: '200,300,400,500,600,700,800,900,1000,1100,1200', class: 'product-item__secondary-image' -}}
+      {%- endif -%}
+    </a>
+  </div>
+
+  <div class="product-item__info">
+    <div class="product-item-meta">
+      {%- for color_label in color_label_list -%}
+        {% for option_name in product.options %}
+          {% assign option_name_down = option_name | downcase %}
+          {% if option_name_down contains color_label %}
+            {% assign color_option_label = option_name %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+        {%- if product.options_by_name[color_option_label] != blank -%}
+          {%- assign product_option = product.options_by_name[color_option_label] -%}
+
+          {%- case settings.product_color_display -%}
+            {%- when 'count' -%}
+              <p class="product-item-meta__color-count text--small text--subdued">{{- 'collection.product.available_colors_count' | t: count: product_option.values.size -}}</p>
+
+            {%- when 'swatch' -%}
+              <div class="product-item-meta__swatch-list color-swatch-list color-swatch-list--mini" js-container>
+                {%- assign variant_option = 'option' | append: product_option.position -%}
+                {% assign variant_option_handle = variant_option | handleize %}
+                {%- assign color_swatch_config = settings.color_swatch_config | newline_to_br | split: '<br />' -%}
+
+                {%- capture color_name -%}{{ section.id }}-{{ block.id }}-{{ product.id }}{%- endcapture -%}
+
+                {% assign color_swatch_list_count = 0 %}
+                {% capture color_swatch_list %}
+                  {%- for value in product_option.values -%}
+                    {%- capture color_id -%}{{ color_name }}-{{ forloop.index }}{%- endcapture -%}
+                    {%- assign color_value_downcase = value | downcase -%}
+                    {%- assign variant_for_value = product.variants | where: variant_option, value | first -%}
+
+                    {% assign flag = true %}
+                    {% assign variants_for_value = product.variants | where: variant_option, value %}
+                    {% for each_variant in variants_for_value %}
+                      {% if each_variant.metafields.custom.hidden_on_storefront_variant_option != true %}
+                        {% assign flag = false %}
+                        {% break %}
+                      {% endif %}
+                    {% endfor %}
+                    {% if flag == true %}
+                      {% continue %}
+                    {% endif %}
+
+                    {% assign color_swatch_list_count = color_swatch_list_count | plus: 1 %}
+                    {%  liquid
+                      if colors != blank
+                        assign color = 'black'
+                      elsif image != blank
+                        assign color = 'black'
+                      else
+                        assign color_value_downcase = value | downcase
+                        assign color = color_value_downcase
+                    
+                        for color_swatch_item in color_swatch_config
+                          assign color_swatch_parts = color_swatch_item | split: ':'
+                          assign color_swatch_name = color_swatch_parts.first | downcase | strip
+                    
+                          if color_value_downcase == color_swatch_name
+                            assign color_swatch_value = color_swatch_parts.last | strip
+                    
+                            if color_swatch_value contains '#'
+                              assign color = color_swatch_value
+                            elsif images[color_swatch_value] != blank
+                              assign color = 'black'
+                            endif
+                    
+                            break
+                          endif
+                        endfor
+                      endif
+                    %}
+                    <div
+                      class="
+                        color-swatch
+                        {% if color_white_label == color_value_downcase or color_white_label_2 == color_value_downcase %} color-swatch--white{% endif %}
+                        {% if color_off_white_label == color_value_downcase %} color-swatch--off-white{% endif %}
+                      "
+                      style="--color: {{ color }};"
+                    >
+                      <input
+                        class="color-swatch__radio visually-hidden"
+                        type="radio"
+                        name="{{ color_name }}"
+                        id="{{ color_id }}"
+                        value="{{ value | escape }}"
+                        {% if color_swatch_list_count == 1 and selected_variant == blank %}
+                          checked="checked"
+                        {% endif %}
+                        {% if selected_variant[variant_option_handle] == value and selected_variant != blank %}
+                          checked="checked"
+                        {% endif %}
+                        data-variant-id="{{ variant_for_value.id }}"
+                        {% if variant_for_value.featured_media %}
+                          data-variant-featured-media="{{ variant_for_value.featured_media.id }}"
+                        {% endif %}
+                      >
+                      <label class="color-swatch__item" for="{{ color_id }}" style="{% render 'color-swatch-style', color_swatch_config: color_swatch_config, value: value %}">
+                        <span class="visually-hidden">{{ value }}</span>
+                      </label>
+                    </div>
+                  {%- endfor -%}
+                {% endcapture %}
+
+                {% if color_swatch_list_count > 4 %}
+                  <span class="prev__next-button prev-button" js-prev>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                      <g clip-path="url(#clip0_1133_1135)">
+                        <path opacity="0.8" d="M4.5 2.25L8.25 6L4.5 9.75" stroke="#12100F" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1133_1135">
+                          <rect width="12" height="12" fill="white"/>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                {% endif %}
+                <div class="bd-custom-slider {% unless color_swatch_list_count > 4 %}no-next-prev-buttons{% endunless %}" js-bd-custom-slider data-offset-left="2">{{ color_swatch_list }}</div>
+                {% if color_swatch_list_count > 4 %}
+                  <span class="prev__next-button next-button active" js-next>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                      <g clip-path="url(#clip0_1133_1135)">
+                        <path opacity="0.8" d="M4.5 2.25L8.25 6L4.5 9.75" stroke="#12100F" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1133_1135">
+                          <rect width="12" height="12" fill="white"/>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                {% endif %}
+              </div>
+          {%- endcase -%}
+
+          {%- break -%}
+        {%- endif -%}
+      {%- endfor -%}
+
+      <div class="loox-rating" data-id="{{ product.id }}" data-rating="{{ product.metafields.loox.avg_rating }}" data-raters="{{ product.metafields.loox.num_reviews }}"></div>
+
+      <a href="{{ product.url }}" data-instant class="product-item-meta__title">{{ product.title }}</a>
+
+      <div class="product-item-meta__price-list-container">
+        <div class="price-list price-list--centered">
+          {%- if product.price_varies and product.compare_at_price -%}
+            {%- assign cheapest_variant = product.variants | sort: 'price' | first -%}
+
+            {%- capture price_min -%}
+              {%- if settings.currency_code_enabled -%}
+                {{- cheapest_variant.price | money_with_currency -}}
+              {%- else -%}
+                {{- cheapest_variant.price | money -}}
+              {%- endif -%}
+            {%- endcapture -%}
+
+            {%- if cheapest_variant.price < cheapest_variant.compare_at_price -%}
+              <span class="price price--highlight">
+                <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
+                {{- 'collection.product.from_price_html' | t: price_min: price_min -}}
+              </span>
+
+              <span class="price price--compare">
+                <span class="visually-hidden">{{ 'product.general.regular_price' | t }}</span>
+
+                {%- if settings.currency_code_enabled -%}
+                  {{- cheapest_variant.compare_at_price | money_with_currency -}}
+                {%- else -%}
+                  {{- cheapest_variant.compare_at_price | money -}}
+                {%- endif -%}
+              </span>
+            {%- else -%}
+              <span class="price">
+                <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
+                {{- 'collection.product.from_price_html' | t: price_min: price_min -}}
+              </span>
+            {%- endif -%}
+          {%- elsif product.price < product.compare_at_price -%}
+            <span class="price price--highlight">
+              <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
+
+              {%- if settings.currency_code_enabled -%}
+                {{- product.price | money_with_currency -}}
+              {%- else -%}
+                {{- product.price | money -}}
+              {%- endif -%}
+            </span>
+
+            <span class="price price--compare">
+              <span class="visually-hidden">{{ 'product.general.regular_price' | t }}</span>
+              {%- if settings.currency_code_enabled -%}
+                {{- product.compare_at_price | money_with_currency -}}
+              {%- else -%}
+                {{- product.compare_at_price | money -}}
+              {%- endif -%}
+            </span>
+          {%- elsif product.price_varies -%}
+            {%- capture price_min -%}
+              {%- if settings.currency_code_enabled -%}
+                {{ product.price_min | money_with_currency }}
+              {%- else -%}
+                {{ product.price_min | money }}
+              {%- endif -%}
+            {%- endcapture -%}
+
+            {%- capture price_max -%}
+              {%- if settings.currency_code_enabled -%}
+                {{- product.price_max | money_with_currency -}}
+              {%- else -%}
+                {{- product.price_max | money -}}
+              {%- endif -%}
+            {%- endcapture -%}
+
+            <span class="price">
+              <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
+              {{- 'collection.product.from_price_html' | t: price_min: price_min, price_max: price_max -}}
+            </span>
+          {%- else -%}
+            <span class="price">
+              <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
+
+              {%- if settings.currency_code_enabled -%}
+                {{- product.price | money_with_currency -}}
+              {%- else -%}
+                {{- product.price | money -}}
+              {%- endif -%}
+            </span>
+          {%- endif -%}
+
+          {%- if product.selected_or_first_available_variant.unit_price_measurement -%}
+            <div class="price price--block text--xsmall text--subdued">
+              <div class="unit-price-measurement">
+                <span class="unit-price-measurement__price">{{ product.selected_or_first_available_variant.unit_price | money }}</span>
+                <span class="unit-price-measurement__separator">/</span>
+
+                {%- if product.selected_or_first_available_variant.unit_price_measurement.reference_value != 1 -%}
+                  <span class="unit-price-measurement__reference-value">{{ product.selected_or_first_available_variant.unit_price_measurement.reference_value }}</span>
+                {%- endif -%}
+
+                <span class="unit-price-measurement__reference-unit">{{ product.selected_or_first_available_variant.unit_price_measurement.reference_unit }}</span>
+              </div>
+            </div>
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</product-item>

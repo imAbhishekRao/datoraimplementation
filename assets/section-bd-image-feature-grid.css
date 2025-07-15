@@ -1,0 +1,89 @@
+.bd-image-feature-grid--container .heading {
+	max-width: var(--mobile-max-width, 'fit-content');
+	margin: 0;
+	margin: auto;
+}
+.bd-image-feature-grid--container .heading * {
+	color: #12100F;
+	text-align: center;
+	font-family: var(--heading-font-family);
+	font-size: 3.2rem;
+	font-style: normal;
+	font-weight: 100;
+	line-height: normal;
+}
+.bd-image-feature-grid--container .description {
+	margin: 0;
+	margin-top: 0.8rem;
+}
+.bd-image-feature-grid--container .description * {
+	color: #282828;
+	text-align: center;
+	font-family: var(--text-font-family);
+	font-size: 1.4rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: 0.014rem;
+	margin: 0;
+}
+.bd-image-feature-grid--container .block-grid {
+	width: 100%;
+	margin: auto;
+	margin-top: 4rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	row-gap: 2rem;
+	column-gap: 1.1rem;
+}
+.bd-image-feature-grid--container .block-grid .feature {
+	width: 15.8rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1.2rem;
+}
+.bd-image-feature-grid--container .block-grid .feature .image {
+	width: 6.4rem;
+	height: 5.2rem;
+	object-fit: contain;
+	object-position: center;
+	mix-blend-mode: multiply;
+}
+.bd-image-feature-grid--container .block-grid .feature .text {
+	color: #282828;
+	text-align: center;
+	font-family: var(--text-font-family);
+	font-size: 1.2rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: 0.012rem;
+	padding: 0 1.2rem;
+}
+@media screen and (min-width: 1000px) {
+	.bd-image-feature-grid--container .heading {
+		max-width: var(--max-width, 'fit-content');
+	}
+	.bd-image-feature-grid--container .block-grid {
+		align-items: start;
+	}
+	.bd-image-feature-grid--container .heading * {
+		font-size: 3.6rem;
+	}
+	.bd-image-feature-grid--container .description * {
+		font-size: 1.6rem;
+	}
+	.bd-image-feature-grid--container .block-grid .feature {
+		width: 16rem;
+	}
+	.bd-image-feature-grid--container .block-grid .feature .image {
+		width: 7rem;
+		height: 5.8rem;
+	}
+	.bd-image-feature-grid--container .block-grid .feature .text {
+		font-size: 1.4rem;
+	}
+}
