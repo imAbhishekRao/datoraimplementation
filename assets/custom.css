@@ -2643,3 +2643,29 @@ body.new-big-redesign-ab-test .product--image-and-size-details .product--size-de
 .checkout-subtotal{
 	margin-bottom: 10px;
 }
+
+/* Ensure default badge is always visible and not black */
+.hb_discount-badge {
+  background: #FF6666 !important; /* Example: red background, adjust as needed */
+  color: #fff !important;
+  margin-bottom: 5px;
+}
+
+/* Stack both badges vertically with minimal margin */
+.product-badges-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+}
+
+.product-badges-wrapper .hb_discount-badge,
+.product-badges-wrapper .datora.discount-badge {
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .product-badges-wrapper {
+    gap: 6px;
+  }
+}

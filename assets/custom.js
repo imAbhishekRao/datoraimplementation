@@ -826,3 +826,23 @@ var updateProductMedia = (variantId) => {
 		}
 	});
 }
+
+// --- Datora Badge Fix: Always Show Code/Text on All Badges ---
+function updateAllDatoraBadges() {
+  // Example: get the code from localStorage or a global variable, or fallback
+  var datoraCode = localStorage.getItem('datora_discount_code') || window.datoraDiscountCode || '';
+  // If you have a function to get the code, use it here
+
+  document.querySelectorAll('.datora.discount-badge:not([hidden]) [data-datora]').forEach(function(span) {
+    if (datoraCode) {
+      span.textContent = datoraCode;
+      span.parentElement.removeAttribute('hidden');
+    } else {
+      span.textContent = '';
+      span.parentElement.setAttribute('hidden', '');
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', updateAllDatoraBadges);
+document.addEventListener('variant:changed', updateAllDatoraBadges);
