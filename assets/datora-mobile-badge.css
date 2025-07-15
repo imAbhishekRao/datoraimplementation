@@ -5,6 +5,37 @@
 
 /* Base mobile improvements for Datora discount badge */
 @media screen and (max-width: 767px) {
+  /* Stack all discount badges vertically with spacing */
+  .product-meta,
+  .product-info,
+  .cart__discount-list,
+  .mini-cart,
+  .line-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5em;
+  }
+
+  /* Make sure both badges are full width and not inline */
+  .discount-badge,
+  .datora.discount-badge,
+  .line-item__discount-badge,
+  .cart__discount-badge,
+  .mini-cart__discount-badge {
+    display: block;
+    width: fit-content;
+    min-width: 120px;
+    margin: 0 0 0.25em 0;
+    text-align: left;
+  }
+
+  /* Add a little more space between badges if needed */
+  .discount-badge + .datora.discount-badge,
+  .datora.discount-badge + .discount-badge {
+    margin-top: 0.25em;
+  }
+
   /* Main Datora badge */
   .datora.discount-badge {
     display: inline-flex;
