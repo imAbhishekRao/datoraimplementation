@@ -2712,7 +2712,9 @@ body.new-big-redesign-ab-test .product--image-and-size-details .product--size-de
   gap: 4px;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .product-badges-wrapper .hb_discount-badge,
@@ -2724,28 +2726,16 @@ body.new-big-redesign-ab-test .product--image-and-size-details .product--size-de
   .product-badges-wrapper {
     gap: 6px;
     align-items: center;
-  }
-  .datora.discount-badge,
-  .label.label--highlight.discount-badge {
-    text-align: center !important;
-    justify-content: center !important;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
+.datora.discount-badge,
 .label.label--highlight.discount-badge {
-  background: #FFCC66 !important;
-  color: #282828 !important;
-  border-radius: 12px !important;
-  padding: 6px 12px !important;
-  font-size: 12px !important;
-  font-weight: 600 !important;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
-  letter-spacing: 0.3px !important;
-  line-height: 1.2 !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  margin-bottom: 5px !important;
-  transition: all 0.3s ease !important;
+  font-weight: 700 !important;
+  justify-content: center !important;
+  text-align: initial !important;
 }
 
 .label.label--highlight.discount-badge svg {
