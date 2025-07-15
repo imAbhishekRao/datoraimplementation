@@ -188,8 +188,9 @@
             {%- if template.suffix == 'quick-buy-popover' -%}
               <a href="{{ product.url }}" class="link text--subdued">{{ 'product.general.view_details' | t }}</a>
             {%- endif -%}
-            
-            <br />
+          </div>
+
+                    <div class="product-meta__discount-badge-container">
             <li hidden class="datora discount-badge">
                {%- render 'icon' with 'discount-badge' -%}
                <span data-datora></span>

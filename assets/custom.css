@@ -95,7 +95,7 @@
   }
   
   .datora.discount-badge {
-	display: inline-block;
+	display: block;
 	border-radius: 12px;
 	background: #FFCC66;
 	color: #282828;
@@ -103,6 +103,13 @@
 	padding-left: 10px;
 	font-size: 12px;
 	margin-bottom: 5px;
+	margin-top: 8px;
+	width: fit-content;
+  }
+
+  .product-meta__discount-badge-container {
+	margin-top: 8px;
+	margin-bottom: 8px;
   }
   
   .datora.discount-badge svg {
